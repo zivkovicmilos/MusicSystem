@@ -33,15 +33,17 @@ Duration operator+(const Duration &d1, const Duration &d2) {
 }
 
 void Duration::changeDuration(int num, int denom) {
-	if (denom != 4 || denom != 8) throw InvalidDenominator();
+	if ((denom != 4) || (denom != 8)) throw InvalidDenominator();
 
 	numerator = num;
 	denominator = denom;
 }
 
+// Fix so that the denominators are always either 4 or 8
 int Duration::getGCD(int d1, int d2) {
-	if (d1 == 0)
+	if (d1 == 0) {
 		return d2;
+	}
 	return getGCD(d2%d1, d1);
 }
 

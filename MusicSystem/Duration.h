@@ -4,10 +4,10 @@
 class Duration {
 	int numerator;
 	int denominator;
-
-private:
+public:
 
 	Duration(int, int);
+	//Duration();
 
 	void changeDuration(int, int);
 	int getDenominator() const;

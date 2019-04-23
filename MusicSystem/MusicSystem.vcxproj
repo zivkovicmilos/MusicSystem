@@ -115,11 +115,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Duration.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Measure.cpp" />
     <ClCompile Include="MusicSymbol.cpp" />
+    <ClCompile Include="Note.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Duration.h" />
+    <ClInclude Include="Errors.h" />
+    <ClInclude Include="Measure.h" />
     <ClInclude Include="MusicSymbol.h" />
+    <ClInclude Include="Note.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
