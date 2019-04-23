@@ -6,4 +6,6 @@ class MusicSymbol {
 	bool isSplit;
 public:
 	MusicSymbol(Duration d);
+
+	Duration getDuration() const;
 };

@@ -4,13 +4,15 @@
 
 class Measure {
 	Duration maxDur;
-	vector<MusicSymbol> symbols;
+	vector<MusicSymbol*> symbols;
 	bool full;
 	Duration currDur;
 
 public:
-	Measure();
+	enum status {OK, SPLIT};
+	Measure(Duration);
+
 	// Watch out for the splitting of notes between two measures
-	MusicSymbol addSymbol(MusicSymbol);
+	status addSymbol(MusicSymbol*);
 };
 

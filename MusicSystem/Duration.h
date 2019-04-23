@@ -7,6 +7,7 @@ class Duration {
 public:
 
 	Duration(int, int);
+	Duration(int);
 	//Duration();
 
 	void changeDuration(int, int);
@@ -16,4 +17,12 @@ public:
 	static int getGCD(int, int);
 
 	friend Duration operator+(const Duration&, const Duration&);
+
+	// Comparing durations
+	friend bool operator<(const Duration&, const Duration&);
+	friend bool operator>(const Duration&, const Duration&);
+	friend bool operator==(const Duration&, const Duration&);
+	friend bool operator<=(const Duration&, const Duration&);
+	friend bool operator>=(const Duration&, const Duration&);
+	
 };

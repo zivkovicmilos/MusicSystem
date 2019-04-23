@@ -25,12 +25,22 @@ int main() {
 			//cout << character << " => " << note << ", " << midiNum << endl;
 		}
 	}
+	
+	ifstream file2;
+	file2.open("C:\\Users\\Milos\\Desktop\\FAKS\\POOP\\Projekat 1\\MusicSystem\\input\\ode_to_joy.txt");
+	regex rx("([^,]*),([^,]*),([^,]*)*");
 
-	for (const pair<char, pair<string, int>> &it : noteMap) {
-		pair<string, int> p = it.second;
-		cout << it.first << " => " << p.first <<", " << p.second << endl;
+	while (getline(file, textLine)) {
+		smatch result;
+
+		if (regex_match(textLine, result, rx)) {
+			char character = (result.str(1).c_str())[0];
+			string note = result.str(2);
+			int midiNum = atoi(result.str(3).c_str());
+			noteMap[character] = pair<string, int>(note, midiNum);
+			//cout << character << " => " << note << ", " << midiNum << endl;
+		}
 	}
-	// good
 
 	return 0;
 }
