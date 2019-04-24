@@ -4,16 +4,11 @@ using namespace std;
 
 class InvalidDenominator : public exception {
 public:
-
-	friend ostream operator<<(ostream& os, const InvalidDenominator& id) {
-		return os << "Invalid denominator given\n";
-	}
-	
-};
+	string er = "Invalid denominator given\n";
+	const char* what()const override {		return er.c_str();	}};
 
 class InvalidOctave : public exception {
 public:
-	friend ostream operator<<(ostream& os, const InvalidOctave& io) {
-		return os << "Invalid octave given\n";
-	}
+	string er = "Invalid octave given\n";
+	const char* what()const override {		return er.c_str();	}
 };

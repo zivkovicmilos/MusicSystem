@@ -1,6 +1,7 @@
 #include "Duration.h"
 
 Duration::Duration(int num, int denom) {
+	if (((denom != 4)) && (denom != 8)) throw InvalidDenominator();
 	numerator = 0;
 	denominator = 0;
 	changeDuration(num, denom);
@@ -44,8 +45,6 @@ Duration operator+(const Duration &d1, const Duration &d2) {
 }
 
 void Duration::changeDuration(int num, int denom) {
-	if ((denom != 4) || (denom != 8)) throw InvalidDenominator();
-
 	numerator = num;
 	denominator = denom;
 }
@@ -128,4 +127,8 @@ bool operator>=(const Duration& d1, const Duration& d2) {
 	else {
 		return false;
 	}
+}
+
+ostream& operator<<(const ostream& os, const Duration& d) {
+	return os << d.getNumerator() << "/" << d.getDenominator();
 }
