@@ -59,7 +59,14 @@ void addSymbols(vector<Temp*>* noteMap, regex rx, string str) {
 			}
 		}
 		else {
-			Temp* temp = new Temp(match.str()[0], num, Duration(1, 4));
+			Temp* temp = nullptr;
+			if (match.str() == " ") {
+				temp = new Temp(match.str()[0], num, Duration(1, 4));
+			}
+			else {
+				temp = new Temp(match.str()[0], num, Duration(1, 8));
+			}
+			
 			noteMap->push_back(temp);
 		}
 		searchStart = match.suffix().first;
@@ -92,6 +99,7 @@ int main() {
 
 	file2.open("test.txt");
 	regex outside("([a-zA-Z0-9]{1,}(?![^\\[\\]]*\\]))");
+	regex spaces("([ ]{1}(?![^\\[\\]]*\\]))");
 
 	while (getline(file2, textLine)) {
 		// For now just the whole words / characters
