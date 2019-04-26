@@ -129,6 +129,8 @@ bool operator>=(const Duration& d1, const Duration& d2) {
 	}
 }
 
-ostream& operator<<(const ostream& os, const Duration& d) {
-	return os << d.getNumerator() << "/" << d.getDenominator();
+ostream& operator<<(ostream& os, Duration& d) {
+	int num = d.getNumerator();
+	int denom = d.getDenominator();
+	return os << num << "/" << denom;
 }

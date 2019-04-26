@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{C99290EA-BAF4-46F1-B978-19B8AEA0D3FA}</ProjectGuid>
     <RootNamespace>MusicSystem</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -121,6 +121,7 @@
     <ClCompile Include="Measure.cpp" />
     <ClCompile Include="MusicSymbol.cpp" />
     <ClCompile Include="Note.cpp" />
+    <ClCompile Include="Pause.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Composition.h" />
@@ -129,6 +130,7 @@
     <ClInclude Include="Measure.h" />
     <ClInclude Include="MusicSymbol.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="Pause.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

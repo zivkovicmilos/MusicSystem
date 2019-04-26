@@ -9,9 +9,12 @@ private:
 	int octave;
 	Pitch p;
 	bool isSharp;
-	bool isSplit;
+	Note* nextNote; // Next note to be played in [ ] section
 public:
 	Note(Duration, int, bool, Pitch);
+	void addNext(Note*);
+	static Pitch getPitch(char);
+	void getInfo(ostream&) override;
 	~Note();
 };
 
