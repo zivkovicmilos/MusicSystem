@@ -1,19 +1,37 @@
 #pragma once
-#include "Measure.h"
 #include <utility>
+#include <vector>
+#include "Measure.h"
+#include "MusicSymbol.h"
+#include "Note.h"
+#include "Pause.h"
 
 class Composition {
-	struct Elem {
-		Elem* next;
-		Elem* prev;
-		Measure* m;
-		Elem(Measure*);
-	};
 	// First item in the pair is the start,
 	// the second item is the end of that part
-	pair<Elem*, Elem*> left;
-	pair<Elem*, Elem*> right;
-	Duration d;
+	/*struct Elem {
+		Elem* next;
+		Measure* m;
+		Elem(Measure* m) {
+			this->m = m;
+			next = nullptr;
+		}
+	};
+	Elem* leftFirst;
+	Elem* rightFirst;
+
+	Elem* leftLast;
+	Elem* rightLast;*/
+	vector<Measure*> left;
+	vector<Measure*> right;
+
+	int numOfMeasures;
 	
+	vector<pair<MusicSymbol*, int>>* symbolMap;
+	Duration d;
+public:
 	Composition(Duration);
+
+	void attachMap(vector<pair<MusicSymbol*, int>>* symbolMap);
+	void createComposition();
 };

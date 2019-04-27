@@ -1,7 +1,7 @@
 #include "Pause.h"
 
 Pause::Pause(Duration d) : MusicSymbol(d) {
-	isSplit = false;
+	isPause = true;
 }
 
 void Pause::getInfo(ostream& os) {

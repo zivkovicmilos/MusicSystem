@@ -21,27 +21,35 @@ Duration operator+(const Duration &d1, const Duration &d2) {
 	}
 
 	int tempNum;
-	int tempDenum;
+	int tempDenom;
 
 	int d1Num = d1.getNumerator();
 	int d2Num = d2.getNumerator();
 
-	int d1Denum = d1.getDenominator();
-	int d2Denum = d2.getDenominator();
+	int d1Denom = d1.getDenominator();
+	int d2Denom = d2.getDenominator();
 
 	if (d1.getDenominator() == d2.getDenominator()) {
 		tempNum = d1Num + d2Num;
+		tempDenom = d1.getDenominator();
 	}
 	else {
-		tempNum = (d1Num * d2Denum) + (d1Denum * d2Num);
-		tempDenum = d1Denum * d2Denum;
+		tempNum = (d1Num * d2Denom) + (d1Denom * d2Num);
+		tempDenom = d1Denom * d2Denom;
 	}
-
-	int simpleGCD = Duration::getGCD(tempNum, tempDenum);
-	tempNum /= simpleGCD;
-	tempDenum /= simpleGCD;
-
-	return Duration(tempNum, tempDenum);
+	
+	if ((tempDenom != 4) && (tempDenom != 8)) {
+		int simpleGCD = Duration::getGCD(tempNum, tempDenom);
+		tempNum /= simpleGCD;
+		tempDenom /= simpleGCD;
+	}
+	
+	if (tempDenom == 2) {
+		tempNum *= 2;
+		tempDenom *= 2;
+	}
+	
+	return Duration(tempNum, tempDenom);
 }
 
 void Duration::changeDuration(int num, int denom) {
@@ -70,10 +78,10 @@ bool operator==(const Duration& d1, const Duration& d2) {
 	int d1Num = d1.getNumerator();
 	int d2Num = d2.getNumerator();
 
-	int d1Denum = d1.getDenominator();
-	int d2Denum = d2.getDenominator();
+	int d1Denom = d1.getDenominator();
+	int d2Denom = d2.getDenominator();
 
-	if ((d1Num/d1Denum) == (d2Num/d2Denum)) {
+	if (((double)d1Num/d1Denom) == ((double)d2Num/d2Denom)) {
 		return true;
 	}
 	else {
@@ -85,10 +93,10 @@ bool operator<(const Duration& d1, const Duration& d2) {
 	int d1Num = d1.getNumerator();
 	int d2Num = d2.getNumerator();
 
-	int d1Denum = d1.getDenominator();
-	int d2Denum = d2.getDenominator();
+	int d1Denom = d1.getDenominator();
+	int d2Denom = d2.getDenominator();
 
-	if ((d1Num / d1Denum) < (d2Num / d2Denum)) {
+	if (((double)d1Num / d1Denom) < ((double)d2Num / d2Denom)) {
 		return true;
 	}
 	else {
@@ -100,10 +108,10 @@ bool operator>(const Duration& d1, const Duration& d2) {
 	int d1Num = d1.getNumerator();
 	int d2Num = d2.getNumerator();
 
-	int d1Denum = d1.getDenominator();
-	int d2Denum = d2.getDenominator();
+	int d1Denom = d1.getDenominator();
+	int d2Denom = d2.getDenominator();
 
-	if ((d1Num / d1Denum) > (d2Num / d2Denum)) {
+	if (((double)d1Num / d1Denom) > ((double)d2Num / d2Denom)) {
 		return true;
 	}
 	else {

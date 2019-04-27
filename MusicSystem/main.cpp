@@ -13,6 +13,7 @@
 #include "MusicSymbol.h"
 #include "Note.h"
 #include "Pause.h"
+#include "Composition.h"
 //#include "Pause.h" TODO
 
 using namespace std;
@@ -173,8 +174,14 @@ void addSymbols(map<char, pair<string, int>> noteMap) {
 		}
 		oldBase = base;
 	}
+	// Sort the symbols
+	auto lambdaRule = [] (pair<MusicSymbol*, int> m1, pair<MusicSymbol*, int> m2) {
+		return m1.second < m2.second;
+	};
+
+	sort(playing.begin(), playing.end(), lambdaRule);
+
 	// File parsed
-	/* TODO ovde puca*/
 	ofstream ofile;
 	ofile.open("output.txt");
 	for (int i = 0; i < playing.size(); i++) {
@@ -211,8 +218,25 @@ int main() {
 	//file2.open("‪C:\\Users\\Milos\\Desktop\\test.txt");
 
 	//file2->open("test.txt");
-	regex outside("([a-zA-Z0-9]{1,}(?![^\\[\\]]*\\]))");
-	regex spaces("([ ]{1}(?![^\\[\\]]*\\]))");
+	Composition* c = new Composition(Duration(3, 8));
+	Measure* m = new Measure(Duration(3, 8));
+	Note* n1 = new Note(Duration(1, 4), 3, false, Note::Pitch::C);
+	Note* n2 = new Note(Duration(1, 4), 5, false, Note::Pitch::F);
+	vector<Note*> notes;
+	notes.push_back(n1);
+	notes.push_back(n2);
+
+	Duration d = Duration(1, 4) + Duration(1, 8);
+	cout << d << endl;
+	d = Duration(1, 4) + Duration(1, 4);
+	cout << d << endl;
+	d = Duration(1, 8) + Duration(1, 8);
+	cout << d << endl;
+	d = Duration(2, 4) + Duration(1, 8);
+	cout << d << endl;
+	d = Duration(2, 8) + Duration(1, 4);
+	cout << d << endl;
+
 	addSymbols(noteMap);
 	
 	return 0;

@@ -1,28 +1,45 @@
 #include "Note.h"
 
-Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d), isSharp(false) {
+Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	if ((octave < 2) || (octave > 6)) throw InvalidOctave();
 	this->octave = octave;
 	this->p = p;
-	isSplit = false;
-	nextNote = nullptr;
+	isPause = false;
+	prevNote = nextNote = nullptr;
 	this->isSharp = isSharp;
 }
 
 void Note::addNext(Note* n) {
 	nextNote = n;
+	n->addPrev(this);
+}
+
+void Note::addPrev(Note* n) {
+	prevNote = n;
+}
+
+Note* Note::getNext() const {
+	return nextNote;
+}
+
+Note* Note::getPrev() const {
+	return prevNote;
 }
 
 void Note::getInfo(ostream& os) {
 	char pitch;
+	bool upperCase = false;
+	if (d == Duration(1, 4)) {
+		upperCase = true;
+	}
 	switch (p) {
-	case C: pitch = 'C'; break;
-	case D: pitch = 'D'; break;
-	case E: pitch = 'E'; break;
-	case F: pitch = 'F'; break;
-	case G: pitch = 'G'; break;
-	case A: pitch = 'A'; break;
-	case B: pitch = 'B'; break;
+	case C: upperCase ? pitch = 'C' : pitch = 'c'; break;
+	case D: upperCase ? pitch = 'D' : pitch = 'd'; break;
+	case E: upperCase ? pitch = 'E' : pitch = 'e'; break;
+	case F: upperCase ? pitch = 'F' : pitch = 'f'; break;
+	case G: upperCase ? pitch = 'G' : pitch = 'g'; break;
+	case A: upperCase ? pitch = 'A' : pitch = 'a'; break;
+	case B: upperCase ? pitch = 'B' : pitch = 'b'; break;
 	}
 
 	os << pitch;
@@ -33,6 +50,10 @@ void Note::getInfo(ostream& os) {
 	if (nextNote) {
 		os << " next note: " << *nextNote;
 	}
+}
+
+int Note::getOctave() const {
+	return octave;
 }
 
 Note::Pitch Note::getPitch(char c) {

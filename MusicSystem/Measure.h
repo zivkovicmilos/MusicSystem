@@ -1,5 +1,6 @@
 #pragma once
 #include "MusicSymbol.h"
+#include "Note.h"
 #include <vector>
 
 class Measure {
