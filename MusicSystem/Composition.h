@@ -33,5 +33,12 @@ public:
 	Composition(Duration);
 
 	void attachMap(vector<pair<MusicSymbol*, int>>* symbolMap);
+	void parallelAdd(vector<Measure*>&, vector<Measure*>&,
+		MusicSymbol*, MusicSymbol*);
 	void createComposition();
+
+	vector<Measure*>* getRight();
+	vector<Measure*>* getLeft();
+	Duration getDuration() const;
+	friend ostream& operator<<(ostream&, const Composition&);
 };

@@ -1,0 +1,168 @@
+Measure 0:
+L: P 1/4 P 1/8 
+R: E4 1/4 e4 1/8 
+
+Measure 1:
+L: P 1/8 P 1/4 
+R: e4 1/8 F4 1/4 
+
+Measure 2:
+L: P 1/4 P 1/8 
+R: G4 1/4 g4 1/8 
+
+Measure 3:
+L: P 1/8 P 1/4 
+R: g4 1/8 F4 1/4 
+
+Measure 4:
+L: P 1/4 P 1/8 
+R: E4 1/4 d4 1/8 
+
+Measure 5:
+L: P 1/8 P 1/4 
+R: d4 1/8 C4 1/4 
+
+Measure 6:
+L: P 1/4 P 1/8 
+R: C4 1/4 d4 1/8 
+
+Measure 7:
+L: P 1/8 P 1/4 
+R: d4 1/8 E4 1/4 
+
+Measure 8:
+L: P 1/4 P 1/8 
+R: E4 1/4 P 1/8 
+
+Measure 9:
+L: P 1/8 P 1/8 P 1/8 
+R: d4 1/8 P 1/8 d4 1/8 
+
+Measure 10:
+L: P 1/8 P 1/4 
+R: P 1/8 E4 1/4 
+
+Measure 11:
+L: P 1/4 P 1/8 
+R: E4 1/4 f4 1/8 
+
+Measure 12:
+L: P 1/8 P 1/4 
+R: f4 1/8 G4 1/4 
+
+Measure 13:
+L: P 1/4 P 1/8 
+R: G4 1/4 f4 1/8 
+
+Measure 14:
+L: P 1/8 P 1/4 
+R: f4 1/8 E4 1/4 
+
+Measure 15:
+L: P 1/4 P 1/8 
+R: D4 1/4 c4 1/8 
+
+Measure 16:
+L: P 1/8 P 1/4 
+R: c4 1/8 C4 1/4 
+
+Measure 17:
+L: P 1/4 P 1/8 
+R: D4 1/4 e4 1/8 
+
+Measure 18:
+L: P 1/8 P 1/4 
+R: e4 1/8 D4 1/4 
+
+Measure 19:
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 c4 1/8 P 1/8 
+
+Measure 20:
+L: P 1/8 P 1/8 P 1/8 
+R: c4 1/8 P 1/8 d4 1/8 
+
+Measure 21:
+L: P 1/8 P 1/4 
+R: d4 1/8 D4 1/4 
+
+Measure 22:
+L: P 1/4 P 1/8 
+R: E4 1/4 c4 1/8 
+
+Measure 23:
+L: P 1/8 P 1/4 
+R: c4 1/8 D4 1/4 
+
+Measure 24:
+L: P 1/8 P 1/8 P 1/8 
+R: e4 1/8 P 1/8 f4 1/8 
+
+Measure 25:
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 e4 1/8 c4 1/8 
+
+Measure 26:
+L: P 1/8 P 1/4 
+R: c4 1/8 D4 1/4 
+
+Measure 27:
+L: P 1/8 P 1/8 P 1/8 
+R: e4 1/8 P 1/8 f4 1/8 
+
+Measure 28:
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 e4 1/8 d4 1/8 
+
+Measure 29:
+L: P 1/8 P 1/4 
+R: d4 1/8 C4 1/4 
+
+Measure 30:
+L: P 1/4 g3 1/8 
+R: D4 1/4 P 1/8 
+
+Measure 31:
+L: g3 1/8 P 1/8 P 1/8 
+R: P 1/8 P 1/8 e4 1/8 
+
+Measure 32:
+L: P 1/8 P 1/4 
+R: e4 1/8 E4 1/4 
+
+Measure 33:
+L: P 1/4 P 1/8 
+R: F4 1/4 g4 1/8 
+
+Measure 34:
+L: P 1/8 P 1/4 
+R: g4 1/8 G4 1/4 
+
+Measure 35:
+L: P 1/4 P 1/8 
+R: F4 1/4 e4 1/8 
+
+Measure 36:
+L: P 1/8 P 1/4 
+R: e4 1/8 D4 1/4 
+
+Measure 37:
+L: P 1/4 P 1/8 
+R: C4 1/4 c4 1/8 
+
+Measure 38:
+L: P 1/8 P 1/4 
+R: c4 1/8 D4 1/4 
+
+Measure 39:
+L: P 1/4 P 1/8 
+R: E4 1/4 d4 1/8 
+
+Measure 40:
+L: P 1/8 P 1/8 P 1/8 
+R: d4 1/8 P 1/8 c4 1/8 
+
+Measure 41:
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 c4 1/8 P 1/8 
+

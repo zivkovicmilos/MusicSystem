@@ -13,7 +13,10 @@ public:
 	enum status {OK, SPLIT};
 	Measure(Duration);
 
-	// Watch out for the splitting of notes between two measures
 	status addSymbol(MusicSymbol*);
+	vector<MusicSymbol*>* getSymbols();
+	void incCurrent(Duration d);
+	bool isFull() const;
+	friend ostream& operator<<(ostream&, const Measure&);
 };
 

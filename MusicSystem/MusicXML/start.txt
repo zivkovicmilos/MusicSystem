@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"
+standalone="no"?>
+<!DOCTYPE score-partwise PUBLIC
+"-//Recordare//DTD MusicXML 3.1 Partwise//EN"
+"http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+<part-list>
+<score-part id="Right"></score-part>
+<score-part id="Left"></score-part>
+</part-list>
+<part id="Right">
+<measure>
+<attributes>
+<divisions>2</divisions>
+<time>

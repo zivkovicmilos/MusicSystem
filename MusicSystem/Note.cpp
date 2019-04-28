@@ -5,6 +5,7 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	this->octave = octave;
 	this->p = p;
 	isPause = false;
+	isSplit = false;
 	prevNote = nextNote = nullptr;
 	this->isSharp = isSharp;
 }
@@ -48,12 +49,36 @@ void Note::getInfo(ostream& os) {
 	}
 	os << octave << " " << d;
 	if (nextNote) {
-		os << " next note: " << *nextNote;
+		os << " (next note: " << nextNote->getPitchC();
+		if (isSharp) {
+			os << "#";
+		}
+		os << nextNote->getOctave() << ")";
+	}
+	if (prevNote) {
+		os << " (prev note: " << prevNote->getPitchC();
+		if (isSharp) {
+			os << "#";
+		}
+		os << prevNote->getOctave() << ")";
 	}
 }
 
 int Note::getOctave() const {
 	return octave;
+}
+
+char Note::getPitchC() const {
+	switch (p) {
+	case C: return 'C';
+	case D: return 'D';
+	case E: return 'E';
+	case F: return 'F';
+	case G: return 'G';
+	case A: return 'A';
+	case B: return 'B';
+	default: cout << "Fucked up"; break;// TODO throw exception
+	};
 }
 
 Note::Pitch Note::getPitch(char c) {
@@ -69,4 +94,16 @@ Note::Pitch Note::getPitch(char c) {
 	default: cout << "Fucked up"; break;// TODO throw exception
 	};
 	return ret;
+}
+
+bool Note::checkSharp() const {
+	return isSharp;
+}
+
+bool Note::checkSplit() const {
+	return isSplit;
+}
+
+void Note::setSplit() {
+	isSplit = true;
 }

@@ -29,7 +29,7 @@ struct Temp {
 	}
 };
 
-void addSymbols(map<char, pair<string, int>> noteMap) {
+Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 	//vector<MusicSymbol*> playing;
 	ifstream file;
 	file.open("test2.txt");
@@ -69,6 +69,7 @@ void addSymbols(map<char, pair<string, int>> noteMap) {
 				//cout << (searchStart == textLine.cbegin() ? "" : " ") << match[0] << endl;
 				workingStr = (i == 2) ? match.str(1) : match.str();
 				pos = (i == 2) ? match.position(1) : match.position();
+				oldNote = nullptr;
 
 				if (first) {
 					num = oldBase + pos;
@@ -186,11 +187,125 @@ void addSymbols(map<char, pair<string, int>> noteMap) {
 	ofile.open("output.txt");
 	for (int i = 0; i < playing.size(); i++) {
 		MusicSymbol* t = playing[i].first;
-		cout << *t << " at index: " << playing[i].second << endl;
+		//cout << *t << " at index: " << playing[i].second << endl;
 		ofile << *t << " at index: " << playing[i].second << endl;
 	}
 	ofile.close();
 	file.close();
+
+	ofile.open("compositionOutput.txt");
+
+	Composition* c = new Composition(Duration(3, 8));
+	c->attachMap(&playing);
+	c->createComposition();
+	cout << *c;
+	ofile << *c;
+	ofile.close();
+	return c;
+}
+
+void printNote(ostream& os, MusicSymbol* m, bool& split) {
+	int duration = m->getDuration().getDenominator() == 4 ? 2 : 1;
+	os << "<note>" << endl;
+	if (m->checkPause()) {
+		Pause* p = (Pause*)m;
+		os << "<rest/>" << endl;
+		os << "<duration>" << duration << "</duration>" << endl;
+		os << "</note>" << endl;
+	}
+	else {
+		Note* n = (Note*)m;
+		if (n->getPrev()) {
+			os << "<chord/>" << endl;
+		}
+		os << "<pitch>" << endl;
+		os << "<step>" << n->getPitchC() << "</step>" << endl;
+		os << "<octave>" << n->getOctave() << "</octave>" << endl;
+		if (n->checkSharp()) {
+			os << "<alter>1</alter>" << endl;
+		}
+		os << "</pitch>" << endl;
+		os << "<duration>" << duration << "</duration>" << endl;
+		if (n->checkSplit() && !split) {
+			os << "<tie type=\"start\"/>" << endl;
+			split = true;
+		}
+		else if (split) {
+			os << "<tie type=\"end\"/>" << endl;
+			split = false;
+		}
+		os << "</note>" << endl;
+	}
+}
+
+void musicXML(Composition* c) {
+	ifstream reader;
+	ofstream output;
+	vector<Measure*>* right = c->getRight();
+	vector<Measure*>* left = c->getLeft();
+	bool openMeasure = true;
+	
+	reader.open("MusicXML\\start.txt");
+	output.open("MusicXML\\output.musicxml");
+
+	string textLine;
+	while (getline(reader, textLine)) {
+		output << textLine;
+	}
+	reader.close();
+	reader.open("MusicXML\\rightBP.txt");
+
+	output << "<beats>" << c->getDuration().getNumerator() << "</beats>" << endl;
+	output << "<beat-type>" << c->getDuration().getDenominator() << "</beat-type>" << endl;
+
+	while (getline(reader, textLine)) {
+		output << textLine;
+	}
+	reader.close();
+	// Right boilerplate done
+	vector<MusicSymbol*>* symbols;
+	bool split = false;
+	for (int i = 0; i < right->size(); i++) {
+		symbols = (*right)[i]->getSymbols();
+		if (!openMeasure) {
+			output << "<measure>" << endl;
+		}
+		for (int j = 0; j < symbols->size(); j++) {
+			printNote(output, (*symbols)[j], split);
+		}
+		output << "</measure>" << endl;
+		openMeasure = false;
+	}
+	output << "</part>" << endl;
+	// Right part done
+
+	output << "<part id=\"Left\">" << endl;
+	output << endl;
+	output << "<measure>" << endl << "<attributes>" << endl;
+	output << "<divisions>2</divisions>" << endl;
+	output << "<time>" << endl;
+	output << "<beats>" << c->getDuration().getNumerator() << "</beats>" << endl;
+	output << "<beat-type>" << c->getDuration().getDenominator() << "</beat-type>" << endl;
+	output << "</time>" << endl << "<clef>" << endl << "<sign>F</sign>" << endl << "<line>4</line>" << endl;
+	output << "</clef>" << endl;
+	output << "</attributes>" << endl;
+	openMeasure = true;
+	split = false;
+
+	for (int i = 0; i < right->size(); i++) {
+		symbols = (*right)[i]->getSymbols();
+		if (!openMeasure) {
+			output << "<measure>" << endl;
+		}
+		for (int j = 0; j < symbols->size(); j++) {
+			printNote(output, (*symbols)[j], split);
+		}
+		output << "</measure>" << endl;
+		openMeasure = false;
+	}
+	output << "</part>" << endl;
+	output << "</score-partwise>";
+	output.close();
 }
 
 int main() {
@@ -236,8 +351,7 @@ int main() {
 	cout << d << endl;
 	d = Duration(2, 8) + Duration(1, 4);
 	cout << d << endl;
-
-	addSymbols(noteMap);
-	
+	Composition* comp = addSymbols(noteMap);
+	musicXML(comp);
 	return 0;
 }
