@@ -5,9 +5,41 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	this->octave = octave;
 	this->p = p;
 	isPause = false;
+	added = false;
 	isSplit = false;
 	prevNote = nextNote = nullptr;
 	this->isSharp = isSharp;
+}
+
+void Note::setNext(Note* n) {
+	nextNote = n;
+}
+
+void Note::setPrev(Note* n) {
+	prevNote = n;
+}
+
+void Note::resetPtr() {
+	nextNote = prevNote = nullptr;
+}
+
+//Change the duration of the note(s)
+void Note::splitDuration() {
+	Note* temp = this;
+	// Mark split only on the first note
+	isSplit = true;
+	while (temp) {
+		temp->d.changeDuration(1, 8);
+		temp = temp->nextNote;
+	}
+}
+
+void Note::setAdded() {
+	added = true;
+}
+
+bool Note::isAdded() {
+	return added;
 }
 
 void Note::addNext(Note* n) {

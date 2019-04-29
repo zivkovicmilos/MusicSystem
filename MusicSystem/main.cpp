@@ -90,6 +90,7 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 					strcpy(charArr, workingStr.c_str());
 					int offset = 0;
 					bool connected = false;
+					bool added = false;
 					for (int j = 0; j < n; j++) {
 						Duration d(0);
 						if (i == 2) {
@@ -112,14 +113,15 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 						if (note == ' ') {
 							// The symbol is a pause within [ ]
 							temp = new Pause(d);
-							playing.push_back(pair<MusicSymbol*, int>(temp, offset + num));
+							Pause* tempP = (Pause*)temp;
+
+							playing.push_back(pair<MusicSymbol*, int>(tempP, offset + num));
 							offset++;
 							continue;
 						}
 						char cPitch = noteMap[note].first[0];
 						pitch = Note::getPitch(cPitch);
 
-						string tst = noteMap[note].first;
 						if ((noteMap[note].first)[1] != '#') {
 							octave = (int) (noteMap[note].first)[1] - '0';
 						}
@@ -129,14 +131,14 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 						}
 
 						temp = new Note(d, octave, isSharp, pitch);
+						
+						// TODO ovde greska
+						playing.push_back(pair<MusicSymbol*, int>(temp, offset + num));
+
 						if (connected && oldNote) {
 							oldNote->addNext((Note*)temp);
-							//playing[playing.size()].first->setNext(temp);
-							//oldNote->setNext(temp);
 						}
-						//Temp* temp = new Temp(charArr[i], num + offset, Duration(1, 4));
 						
-						playing.push_back(pair<MusicSymbol*, int>(temp, offset+num));
 						offset++;
 						oldNote = (Note *) temp;
 					}
@@ -146,7 +148,10 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 						temp = new Pause(Duration(1, 8));
 					}
 					else if (workingStr == "|") {
+						// TODO Capture this with a regex, turn off the pause regex
 						temp = new Pause(Duration(1, 4));
+						Pause* tempP = (Pause*)temp;
+						tempP->setSpecial(); // Mark it as playable TODO Remove
 					}
 					else {
 						Note::Pitch pitch;
@@ -204,7 +209,22 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 	return c;
 }
 
+void additionalNotes(ostream& os, Note* n, int duration) {
+	os << "<note>" << endl;
+	os << "<chord/>" << endl;
+	os << "<pitch>" << endl;
+	os << "<step>" << n->getPitchC() << "</step>" << endl;
+	os << "<octave>" << n->getOctave() << "</octave>" << endl;
+	if (n->checkSharp()) {
+		os << "<alter>1</alter>" << endl;
+	}
+	os << "</pitch>" << endl;
+	os << "<duration>" << duration << "</duration>" << endl;
+	os << "</note>" << endl;
+}
+
 void printNote(ostream& os, MusicSymbol* m, bool& split) {
+
 	int duration = m->getDuration().getDenominator() == 4 ? 2 : 1;
 	os << "<note>" << endl;
 	if (m->checkPause()) {
@@ -215,9 +235,6 @@ void printNote(ostream& os, MusicSymbol* m, bool& split) {
 	}
 	else {
 		Note* n = (Note*)m;
-		if (n->getPrev()) {
-			os << "<chord/>" << endl;
-		}
 		os << "<pitch>" << endl;
 		os << "<step>" << n->getPitchC() << "</step>" << endl;
 		os << "<octave>" << n->getOctave() << "</octave>" << endl;
@@ -227,6 +244,7 @@ void printNote(ostream& os, MusicSymbol* m, bool& split) {
 		os << "</pitch>" << endl;
 		os << "<duration>" << duration << "</duration>" << endl;
 		if (n->checkSplit() && !split) {
+			// TODO Split arc for ALL notes
 			os << "<tie type=\"start\"/>" << endl;
 			split = true;
 		}
@@ -235,14 +253,21 @@ void printNote(ostream& os, MusicSymbol* m, bool& split) {
 			split = false;
 		}
 		os << "</note>" << endl;
+
+		if (n->getNext()) {
+			Note* temp = n->getNext();
+			while (temp) {
+				additionalNotes(os, temp, duration);
+				temp = temp->getNext();
+			}
+		}
 	}
 }
 
 void musicXML(Composition* c) {
 	ifstream reader;
 	ofstream output;
-	vector<Measure*>* right = c->getRight();
-	vector<Measure*>* left = c->getLeft();
+	
 	bool openMeasure = true;
 	
 	reader.open("MusicXML\\start.txt");
@@ -263,15 +288,18 @@ void musicXML(Composition* c) {
 	}
 	reader.close();
 	// Right boilerplate done
-	vector<MusicSymbol*>* symbols;
+	vector<Measure*>* measureArr = c->getMeasureArr();
+	vector<MusicSymbol*>* left = nullptr;
+	vector<MusicSymbol*>* right = nullptr;
 	bool split = false;
-	for (int i = 0; i < right->size(); i++) {
-		symbols = (*right)[i]->getSymbols();
+
+	for (int i = 0; i < measureArr->size(); i++) {
+		right = (*measureArr)[i]->getRight();
 		if (!openMeasure) {
 			output << "<measure>" << endl;
 		}
-		for (int j = 0; j < symbols->size(); j++) {
-			printNote(output, (*symbols)[j], split);
+		for (int j = 0; j < right->size(); j++) {
+			printNote(output, (*right)[j], split);
 		}
 		output << "</measure>" << endl;
 		openMeasure = false;
@@ -292,13 +320,13 @@ void musicXML(Composition* c) {
 	openMeasure = true;
 	split = false;
 
-	for (int i = 0; i < right->size(); i++) {
-		symbols = (*right)[i]->getSymbols();
+	for (int i = 0; i < measureArr->size(); i++) {
+		left = (*measureArr)[i]->getLeft();
 		if (!openMeasure) {
 			output << "<measure>" << endl;
 		}
-		for (int j = 0; j < symbols->size(); j++) {
-			printNote(output, (*symbols)[j], split);
+		for (int j = 0; j < left->size(); j++) {
+			printNote(output, (*left)[j], split);
 		}
 		output << "</measure>" << endl;
 		openMeasure = false;

@@ -39,9 +39,16 @@ Duration operator+(const Duration &d1, const Duration &d2) {
 	}
 	
 	if ((tempDenom != 4) && (tempDenom != 8)) {
-		int simpleGCD = Duration::getGCD(tempNum, tempDenom);
-		tempNum /= simpleGCD;
-		tempDenom /= simpleGCD;
+		if (tempDenom == tempNum) {
+			tempDenom /= 4;
+			tempNum /= 4;
+		
+		}
+		else {
+			int simpleGCD = Duration::getGCD(tempNum, tempDenom);
+			tempNum /= simpleGCD;
+			tempDenom /= simpleGCD;
+		}
 	}
 	
 	if (tempDenom == 2) {

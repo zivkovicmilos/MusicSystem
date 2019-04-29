@@ -11,6 +11,7 @@ public:
 	void setDuration(int, int);
 	virtual void getInfo(ostream&);
 
+	void virtual splitDuration() {}
 	bool checkPause();
 	
 	friend ostream& operator<<(ostream&, MusicSymbol&);

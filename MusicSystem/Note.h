@@ -10,6 +10,7 @@ private:
 	Pitch p;
 	bool isSharp;
 	bool isSplit;
+	bool added;
 	Note* nextNote; // Next note to be played in [ ] section
 	Note* prevNote;
 public:
@@ -24,7 +25,13 @@ public:
 	Note* getNext() const;
 	Note* getPrev() const;
 	void setSplit();
-
+	void setNext(Note*);
+	void setPrev(Note*);
+	void resetPtr();
+	void setAdded();
+	bool isAdded();
+	void splitDuration() override;
+	
 	bool checkSharp() const;
 	bool checkSplit() const;
 	~Note();

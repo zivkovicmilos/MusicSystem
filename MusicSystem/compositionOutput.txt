@@ -1,192 +1,136 @@
 Measure 0:
 L: P 1/4 P 1/8 
-R: G4 1/4 P 1/8 
+R: E4 1/4 e4 1/8 
 
 Measure 1:
 L: P 1/4 P 1/8 
-R: C4 1/4 P 1/8 
+R: F4 1/4 g4 1/8 
 
 Measure 2:
 L: P 1/4 P 1/8 
-R: D#4 1/4 f4 1/8 
+R: G4 1/4 f4 1/8 
 
 Measure 3:
-L: P 1/8 P 1/4 
-R: f4 1/8 G4 1/4 
+L: P 1/4 P 1/8 
+R: E4 1/4 d4 1/8 
 
 Measure 4:
-L: P 1/8 P 1/4 
-R: P 1/8 C4 1/4 
+L: P 1/4 P 1/8 
+R: C4 1/4 c4 1/8 
 
 Measure 5:
-L: P 1/8 P 1/4 
-R: P 1/8 D#4 1/4 
+L: P 1/4 P 1/8 
+R: D4 1/4 e4 1/8 
 
 Measure 6:
 L: P 1/4 P 1/8 
-R: F4 1/4 d4 1/8 
+R: E4 1/4 P 1/8 
 
 Measure 7:
 L: P 1/8 P 1/8 P 1/8 
-R: d4 1/8 P 1/8 f4 1/8 
+R: d4 1/8 P 1/8 d4 1/8 
 
 Measure 8:
-L: P 1/8 P 1/8 a#3 1/8 
-R: f4 1/8 P 1/8 P 1/8 
+L: P 1/8 P 1/4 
+R: P 1/8 E4 1/4 
 
 Measure 9:
-L: a#3 1/8 P 1/8 P 1/8 
-R: P 1/8 P 1/8 d4 1/8 
+L: P 1/4 P 1/8 
+R: E4 1/4 f4 1/8 
 
 Measure 10:
-L: P 1/8 P 1/4 
-R: d4 1/8 D#4 1/4 
+L: P 1/4 P 1/8 
+R: G4 1/4 g4 1/8 
 
 Measure 11:
 L: P 1/4 P 1/8 
-R: F4 1/4 P 1/8 
+R: F4 1/4 e4 1/8 
 
 Measure 12:
-L: A#3 1/4 P 1/8 
-R: P 1/4 P 1/8 
+L: P 1/4 P 1/8 
+R: D4 1/4 c4 1/8 
 
 Measure 13:
 L: P 1/4 P 1/8 
-R: D#4 1/4 d4 1/8 
+R: C4 1/4 d4 1/8 
 
 Measure 14:
-L: P 1/8 P 1/4 
-R: d4 1/8 C4 1/4 
+L: P 1/4 P 1/8 
+R: E4 1/4 d4 1/8 
 
 Measure 15:
-L: P 1/8 P 1/4 
-R: P 1/8 G4 1/4 
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 c4 1/8 P 1/8 
 
 Measure 16:
-L: P 1/8 P 1/4 
-R: P 1/8 C4 1/4 
+L: P 1/8 P 1/8 P 1/8 
+R: c4 1/8 P 1/8 d4 1/8 
 
 Measure 17:
-L: P 1/8 P 1/4 
-R: P 1/8 D#4 1/4 
+L: P 1/4 P 1/8 
+R: D4 1/4 e4 1/8 
 
 Measure 18:
 L: P 1/4 P 1/8 
-R: F4 1/4 g4 1/8 
+R: C4 1/4 d4 1/8 
 
 Measure 19:
 L: P 1/8 P 1/8 P 1/8 
-R: g4 1/8 P 1/8 c4 1/8 
+R: e4 1/8 P 1/8 f4 1/8 
 
 Measure 20:
 L: P 1/8 P 1/8 P 1/8 
-R: c4 1/8 P 1/8 d#4 1/8 
+R: P 1/8 e4 1/8 c4 1/8 
 
 Measure 21:
-L: P 1/8 P 1/4 
-R: d#4 1/8 F4 1/4 
+L: P 1/4 P 1/8 
+R: D4 1/4 e4 1/8 
 
 Measure 22:
-L: P 1/4 P 1/8 
-R: D4 1/4 P 1/8 
+L: P 1/8 P 1/8 P 1/8 
+R: P 1/8 f4 1/8 P 1/8 
 
 Measure 23:
-L: P 1/4 P 1/8 
-R: F4 1/4 P 1/8 
+L: P 1/8 P 1/4 
+R: e4 1/8 D4 1/4 
 
 Measure 24:
-L: A#3 1/4 P 1/8 
-R: P 1/4 P 1/8 
+L: P 1/4 P 1/8 
+R: C4 1/4 d4 1/8 
 
 Measure 25:
-L: P 1/4 P 1/8 
-R: D4 1/4 d#4 1/8 
+L: G3 1/4 P 1/8 
+R: P 1/4 P 1/8 
 
 Measure 26:
-L: P 1/8 P 1/4 
-R: d#4 1/8 F4 1/4 
+L: P 1/4 P 1/8 
+R: E4 1/4 e4 1/8 
 
 Measure 27:
-L: P 1/8 A#3 1/4 
-R: P 1/8 P 1/4 
+L: P 1/4 P 1/8 
+R: F4 1/4 g4 1/8 
 
 Measure 28:
-L: P 1/8 P 1/4 
-R: P 1/8 D4 1/4 
+L: P 1/4 P 1/8 
+R: G4 1/4 f4 1/8 
 
 Measure 29:
 L: P 1/4 P 1/8 
-R: D#4 1/4 d4 1/8 
+R: E4 1/4 d4 1/8 
 
 Measure 30:
-L: P 1/8 P 1/4 
-R: d4 1/8 C4 1/4 
+L: P 1/4 P 1/8 
+R: C4 1/4 c4 1/8 
 
 Measure 31:
-L: P 1/8 P 1/4 
-R: P 1/8 G5 1/4 
+L: P 1/4 P 1/8 
+R: D4 1/4 e4 1/8 
 
 Measure 32:
-L: P 1/8 P 1/4 
-R: P 1/8 C5 1/4 
+L: P 1/4 P 1/8 
+R: D4 1/4 P 1/8 
 
 Measure 33:
-L: P 1/8 P 1/4 
-R: P 1/8 D#5 1/4 
-
-Measure 34:
-L: P 1/4 P 1/8 
-R: F5 1/4 g5 1/8 
-
-Measure 35:
 L: P 1/8 P 1/8 P 1/8 
-R: g5 1/8 P 1/8 c5 1/8 
-
-Measure 36:
-L: P 1/8 P 1/8 P 1/8 
-R: c5 1/8 P 1/8 d#5 1/8 
-
-Measure 37:
-L: P 1/8 P 1/4 
-R: d#5 1/8 F5 1/4 
-
-Measure 38:
-L: P 1/4 P 1/8 
-R: D5 1/4 P 1/8 
-
-Measure 39:
-L: P 1/4 P 1/8 
-R: F5 1/4 P 1/8 
-
-Measure 40:
-L: P 1/4 P 1/8 
-R: A#4 1/4 P 1/8 
-
-Measure 41:
-L: P 1/4 P 1/8 
-R: D5 1/4 d#5 1/8 
-
-Measure 42:
-L: P 1/8 P 1/4 
-R: d#5 1/8 F5 1/4 
-
-Measure 43:
-L: P 1/8 P 1/4 
-R: P 1/8 A#4 1/4 
-
-Measure 44:
-L: P 1/8 P 1/4 
-R: P 1/8 D5 1/4 
-
-Measure 45:
-L: P 1/4 P 1/8 
-R: D#5 1/4 d5 1/8 
-
-Measure 46:
-L: P 1/8 P 1/4 
-R: d5 1/8 C5 1/4 
-
-Measure 47:
-L: P 1/8 
-R: P 1/8 
+R: c4 1/8 P 1/8 c4 1/8 
 

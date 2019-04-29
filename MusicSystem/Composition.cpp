@@ -1,102 +1,166 @@
 #include "Composition.h"
+#include <queue>
 
 Composition::Composition(Duration d) : d(d){
 	symbolMap = nullptr;
-	numOfMeasures = 0;
-	//leftFirst = rightFirst = nullptr;
-	//leftLast = rightLast = nullptr;
 }
 
 void Composition::attachMap(vector<pair<MusicSymbol*, int>>* sm) {
 	symbolMap = sm;
-	left.push_back(new Measure(d));
-	right.push_back(new Measure(d));
+	// Add in the initial measure
+	measureArr.push_back(new Measure(d));
 }
 
-void Composition::parallelAdd(vector<Measure*>& firstV, vector<Measure*>& secondV,
-			MusicSymbol* first, MusicSymbol* second) {
-	if (firstV[firstV.size() - 1]->isFull()) {
-		// The last measure added is full, so a new one must be created
-		firstV.push_back(new Measure(d));
-		secondV.push_back(new Measure(d));
+vector<Measure*>* Composition::getMeasureArr() {
+	return &measureArr;
+}
 
-		firstV[firstV.size() - 1]->addSymbol(first);
-		secondV[secondV.size() - 1]->addSymbol(second);
-
-	}
-	else if (firstV[firstV.size() - 1]->addSymbol(first) == Measure::status::SPLIT) {
-
-		secondV[secondV.size() - 1]->addSymbol(second); // This returns a split ack
-
-		firstV.push_back(new Measure(d));
-		secondV.push_back(new Measure(d));
-
-		firstV[firstV.size() - 1]->addSymbol(first);
-		secondV[secondV.size() - 1]->addSymbol(second);
+void addToList(Note*& first, Note* temp) {
+	if (!first) {
+		first = temp;
 	}
 	else {
-		// No split needed
-		secondV[secondV.size() - 1]->addSymbol(second);
+		Note* last = first;
+		while (last->getNext()) {
+			last = last->getNext();
+		}
+		last->addNext(temp);
+		temp->addPrev(last);
 	}
+}
+
+void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
+
+	vector<MusicSymbol*>* left = m->getLeft();
+	vector<MusicSymbol*>* right = m->getRight();
+
+	if (ms->checkPause()) {
+		// A pause goes in both systems
+		Pause* p = (Pause*)ms;
+		left->push_back(p);
+		right->push_back(p);
+		m->addDuration(p->getDuration());
+		return;
+	}
+
+	Note* note = (Note*)ms;
+
+	if (note->getNext()) {
+		// There are multiple notes
+
+		std::queue <Note*> together;
+		Note* temp = note;
+		Note* oldNext = nullptr;
+		while (temp) {
+			together.push(temp);
+			oldNext = temp;
+			temp = temp->getNext();
+			oldNext->resetPtr();
+		}
+
+		Note* leftNotes = nullptr;
+		Note* rightNotes = nullptr;
+		while (!together.empty()) {
+			temp = together.front();
+			temp->setAdded();
+			together.pop();
+			if (temp->getOctave() > 3) {
+				addToList(rightNotes, temp);
+			}
+			else {
+				addToList(leftNotes, temp);
+			}
+		}
+		vector<MusicSymbol*>* nextLeft = nullptr;
+		vector<MusicSymbol*>* nextRight = nullptr;
+		if (split) {
+			nextLeft = getMeasureArr()->back()->getLeft();
+			nextRight = getMeasureArr()->back()->getRight();
+		}
+
+		// Add the notes accordingly
+		if (leftNotes && rightNotes) {
+			// Both systems have notes waiting
+			left->push_back(leftNotes);
+			right->push_back(rightNotes);
+
+			if (split) {
+				nextLeft->push_back(leftNotes);
+				nextRight->push_back(rightNotes);
+			}
+		}
+		else if (!leftNotes && rightNotes) {
+			left->push_back(new Pause(note->getDuration()));
+			right->push_back(rightNotes);
+
+			if (split) {
+				nextLeft->push_back(new Pause(note->getDuration()));
+				nextRight->push_back(rightNotes);
+			}
+		}
+		else {
+			// The right system is empty
+			left->push_back(leftNotes);
+			right->push_back(new Pause(note->getDuration()));
+
+			if (split) {
+				nextLeft->push_back(leftNotes);
+				nextRight->push_back(new Pause(note->getDuration()));
+			}
+		}
+	}
+	else {
+		// Just add the one note to the correct system
+		if (note->getOctave() > 3) {
+			right->push_back(note);
+			left->push_back(new Pause(note->getDuration()));
+		}
+		else {
+			left->push_back(note);
+			right->push_back(new Pause(note->getDuration()));
+		}
+	}
+	
+	m->addDuration(note->getDuration());
 }
 
 void Composition::createComposition() {
-	for (int i = 0; i < symbolMap->size(); i++) {
-		MusicSymbol* curr = (*symbolMap)[i].first;
-		if (curr->checkPause()) {
-			Pause* p = (Pause*)curr;
-				//If it is a split, 
-				//the symbol will be added to the array before returning
-			parallelAdd(left, right, p, p);
-		}
-		else {
-			// This is a note, not a pause
-			Note* n = (Note*)curr;
 
-			// Add only the first note in the sequence so it occupies one space
-			if (n->getNext() && !n->getPrev()) {
-				// These notes are played together
-				Note* temp = n;
-				Pause* p = new Pause(n->getDuration());
-					if (n->getOctave() > 3) {
-						// Place it in the right system
-						// and place a pause in the left one
-						parallelAdd(right, left, temp, p);
-					}
-					else {
-						// TODO: Extract the below code as a separate function
-						// Place it in the left system
-						// and place a pause in the right one
-						parallelAdd(left, right, temp, p);
-					}
-			}
-			else if (!n->getPrev()){
-				// Only one note is played
-				Pause* p = new Pause(n->getDuration());
-				if (n->getOctave() > 3) {
-					// Place it in the right system
-					// and place a pause in the left one
-					parallelAdd(right, left, n, p);
-				}
-				else {
-					// TODO: Extract the below code as a separate function
-					// Place it in the left system
-					// and place a pause in the right one
-					parallelAdd(left, right, n, p);
-				}
-			}
+	MusicSymbol* ms = nullptr;
+	for (int i = 0; i < symbolMap->size(); i++) {
+		ms = (*symbolMap)[i].first;
+		if (!ms->checkPause()) {
+			Note* tempN = (Note*)ms;
+			if (tempN->isAdded()) continue;
+		}
+		switch (measureArr.back()->getStatus(ms)) {
+		case Measure::status::OK:
+			// There is room for the current note(s)
+			selectiveAdd(measureArr.back(), ms, false);
+			break;
+		case Measure::status::FULL:
+			// There is no room for the current note(s), a new measure is needed
+			measureArr.push_back(new Measure(d));
+			selectiveAdd(measureArr.back(), ms, false);
+			break;
+		case Measure::status::SPLIT:
+			// A split is required to fit the note(s)
+			ms->splitDuration();
+			Measure* temp = measureArr.back();
+			measureArr.push_back(new Measure(d));
+
+			// Add the split note group to both measures
+			selectiveAdd(temp, ms, true);
+			break;
 		}
 	}
-	// TODO TEMPORARY
-	Pause* pauza = new Pause(Duration(1, 8));
-	parallelAdd(left, right, pauza, pauza);
 }
-
 ostream& operator<<(ostream& os, const Composition& c) {
-	for (int i = 0; i < c.left.size(); i++) {
+	Measure* currMeasure = nullptr;
+	for (int i = 0; i < c.measureArr.size(); i++) {
+		currMeasure = c.measureArr[i];
 		os << "Measure " << i << ":" << endl;
-		os << "L: " << *c.left[i] << endl;
-		os << "R: " << *c.right[i] << endl;
+		os << *currMeasure;
 		os << endl;
 	}
 	return os;
@@ -104,12 +168,4 @@ ostream& operator<<(ostream& os, const Composition& c) {
 
 Duration Composition::getDuration() const {
 	return d;
-}
-
-vector<Measure*>* Composition::getRight() {
-	return &right;
-}
-
-vector<Measure*>* Composition::getLeft() {
-	return &left;
 }

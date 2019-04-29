@@ -5,18 +5,21 @@
 
 class Measure {
 	Duration maxDur;
-	vector<MusicSymbol*> symbols;
-	bool full;
+
+	vector<MusicSymbol*> left;
+	vector<MusicSymbol*> right;
+
 	Duration currDur;
 
 public:
-	enum status {OK, SPLIT};
+	enum status {OK, SPLIT, FULL};
 	Measure(Duration);
 
-	status addSymbol(MusicSymbol*);
-	vector<MusicSymbol*>* getSymbols();
-	void incCurrent(Duration d);
-	bool isFull() const;
+	status getStatus(MusicSymbol*);
+	vector<MusicSymbol*>* getLeft();
+	vector<MusicSymbol*>* getRight();
+	void addDuration(Duration);
+
 	friend ostream& operator<<(ostream&, const Measure&);
 };
 
