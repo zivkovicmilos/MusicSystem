@@ -13,6 +13,13 @@ vector<MusicSymbol*>* Measure::getRight() {
 Measure::status Measure::getStatus(MusicSymbol* m) {
 	Duration symbolDuration = m->getDuration();
 
+	if (!m->checkPause()) {
+		Note* n = (Note*)m;
+		if (n->isAdded()) {
+			return SKIP;
+		}
+	}
+
 	if (currDur + symbolDuration <= maxDur) return OK;
 
 	if (currDur == maxDur) return FULL;
@@ -25,15 +32,16 @@ void Measure::addDuration(Duration d) {
 }
 
 ostream& operator<<(ostream& os, const Measure& m) {
-	os << "L: ";
-	for (int i = 0; i < m.left.size(); i++) {
-		os << *m.left[i] << " ";
-	}
-	os << endl;
 	os << "R: ";
 	for (int i = 0; i < m.right.size(); i++) {
 		os << *m.right[i] << " ";
 	}
+	os << endl;
+	os << "L: ";
+	for (int i = 0; i < m.left.size(); i++) {
+		os << *m.left[i] << " ";
+	}
+	
 	os << endl;
 	return os;
 }

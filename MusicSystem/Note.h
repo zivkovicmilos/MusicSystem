@@ -13,6 +13,10 @@ private:
 	bool added;
 	Note* nextNote; // Next note to be played in [ ] section
 	Note* prevNote;
+
+	// Midi actionTime start and end
+	int midiS;
+	int midiE;
 public:
 	Note(Duration, int, bool, Pitch);
 	void addNext(Note*);
@@ -31,7 +35,11 @@ public:
 	void setAdded();
 	bool isAdded();
 	void splitDuration() override;
-	
+	void setMidiTime(int, int);
+
+	int midiStart();
+	int midiEnd();
+
 	bool checkSharp() const;
 	bool checkSplit() const;
 	~Note();

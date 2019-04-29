@@ -12,7 +12,7 @@ class Measure {
 	Duration currDur;
 
 public:
-	enum status {OK, SPLIT, FULL};
+	enum status {OK, SPLIT, FULL, SKIP};
 	Measure(Duration);
 
 	status getStatus(MusicSymbol*);

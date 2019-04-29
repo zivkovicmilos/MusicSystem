@@ -8,6 +8,7 @@
 #include <utility>
 #include <regex>
 #include <fstream>
+#include "MidiFile.h"
 #include "vector"
 #include "Duration.h"
 #include "MusicSymbol.h"
@@ -29,7 +30,7 @@ struct Temp {
 	}
 };
 
-Composition* addSymbols(map<char, pair<string, int>> noteMap) {
+Composition* addSymbols(map<char, pair<string, int>>& noteMap) {
 	//vector<MusicSymbol*> playing;
 	ifstream file;
 	file.open("test2.txt");
@@ -39,11 +40,13 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 	regex spaces("([ ]{1}(?![^\\[\\]]*\\]))");
 	//(?<=\[)[a-zA-Z0-9 ]*(?=\])
 	regex inside("\\[([^\\[\\]]*[^\\[\\]])\\]");
+	regex special("(\\|)");
 	vector<regex> rxs;
 
 	rxs.push_back(outside);
 	rxs.push_back(spaces);
 	rxs.push_back(inside);
+	rxs.push_back(special);
 
 	int base = 0;
 	int oldBase = 0;
@@ -137,6 +140,8 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 
 						if (connected && oldNote) {
 							oldNote->addNext((Note*)temp);
+							Note* tmpN = (Note*)temp;
+							tmpN->addPrev(oldNote);
 						}
 						
 						offset++;
@@ -192,7 +197,7 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 	ofile.open("output.txt");
 	for (int i = 0; i < playing.size(); i++) {
 		MusicSymbol* t = playing[i].first;
-		//cout << *t << " at index: " << playing[i].second << endl;
+		cout << *t << " at index: " << playing[i].second << endl;
 		ofile << *t << " at index: " << playing[i].second << endl;
 	}
 	ofile.close();
@@ -201,6 +206,7 @@ Composition* addSymbols(map<char, pair<string, int>> noteMap) {
 	ofile.open("compositionOutput.txt");
 
 	Composition* c = new Composition(Duration(3, 8));
+
 	c->attachMap(&playing);
 	c->createComposition();
 	cout << *c;
@@ -336,12 +342,105 @@ void musicXML(Composition* c) {
 	output.close();
 }
 
+using namespace smf;
+void createMidi(Composition* c, map<string, int>& midiMap) {
+	MidiFile outputfile;
+	outputfile.absoluteTicks();
+	vector<uchar> midievent;
+	midievent.resize(3);
+	int tpq = 48;
+	outputfile.setTicksPerQuarterNote(tpq);
+	outputfile.addTrack(1);
+
+	int actiontime = 0;
+	int actionOffset = 0;
+	int duration;
+	int midiNum;
+	midievent[2] = 64;
+
+	vector<Measure*>* measureArr = c->getMeasureArr();
+	vector<MusicSymbol*>* right = nullptr;
+	vector<MusicSymbol*>* left = nullptr;
+
+	for (int i = 0; i < measureArr->size(); i++) {
+
+		actiontime = actionOffset;
+		
+		right = (*measureArr)[i]->getRight();
+		left = (*measureArr)[i]->getLeft();
+		
+		// RIGHT
+		for (int j = 0; j < right->size(); j++) {
+			MusicSymbol* ms = (*right)[j];
+			duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+			if (ms->checkPause()) {
+				actiontime += tpq * duration;
+				continue;
+			}
+			Note* n = (Note*)ms;
+			Note* temp = n;
+			temp->setMidiTime(actiontime, tpq);
+			while (temp) {
+				string note;
+				note.push_back(temp->getPitchC());
+				note = note + to_string(temp->getOctave());
+				midiNum = midiMap[note];
+
+				midievent[0] = 0x90;
+				midievent[1] = midiNum;
+				outputfile.addEvent(0, temp->midiStart(), midievent);
+
+				midievent[0] = 0x80;
+				outputfile.addEvent(0, temp->midiEnd(), midievent);
+				temp = temp->getNext();
+			}
+			actiontime += tpq * duration;
+		}
+
+
+		// LEFT
+		actiontime = actionOffset;
+		for (int j = 0; j < left->size(); j++) {
+			MusicSymbol* ms = (*left)[j];
+			duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+			if (ms->checkPause()) {
+				actiontime += tpq * duration;
+				continue;
+			}
+			Note* n = (Note*)ms;
+			Note* temp = n;
+			temp->setMidiTime(actiontime, tpq);
+			while (temp) {
+				string note;
+				note.push_back(temp->getPitchC());
+				note = note + to_string(temp->getOctave());
+				midiNum = midiMap[note];
+
+				midievent[0] = 0x90;
+				midievent[1] = midiNum;
+				outputfile.addEvent(1, temp->midiStart(), midievent);
+
+				midievent[0] = 0x80;
+				outputfile.addEvent(1, temp->midiEnd(), midievent);
+				temp = temp->getNext();
+			}
+			actiontime += tpq * duration;
+		}
+
+		actionOffset = actiontime;
+	}
+	
+	outputfile.sortTracks();
+	outputfile.write("milos.mid");
+}
+
 int main() {
 	ifstream file;
 	file.open("map.csv");
 	string textLine;
 	regex rx("([^,]*),([^,]*),([^,]*)*");
 	map<char, pair<string, int>> noteMap;
+	map<string, int> midiMap;
 	vector<Temp*> allSymbols;
 
 	while (getline(file, textLine)) {
@@ -352,6 +451,7 @@ int main() {
 			string note = result.str(2);
 			int midiNum = atoi(result.str(3).c_str());
 			noteMap[character] = pair<string, int>(note, midiNum);
+			midiMap[note] = midiNum;
 			cout << character << " => " << note << ", " << midiNum << endl;
 		}
 	}
@@ -361,25 +461,9 @@ int main() {
 	//file2.open("‪C:\\Users\\Milos\\Desktop\\test.txt");
 
 	//file2->open("test.txt");
-	Composition* c = new Composition(Duration(3, 8));
-	Measure* m = new Measure(Duration(3, 8));
-	Note* n1 = new Note(Duration(1, 4), 3, false, Note::Pitch::C);
-	Note* n2 = new Note(Duration(1, 4), 5, false, Note::Pitch::F);
-	vector<Note*> notes;
-	notes.push_back(n1);
-	notes.push_back(n2);
 
-	Duration d = Duration(1, 4) + Duration(1, 8);
-	cout << d << endl;
-	d = Duration(1, 4) + Duration(1, 4);
-	cout << d << endl;
-	d = Duration(1, 8) + Duration(1, 8);
-	cout << d << endl;
-	d = Duration(2, 4) + Duration(1, 8);
-	cout << d << endl;
-	d = Duration(2, 8) + Duration(1, 4);
-	cout << d << endl;
 	Composition* comp = addSymbols(noteMap);
 	musicXML(comp);
+	createMidi(comp, midiMap);
 	return 0;
 }

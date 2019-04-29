@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\MIDI">
+      <UniqueIdentifier>{f9917dfb-6548-4d42-9bb3-55ac96782a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MIDI">
+      <UniqueIdentifier>{e2c3a5ee-d192-437d-9827-6484c86750be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +42,27 @@
     <ClCompile Include="Pause.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Binasc.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiEvent.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiEventList.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiFile.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="MidiMessage.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
+    <ClCompile Include="createmidifile.cpp">
+      <Filter>Source Files\MIDI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MusicSymbol.h">
@@ -58,6 +85,24 @@
     </ClInclude>
     <ClInclude Include="Pause.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Binasc.h">
+      <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiEvent.h">
+      <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiEventList.h">
+      <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiFile.h">
+      <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="MidiMessage.h">
+      <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files\MIDI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

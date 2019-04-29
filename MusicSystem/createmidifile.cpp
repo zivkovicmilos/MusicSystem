@@ -5,7 +5,7 @@ using namespace std;
 using namespace smf;
 
 
-int main(int argc, char** argv) {
+int midimain(int argc, char** argv) {
    MidiFile outputfile;
    outputfile.absoluteTicks(); 
    vector<uchar> midievent; 

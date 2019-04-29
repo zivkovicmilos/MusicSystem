@@ -115,21 +115,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Binasc.cpp" />
     <ClCompile Include="Composition.cpp" />
+    <ClCompile Include="createmidifile.cpp" />
     <ClCompile Include="Duration.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Measure.cpp" />
+    <ClCompile Include="MidiEvent.cpp" />
+    <ClCompile Include="MidiEventList.cpp" />
+    <ClCompile Include="MidiFile.cpp" />
+    <ClCompile Include="MidiMessage.cpp" />
     <ClCompile Include="MusicSymbol.cpp" />
     <ClCompile Include="Note.cpp" />
+    <ClCompile Include="Options.cpp" />
     <ClCompile Include="Pause.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Binasc.h" />
     <ClInclude Include="Composition.h" />
     <ClInclude Include="Duration.h" />
     <ClInclude Include="Errors.h" />
     <ClInclude Include="Measure.h" />
+    <ClInclude Include="MidiEvent.h" />
+    <ClInclude Include="MidiEventList.h" />
+    <ClInclude Include="MidiFile.h" />
+    <ClInclude Include="MidiMessage.h" />
     <ClInclude Include="MusicSymbol.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="Options.h" />
     <ClInclude Include="Pause.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

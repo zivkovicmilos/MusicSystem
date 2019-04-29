@@ -5,6 +5,7 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	this->octave = octave;
 	this->p = p;
 	isPause = false;
+	midiS = midiE = 0;
 	added = false;
 	isSplit = false;
 	prevNote = nextNote = nullptr;
@@ -13,6 +14,25 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 
 void Note::setNext(Note* n) {
 	nextNote = n;
+}
+
+void Note::setMidiTime(int actionTime, int tpq) {
+	Note* temp = this;
+	int duration = (d == Duration(1, 4) )? 2 : 1;
+	int end = actionTime + tpq * duration;
+	while (temp) {
+		temp->midiS = actionTime;
+		temp->midiE = end;
+		temp = temp->nextNote;
+	}
+}
+
+int Note::midiStart() {
+	return midiS;
+}
+
+int Note::midiEnd() {
+	return midiE;
 }
 
 void Note::setPrev(Note* n) {
@@ -44,7 +64,7 @@ bool Note::isAdded() {
 
 void Note::addNext(Note* n) {
 	nextNote = n;
-	n->addPrev(this);
+	//n->addPrev(this);
 }
 
 void Note::addPrev(Note* n) {

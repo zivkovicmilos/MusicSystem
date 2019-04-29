@@ -34,16 +34,30 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 	vector<MusicSymbol*>* left = m->getLeft();
 	vector<MusicSymbol*>* right = m->getRight();
 
+	vector<MusicSymbol*>* nextLeft = nullptr;
+	vector<MusicSymbol*>* nextRight = nullptr;
+
+	if (split) {
+		nextLeft = getMeasureArr()->back()->getLeft();
+		nextRight = getMeasureArr()->back()->getRight();
+	}
+
 	if (ms->checkPause()) {
 		// A pause goes in both systems
 		Pause* p = (Pause*)ms;
 		left->push_back(p);
 		right->push_back(p);
+		if (split) {
+			nextLeft->push_back(p);
+			nextRight->push_back(p);
+		}
+
 		m->addDuration(p->getDuration());
 		return;
 	}
 
 	Note* note = (Note*)ms;
+	if (note->isAdded()) return;
 
 	if (note->getNext()) {
 		// There are multiple notes
@@ -71,13 +85,7 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 				addToList(leftNotes, temp);
 			}
 		}
-		vector<MusicSymbol*>* nextLeft = nullptr;
-		vector<MusicSymbol*>* nextRight = nullptr;
-		if (split) {
-			nextLeft = getMeasureArr()->back()->getLeft();
-			nextRight = getMeasureArr()->back()->getRight();
-		}
-
+		
 		// Add the notes accordingly
 		if (leftNotes && rightNotes) {
 			// Both systems have notes waiting
@@ -114,14 +122,27 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 		if (note->getOctave() > 3) {
 			right->push_back(note);
 			left->push_back(new Pause(note->getDuration()));
+
+			if (split) {
+				nextRight->push_back(note);
+				nextLeft->push_back(new Pause(note->getDuration()));
+			}
 		}
 		else {
 			left->push_back(note);
 			right->push_back(new Pause(note->getDuration()));
+
+			if (split) {
+				nextLeft->push_back(note);
+				nextRight->push_back(new Pause(note->getDuration()));
+			}
 		}
 	}
 	
 	m->addDuration(note->getDuration());
+	if (split) {
+		getMeasureArr()->back()->addDuration(note->getDuration());
+	}
 }
 
 void Composition::createComposition() {
@@ -129,10 +150,7 @@ void Composition::createComposition() {
 	MusicSymbol* ms = nullptr;
 	for (int i = 0; i < symbolMap->size(); i++) {
 		ms = (*symbolMap)[i].first;
-		if (!ms->checkPause()) {
-			Note* tempN = (Note*)ms;
-			if (tempN->isAdded()) continue;
-		}
+		
 		switch (measureArr.back()->getStatus(ms)) {
 		case Measure::status::OK:
 			// There is room for the current note(s)
@@ -143,7 +161,7 @@ void Composition::createComposition() {
 			measureArr.push_back(new Measure(d));
 			selectiveAdd(measureArr.back(), ms, false);
 			break;
-		case Measure::status::SPLIT:
+		case Measure::status::SPLIT :{
 			// A split is required to fit the note(s)
 			ms->splitDuration();
 			Measure* temp = measureArr.back();
@@ -151,6 +169,9 @@ void Composition::createComposition() {
 
 			// Add the split note group to both measures
 			selectiveAdd(temp, ms, true);
+			break;
+		}
+		case Measure::status::SKIP:
 			break;
 		}
 	}
