@@ -5,6 +5,7 @@ class MusicSymbol {
 protected:
 	Duration d;
 	bool isPause;
+	bool split;
 public:
 	MusicSymbol(Duration d);
 	Duration getDuration() const;
@@ -13,6 +14,7 @@ public:
 
 	void virtual splitDuration() {}
 	bool checkPause();
+	bool isSplit();
 	
 	friend ostream& operator<<(ostream&, MusicSymbol&);
 };

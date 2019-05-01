@@ -34,6 +34,10 @@ void addToList(Note*& first, Note* temp) {
 /*
 There is only one flag on the notes to mark them as split
 When outputting the MXML file, this flag is checked and accordingly handled.
+Onaj u sledecem taktu ne treba da bude split
+
+!!!!! TODO !!!!!
+Samo preko dva vektora muzickih simbola i jednog flaga da sve realizujes
 */
 
 void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
@@ -57,6 +61,7 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 		if (split) {
 			nextLeft->push_back(p);
 			nextRight->push_back(p);
+			getMeasureArr()->back()->addDuration(p->getDuration());
 		}
 
 		m->addDuration(p->getDuration());
@@ -64,6 +69,11 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 	}
 
 	Note* note = (Note*)ms;
+	Pause* tempPause = new Pause(note->getDuration());
+	if (split) {
+		tempPause->setSplit();
+	}
+
 	if (note->isAdded()) return;
 
 	if (note->getNext()) {
@@ -92,7 +102,7 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 				addToList(leftNotes, temp);
 			}
 		}
-		
+
 		// Add the notes accordingly
 		if (leftNotes && rightNotes) {
 			// Both systems have notes waiting
@@ -105,22 +115,22 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 			}
 		}
 		else if (!leftNotes && rightNotes) {
-			left->push_back(new Pause(note->getDuration()));
+			left->push_back(tempPause);
 			right->push_back(rightNotes);
 
 			if (split) {
-				nextLeft->push_back(new Pause(note->getDuration()));
+				nextLeft->push_back(tempPause);
 				nextRight->push_back(rightNotes);
 			}
 		}
 		else {
 			// The right system is empty
 			left->push_back(leftNotes);
-			right->push_back(new Pause(note->getDuration()));
+			right->push_back(tempPause);
 
 			if (split) {
 				nextLeft->push_back(leftNotes);
-				nextRight->push_back(new Pause(note->getDuration()));
+				nextRight->push_back(tempPause);
 			}
 		}
 	}
@@ -128,24 +138,24 @@ void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 		// Just add the one note to the correct system
 		if (note->getOctave() > 3) {
 			right->push_back(note);
-			left->push_back(new Pause(note->getDuration()));
+			left->push_back(tempPause);
 
 			if (split) {
 				nextRight->push_back(note);
-				nextLeft->push_back(new Pause(note->getDuration()));
+				nextLeft->push_back(tempPause);
 			}
 		}
 		else {
 			left->push_back(note);
-			right->push_back(new Pause(note->getDuration()));
+			right->push_back(tempPause);
 
 			if (split) {
 				nextLeft->push_back(note);
-				nextRight->push_back(new Pause(note->getDuration()));
+				nextRight->push_back(tempPause);
 			}
 		}
 	}
-	
+
 	m->addDuration(note->getDuration());
 	if (split) {
 		getMeasureArr()->back()->addDuration(note->getDuration());

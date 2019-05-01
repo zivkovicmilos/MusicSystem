@@ -7,7 +7,6 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	isPause = false;
 	midiS = midiE = 0;
 	added = false;
-	isSplit = false;
 	prevNote = nextNote = nullptr;
 	this->isSharp = isSharp;
 }
@@ -16,10 +15,9 @@ void Note::setNext(Note* n) {
 	nextNote = n;
 }
 
-void Note::setMidiTime(int actionTime, int tpq) {
+void Note::setMidiTime(int actionTime, int tpq, int duration) {
 	Note* temp = this;
-	int duration = (d == Duration(1, 4) )? 2 : 1;
-	int end = actionTime + tpq * duration;
+	int end = actionTime + tpq/2 * duration;
 	while (temp) {
 		temp->midiS = actionTime;
 		temp->midiE = end;
@@ -47,7 +45,7 @@ void Note::resetPtr() {
 void Note::splitDuration() {
 	Note* temp = this;
 	// Mark split only on the first note
-	isSplit = true;
+	split = true;
 	while (temp) {
 		temp->d.changeDuration(1, 8);
 		temp = temp->nextNote;
@@ -151,11 +149,11 @@ Note::Pitch Note::getPitch(char c) {
 bool Note::checkSharp() const {
 	return isSharp;
 }
-
+// TODO remove below (2)
 bool Note::checkSplit() const {
-	return isSplit;
+	return split;
 }
 
 void Note::setSplit() {
-	isSplit = true;
+	split = true;
 }

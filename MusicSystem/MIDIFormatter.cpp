@@ -36,14 +36,20 @@ void MIDIFormatter::format() {
 		// RIGHT
 		for (int j = 0; j < right->size(); j++) {
 			MusicSymbol* ms = (*right)[j];
-			duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+			if (ms->isSplit()) {
+				duration = 2;
+			}
+			else {
+				duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+			}
+
 			if (ms->checkPause()) {
-				actiontime += tpq * duration;
+				actiontime += tpq/2 * duration;
 				continue;
 			}
 			Note* n = (Note*)ms;
 			Note* temp = n;
-			temp->setMidiTime(actiontime, tpq);
+			temp->setMidiTime(actiontime, tpq, duration);
 			while (temp) {
 				string note;
 				note.push_back(temp->getPitchC());
@@ -58,22 +64,28 @@ void MIDIFormatter::format() {
 				outputfile.addEvent(0, temp->midiEnd(), midievent);
 				temp = temp->getNext();
 			}
-			actiontime += tpq * duration;
+			actiontime += tpq/2 * duration;
 		}
-
 
 		// LEFT
 		actiontime = actionOffset;
 		for (int j = 0; j < left->size(); j++) {
 			MusicSymbol* ms = (*left)[j];
-			duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+
+			if (ms->isSplit()) {
+				duration = 2;
+			}
+			else {
+				duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
+			}
+
 			if (ms->checkPause()) {
-				actiontime += tpq * duration;
+				actiontime += tpq/2 * duration;
 				continue;
 			}
 			Note* n = (Note*)ms;
 			Note* temp = n;
-			temp->setMidiTime(actiontime, tpq);
+			temp->setMidiTime(actiontime, tpq, duration);
 			while (temp) {
 				string note;
 				note.push_back(temp->getPitchC());
@@ -88,7 +100,7 @@ void MIDIFormatter::format() {
 				outputfile.addEvent(1, temp->midiEnd(), midievent);
 				temp = temp->getNext();
 			}
-			actiontime += tpq * duration;
+			actiontime += tpq/2 * duration;
 		}
 
 		actionOffset = actiontime;

@@ -107,8 +107,8 @@ void MXMLFormatter::format() {
 	output << "<measure>" << endl << "<attributes>" << endl;
 	output << "<divisions>2</divisions>" << endl;
 	output << "<time>" << endl;
-	output << "<beats>" << c->getDuration().getNumerator() << "</beats>" << endl;
-	output << "<beat-type>" << c->getDuration().getDenominator() << "</beat-type>" << endl;
+	output << "<beats>" << comp->getDuration().getNumerator() << "</beats>" << endl;
+	output << "<beat-type>" << comp->getDuration().getDenominator() << "</beat-type>" << endl;
 	output << "</time>" << endl << "<clef>" << endl << "<sign>F</sign>" << endl << "<line>4</line>" << endl;
 	output << "</clef>" << endl;
 	output << "</attributes>" << endl;

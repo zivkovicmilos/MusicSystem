@@ -9,7 +9,6 @@ private:
 	int octave;
 	Pitch p;
 	bool isSharp;
-	bool isSplit;
 	bool added;
 	Note* nextNote; // Next note to be played in [ ] section
 	Note* prevNote;
@@ -35,7 +34,7 @@ public:
 	void setAdded();
 	bool isAdded();
 	void splitDuration() override;
-	void setMidiTime(int, int);
+	void setMidiTime(int, int, int);
 
 	int midiStart();
 	int midiEnd();

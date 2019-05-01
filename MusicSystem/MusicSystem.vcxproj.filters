@@ -63,6 +63,15 @@
     <ClCompile Include="createmidifile.cpp">
       <Filter>Source Files\MIDI</Filter>
     </ClCompile>
+    <ClCompile Include="Formatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MXMLFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MIDIFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MusicSymbol.h">
@@ -103,6 +112,15 @@
     </ClInclude>
     <ClInclude Include="Options.h">
       <Filter>Header Files\MIDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Formatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MXMLFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MIDIFormatter.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #include "MusicSymbol.h"
 
-MusicSymbol::MusicSymbol(Duration d) : d(d){}
+MusicSymbol::MusicSymbol(Duration d) : d(d), isPause(false), split(false){}
 
 Duration MusicSymbol::getDuration() const {
 	return d;
@@ -8,6 +8,10 @@ Duration MusicSymbol::getDuration() const {
 
 void MusicSymbol::setDuration(int num, int denom) {
 	d.changeDuration(num, denom);
+}
+
+bool MusicSymbol::isSplit() {
+	return split;
 }
 
 ostream& operator<<(ostream& os, MusicSymbol& m) {

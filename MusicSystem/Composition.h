@@ -7,8 +7,9 @@
 #include "Pause.h"
 
 class Composition {
+	// Array of measures for MusicXML
 	vector<Measure*> measureArr;
-	
+
 	vector<pair<MusicSymbol*, int>>* symbolMap;
 	Duration d;
 public:
@@ -18,7 +19,6 @@ public:
 	void createComposition();
 	void selectiveAdd(Measure*, MusicSymbol*, bool);
 	vector<Measure*>* getMeasureArr();
-	vector<pair<MusicSymbol*, int>>* getSymbolMap();
 
 	Duration getDuration() const;
 	friend ostream& operator<<(ostream&, const Composition&);
