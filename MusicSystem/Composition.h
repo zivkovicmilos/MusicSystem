@@ -18,6 +18,7 @@ public:
 	void createComposition();
 	void selectiveAdd(Measure*, MusicSymbol*, bool);
 	vector<Measure*>* getMeasureArr();
+	vector<pair<MusicSymbol*, int>>* getSymbolMap();
 
 	Duration getDuration() const;
 	friend ostream& operator<<(ostream&, const Composition&);

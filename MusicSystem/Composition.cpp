@@ -5,6 +5,8 @@ Composition::Composition(Duration d) : d(d){
 	symbolMap = nullptr;
 }
 
+//vector<pair<MusicSymbol*, int>>* Composition::getSymbolMap
+
 void Composition::attachMap(vector<pair<MusicSymbol*, int>>* sm) {
 	symbolMap = sm;
 	// Add in the initial measure
@@ -28,6 +30,11 @@ void addToList(Note*& first, Note* temp) {
 		temp->addPrev(last);
 	}
 }
+
+/*
+There is only one flag on the notes to mark them as split
+When outputting the MXML file, this flag is checked and accordingly handled.
+*/
 
 void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 
