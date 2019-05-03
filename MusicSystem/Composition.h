@@ -10,6 +10,9 @@ class Composition {
 	// Array of measures for MusicXML
 	vector<Measure*> measureArr;
 
+	vector<Measure*> leftPart;
+	vector<Measure*> rightPart;
+
 	vector<pair<MusicSymbol*, int>>* symbolMap;
 	Duration d;
 public:

@@ -19,6 +19,8 @@ void MIDIFormatter::format() {
 	int actiontime = 0;
 	int actionOffset = 0;
 	int duration;
+	bool splitFlagR = false;
+	bool splitFlagL = false;
 	int midiNum;
 	midievent[2] = 64;
 
@@ -36,8 +38,13 @@ void MIDIFormatter::format() {
 		// RIGHT
 		for (int j = 0; j < right->size(); j++) {
 			MusicSymbol* ms = (*right)[j];
+			if (splitFlagR) {
+				splitFlagR = false;
+				continue;
+			}
 			if (ms->isSplit()) {
 				duration = 2;
+				splitFlagR = true;
 			}
 			else {
 				duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;
@@ -71,9 +78,13 @@ void MIDIFormatter::format() {
 		actiontime = actionOffset;
 		for (int j = 0; j < left->size(); j++) {
 			MusicSymbol* ms = (*left)[j];
-
+			if (splitFlagL) {
+				splitFlagL = false;
+				continue;
+			}
 			if (ms->isSplit()) {
 				duration = 2;
+				splitFlagL = true;
 			}
 			else {
 				duration = ms->getDuration() == Duration(1, 4) ? 2 : 1;

@@ -1,17 +1,2296 @@
-E4 1/4 at index: 0
-E4 1/4 at index: 1
-F4 1/4 at index: 2
-G4 1/4 at index: 3
-G4 1/4 at index: 4
-F4 1/4 at index: 5
-E4 1/4 at index: 6
-D4 1/4 at index: 7
-C4 1/4 at index: 8
-C4 1/4 at index: 9
-D4 1/4 at index: 10
-E4 1/4 at index: 11
-E4 1/4 at index: 12
+B3 1/4 at index: 0
+P 1/8 at index: 1
+A3 1/4 at index: 2
+P 1/8 at index: 3
+G#3 1/4 at index: 4
+P 1/8 at index: 5
+A3 1/4 at index: 6
+A2 1/4 (next note: C4) at index: 8
+C4 1/4 (prev note: A2) at index: 9
+P 1/8 at index: 11
+C4 1/4 at index: 12
 P 1/8 at index: 13
-d4 1/8 at index: 15
-P 1/8 at index: 16
-d4 1/8 at index: 17
+C4 1/4 (next note: D4) at index: 15
+D4 1/4 (prev note: C4) at index: 16
+P 1/8 at index: 18
+C4 1/4 at index: 19
+P 1/8 at index: 20
+B3 1/4 (next note: C4) at index: 22
+C4 1/4 (prev note: B3) at index: 23
+P 1/8 at index: 25
+C4 1/4 at index: 26
+A2 1/4 (next note: E4) at index: 28
+E4 1/4 (prev note: A2) at index: 29
+P 1/8 at index: 31
+C4 1/4 at index: 32
+P 1/8 at index: 33
+C4 1/4 (next note: F4) at index: 35
+F4 1/4 (prev note: C4) at index: 36
+P 1/8 at index: 38
+E4 1/4 at index: 39
+P 1/8 at index: 40
+C4 1/4 (next note: D4) at index: 42
+D#4 1/4 (prev note: C#4) at index: 43
+P 1/8 at index: 45
+E4 1/4 at index: 46
+A2 1/4 (next note: B4) at index: 48
+B4 1/4 (prev note: A2) at index: 49
+P 1/8 at index: 51
+A4 1/4 at index: 52
+P 1/8 at index: 53
+C4 1/4 (next note: G4) at index: 55
+G#4 1/4 (prev note: C#4) at index: 56
+P 1/8 at index: 58
+A4 1/4 at index: 59
+P 1/8 at index: 60
+C4 1/4 (next note: B4) at index: 62
+B4 1/4 (prev note: C4) at index: 63
+P 1/8 at index: 65
+A4 1/4 at index: 66
+P 1/8 at index: 67
+C4 1/4 (next note: G4) at index: 69
+G#4 1/4 (prev note: C#4) at index: 70
+P 1/8 at index: 72
+A4 1/4 at index: 73
+A2 1/4 (next note: C5) at index: 75
+C5 1/4 (prev note: A2) at index: 76
+P 1/8 at index: 78
+C4 1/4 at index: 79
+P 1/8 at index: 80
+C4 1/4 (next note: A4) at index: 82
+A4 1/4 (prev note: C4) at index: 83
+P 1/8 at index: 85
+C4 1/4 (next note: C5) at index: 87
+C5 1/4 (prev note: C4) at index: 88
+P 1/8 at index: 90
+G4 1/4 at index: 91
+P 1/8 at index: 92
+A4 1/4 at index: 93
+E2 1/4 (next note: B4) at index: 95
+B4 1/4 (prev note: E2) at index: 96
+P 1/8 at index: 98
+G3 1/4 (next note: A4) at index: 100
+A4 1/4 (prev note: G3) at index: 101
+P 1/8 at index: 103
+G3 1/4 (next note: G4) at index: 105
+G4 1/4 (prev note: G3) at index: 106
+P 1/8 at index: 108
+G3 1/4 (next note: A4) at index: 110
+A4 1/4 (prev note: G3) at index: 111
+P 1/8 at index: 113
+G4 1/4 at index: 114
+P 1/8 at index: 115
+A4 1/4 at index: 116
+E2 1/4 (next note: B4) at index: 118
+B4 1/4 (prev note: E2) at index: 119
+P 1/8 at index: 121
+G3 1/4 (next note: A4) at index: 123
+A4 1/4 (prev note: G3) at index: 124
+P 1/8 at index: 126
+G3 1/4 (next note: G4) at index: 128
+G4 1/4 (prev note: G3) at index: 129
+P 1/8 at index: 131
+G3 1/4 (next note: A4) at index: 133
+A4 1/4 (prev note: G3) at index: 134
+P 1/8 at index: 136
+G4 1/4 at index: 137
+P 1/8 at index: 138
+A4 1/4 at index: 139
+E2 1/4 (next note: B4) at index: 141
+B4 1/4 (prev note: E2) at index: 142
+P 1/8 at index: 144
+A4 1/4 at index: 145
+P 1/8 at index: 146
+B2 1/4 (next note: G4) at index: 148
+G4 1/4 (prev note: B2) at index: 149
+P 1/8 at index: 151
+F#4 1/4 at index: 152
+E2 1/4 (next note: E4) at index: 154
+E4 1/4 (prev note: E2) at index: 155
+P 1/8 at index: 157
+B3 1/4 at index: 158
+P 1/8 at index: 159
+A3 1/4 at index: 160
+P 1/8 at index: 161
+G#3 1/4 at index: 162
+P 1/8 at index: 163
+A3 1/4 at index: 164
+P 1/8 at index: 165
+A2 1/4 (next note: C4) at index: 167
+C4 1/4 (prev note: A2) at index: 168
+P 1/8 at index: 170
+C4 1/4 at index: 171
+C4 1/4 (next note: D4) at index: 173
+D4 1/4 (prev note: C4) at index: 174
+P 1/8 at index: 176
+C4 1/4 at index: 177
+P 1/8 at index: 178
+B3 1/4 (next note: C4) at index: 180
+C4 1/4 (prev note: B3) at index: 181
+P 1/8 at index: 183
+C4 1/4 at index: 184
+P 1/8 at index: 185
+A2 1/4 (next note: E4) at index: 187
+E4 1/4 (prev note: A2) at index: 188
+P 1/8 at index: 190
+C4 1/4 at index: 191
+C4 1/4 (next note: F4) at index: 193
+F4 1/4 (prev note: C4) at index: 194
+P 1/8 at index: 196
+E4 1/4 at index: 197
+P 1/8 at index: 198
+C4 1/4 (next note: D4) at index: 200
+D#4 1/4 (prev note: C#4) at index: 201
+P 1/8 at index: 203
+E4 1/4 at index: 204
+P 1/8 at index: 205
+A2 1/4 (next note: B4) at index: 207
+B4 1/4 (prev note: A2) at index: 208
+P 1/8 at index: 210
+A4 1/4 at index: 211
+P 1/8 at index: 212
+C4 1/4 (next note: G4) at index: 214
+G#4 1/4 (prev note: C#4) at index: 215
+P 1/8 at index: 217
+A4 1/4 at index: 218
+C4 1/4 (next note: B4) at index: 220
+B4 1/4 (prev note: C4) at index: 221
+P 1/8 at index: 223
+A4 1/4 at index: 224
+C4 1/4 (next note: G4) at index: 226
+G#4 1/4 (prev note: C#4) at index: 227
+P 1/8 at index: 229
+A4 1/4 at index: 230
+P 1/8 at index: 231
+A2 1/4 (next note: C5) at index: 233
+C5 1/4 (prev note: A2) at index: 234
+P 1/8 at index: 236
+C4 1/4 at index: 237
+C4 1/4 (next note: A4) at index: 239
+A4 1/4 (prev note: C4) at index: 240
+P 1/8 at index: 242
+C4 1/4 (next note: C5) at index: 244
+C5 1/4 (prev note: C4) at index: 245
+P 1/8 at index: 247
+G4 1/4 at index: 248
+P 1/8 at index: 249
+A4 1/4 at index: 250
+P 1/8 at index: 251
+E2 1/4 (next note: B4) at index: 253
+B4 1/4 (prev note: E2) at index: 254
+P 1/8 at index: 256
+G3 1/4 (next note: A4) at index: 258
+A4 1/4 (prev note: G3) at index: 259
+P 1/8 at index: 261
+G3 1/4 (next note: G4) at index: 263
+G4 1/4 (prev note: G3) at index: 264
+P 1/8 at index: 266
+G3 1/4 (next note: A4) at index: 268
+A4 1/4 (prev note: G3) at index: 269
+P 1/8 at index: 271
+G4 1/4 at index: 272
+P 1/8 at index: 273
+A4 1/4 at index: 274
+P 1/8 at index: 275
+E2 1/4 (next note: B4) at index: 277
+B4 1/4 (prev note: E2) at index: 278
+P 1/8 at index: 280
+G3 1/4 (next note: A4) at index: 282
+A4 1/4 (prev note: G3) at index: 283
+P 1/8 at index: 285
+G3 1/4 (next note: G4) at index: 287
+G4 1/4 (prev note: G3) at index: 288
+P 1/8 at index: 290
+G3 1/4 (next note: A4) at index: 292
+A4 1/4 (prev note: G3) at index: 293
+P 1/8 at index: 295
+G4 1/4 at index: 296
+P 1/8 at index: 297
+A4 1/4 at index: 298
+P 1/8 at index: 299
+E2 1/4 (next note: B4) at index: 301
+B4 1/4 (prev note: E2) at index: 302
+P 1/8 at index: 304
+A4 1/4 at index: 305
+B2 1/4 (next note: G4) at index: 307
+G4 1/4 (prev note: B2) at index: 308
+P 1/8 at index: 310
+F#4 1/4 at index: 311
+P 1/8 at index: 312
+E2 1/4 (next note: E4) at index: 314
+E4 1/4 (prev note: E2) at index: 315
+P 1/8 at index: 317
+E4 1/4 at index: 318
+P 1/8 at index: 319
+F4 1/4 at index: 320
+P 1/8 at index: 321
+C3 1/4 (next note: G4) at index: 323
+G4 1/4 (prev note: C3) at index: 324
+P 1/8 at index: 326
+C4 1/4 (next note: G4) at index: 328
+G4 1/4 (prev note: C4) at index: 329
+P 1/8 at index: 331
+E3 1/4 (next note: A4) at index: 333
+A4 1/4 (prev note: E3) at index: 334
+P 1/8 at index: 336
+G4 1/4 at index: 337
+P 1/8 at index: 338
+C4 1/4 (next note: F4) at index: 340
+F4 1/4 (prev note: C4) at index: 341
+P 1/8 at index: 343
+E4 1/4 at index: 344
+P 1/8 at index: 345
+G3 1/4 (next note: D4) at index: 347
+D4 1/4 (prev note: G3) at index: 348
+P 1/8 at index: 350
+E4 1/4 at index: 351
+P 1/8 at index: 352
+F4 1/4 at index: 353
+P 1/8 at index: 354
+C3 1/4 (next note: G4) at index: 356
+G4 1/4 (prev note: C3) at index: 357
+P 1/8 at index: 359
+C4 1/4 (next note: G4) at index: 361
+G4 1/4 (prev note: C4) at index: 362
+P 1/8 at index: 364
+E3 1/4 (next note: A4) at index: 366
+A4 1/4 (prev note: E3) at index: 367
+P 1/8 at index: 369
+G4 1/4 at index: 370
+P 1/8 at index: 371
+C4 1/4 (next note: F4) at index: 373
+F4 1/4 (prev note: C4) at index: 374
+P 1/8 at index: 376
+E4 1/4 at index: 377
+P 1/8 at index: 378
+G3 1/4 (next note: D4) at index: 380
+D4 1/4 (prev note: G3) at index: 381
+P 1/8 at index: 383
+C4 1/4 at index: 384
+P 1/8 at index: 385
+D4 1/4 at index: 386
+P 1/8 at index: 387
+A2 1/4 (next note: E4) at index: 389
+E4 1/4 (prev note: A2) at index: 390
+P 1/8 at index: 392
+A3 1/4 (next note: E4) at index: 394
+E4 1/4 (prev note: A3) at index: 395
+P 1/8 at index: 397
+C3 1/4 (next note: F4) at index: 399
+F4 1/4 (prev note: C3) at index: 400
+P 1/8 at index: 402
+E4 1/4 at index: 403
+P 1/8 at index: 404
+A3 1/4 (next note: D4) at index: 406
+D4 1/4 (prev note: A3) at index: 407
+P 1/8 at index: 409
+C4 1/4 at index: 410
+P 1/8 at index: 411
+E3 1/4 (next note: B3) at index: 413
+B3 1/4 (prev note: E3) at index: 414
+P 1/8 at index: 416
+C4 1/4 at index: 417
+P 1/8 at index: 418
+D4 1/4 at index: 419
+P 1/8 at index: 420
+A2 1/4 (next note: E4) at index: 422
+E4 1/4 (prev note: A2) at index: 423
+P 1/8 at index: 425
+A3 1/4 (next note: E4) at index: 427
+E4 1/4 (prev note: A3) at index: 428
+P 1/8 at index: 430
+C3 1/4 (next note: F4) at index: 432
+F4 1/4 (prev note: C3) at index: 433
+P 1/8 at index: 435
+E4 1/4 at index: 436
+P 1/8 at index: 437
+A3 1/4 (next note: D4) at index: 439
+D4 1/4 (prev note: A3) at index: 440
+P 1/8 at index: 442
+C4 1/4 at index: 443
+P 1/8 at index: 444
+E3 1/4 (next note: B3) at index: 446
+B3 1/4 (prev note: E3) at index: 447
+P 1/8 at index: 449
+B3 1/4 at index: 450
+P 1/8 at index: 451
+A3 1/4 at index: 452
+P 1/8 at index: 453
+G#3 1/4 at index: 454
+P 1/8 at index: 455
+A3 1/4 at index: 456
+P 1/8 at index: 457
+A2 1/4 (next note: C4) at index: 459
+C4 1/4 (prev note: A2) at index: 460
+P 1/8 at index: 462
+C4 1/4 at index: 463
+C4 1/4 (next note: D4) at index: 465
+D4 1/4 (prev note: C4) at index: 466
+P 1/8 at index: 468
+C4 1/4 at index: 469
+P 1/8 at index: 470
+B3 1/4 (next note: C4) at index: 472
+C4 1/4 (prev note: B3) at index: 473
+P 1/8 at index: 475
+C4 1/4 at index: 476
+P 1/8 at index: 477
+A2 1/4 (next note: E4) at index: 479
+E4 1/4 (prev note: A2) at index: 480
+P 1/8 at index: 482
+C4 1/4 at index: 483
+C4 1/4 (next note: F4) at index: 485
+F4 1/4 (prev note: C4) at index: 486
+P 1/8 at index: 488
+E4 1/4 at index: 489
+P 1/8 at index: 490
+C4 1/4 (next note: D4) at index: 492
+D#4 1/4 (prev note: C#4) at index: 493
+P 1/8 at index: 495
+E4 1/4 at index: 496
+P 1/8 at index: 497
+A2 1/4 (next note: B4) at index: 499
+B4 1/4 (prev note: A2) at index: 500
+P 1/8 at index: 502
+A4 1/4 at index: 503
+P 1/8 at index: 504
+C4 1/4 (next note: G4) at index: 506
+G#4 1/4 (prev note: C#4) at index: 507
+P 1/8 at index: 509
+A4 1/4 at index: 510
+C4 1/4 (next note: B4) at index: 512
+B4 1/4 (prev note: C4) at index: 513
+P 1/8 at index: 515
+A4 1/4 at index: 516
+P 1/8 at index: 517
+C4 1/4 (next note: G4) at index: 519
+G#4 1/4 (prev note: C#4) at index: 520
+P 1/8 at index: 522
+A4 1/4 at index: 523
+P 1/8 at index: 524
+F2 1/4 (next note: C5) at index: 526
+C5 1/4 (prev note: F2) at index: 527
+P 1/8 at index: 529
+A3 1/4 at index: 530
+A3 1/4 (next note: A4) at index: 532
+A4 1/4 (prev note: A3) at index: 533
+P 1/8 at index: 535
+A3 1/4 (next note: B4) at index: 537
+B4 1/4 (prev note: A3) at index: 538
+P 1/8 at index: 540
+E3 1/4 (next note: C5) at index: 542
+C5 1/4 (prev note: E3) at index: 543
+P 1/8 at index: 545
+A3 1/4 (next note: B4) at index: 547
+B4 1/4 (prev note: A3) at index: 548
+P 1/8 at index: 550
+D3 1/4 (next note: A4) at index: 552
+A4 1/4 (prev note: D3) at index: 553
+P 1/8 at index: 555
+B3 1/4 (next note: G4) at index: 557
+G#4 1/4 (prev note: B#3) at index: 558
+P 1/8 at index: 560
+C3 1/4 (next note: A4) at index: 562
+A4 1/4 (prev note: C3) at index: 563
+P 1/8 at index: 565
+A3 1/4 (next note: E4) at index: 567
+E4 1/4 (prev note: A3) at index: 568
+P 1/8 at index: 570
+D3 1/4 (next note: F4) at index: 572
+F4 1/4 (prev note: D3) at index: 573
+P 1/8 at index: 575
+B3 1/4 (next note: D4) at index: 577
+D4 1/4 (prev note: B3) at index: 578
+P 1/8 at index: 580
+E3 1/4 (next note: C4) at index: 582
+C4 1/4 (prev note: E3) at index: 583
+P 1/8 at index: 585
+A3 1/4 at index: 586
+E3 1/4 (next note: B3) at index: 588
+B3 1/4 (prev note: E3) at index: 589
+P 1/8 at index: 591
+E2 1/4 (next note: A3) at index: 593
+A3 1/4 (prev note: E2) at index: 594
+P 1/8 at index: 596
+B3 1/4 at index: 597
+P 1/8 at index: 598
+A2 1/4 (next note: A3) at index: 600
+A3 1/4 (prev note: A2) at index: 601
+P 1/8 at index: 603
+A4 1/4 at index: 604
+P 1/8 at index: 605
+B4 1/4 at index: 606
+P 1/8 at index: 607
+A2 1/4 (next note: E3) at index: 609
+E3 1/4 (next note: C5) (prev note: A2) at index: 610
+C#5 1/4 (prev note: E#3) at index: 611
+P 1/8 at index: 613
+A2 1/4 (next note: E3) at index: 615
+E3 1/4 (prev note: A2) at index: 616
+P 1/8 at index: 618
+A2 1/4 (next note: E3) at index: 620
+E3 1/4 (next note: A4) (prev note: A2) at index: 621
+A4 1/4 (prev note: E3) at index: 622
+P 1/8 at index: 624
+A2 1/4 (next note: E3) at index: 626
+E3 1/4 (next note: B4) (prev note: A2) at index: 627
+B4 1/4 (prev note: E3) at index: 628
+P 1/8 at index: 630
+A2 1/4 (next note: E3) at index: 632
+E3 1/4 (next note: C5) (prev note: A2) at index: 633
+C#5 1/4 (prev note: E#3) at index: 634
+P 1/8 at index: 636
+A2 1/4 (next note: E3) at index: 638
+E3 1/4 (next note: B4) (prev note: A2) at index: 639
+B4 1/4 (prev note: E3) at index: 640
+P 1/8 at index: 642
+A2 1/4 (next note: E3) at index: 644
+E3 1/4 (next note: A4) (prev note: A2) at index: 645
+A4 1/4 (prev note: E3) at index: 646
+P 1/8 at index: 648
+A2 1/4 (next note: E3) at index: 650
+E3 1/4 (next note: G4) (prev note: A2) at index: 651
+G#4 1/4 (prev note: E#3) at index: 652
+P 1/8 at index: 654
+D3 1/4 (next note: F4) at index: 656
+F#4 1/4 (prev note: D#3) at index: 657
+P 1/8 at index: 659
+D3 1/4 (next note: G4) at index: 661
+G#4 1/4 (prev note: D#3) at index: 662
+P 1/8 at index: 664
+D#3 1/4 (next note: A#4) at index: 666
+A4 1/4 (prev note: D3) at index: 667
+P 1/8 at index: 669
+D#3 1/4 (next note: B#4) at index: 671
+B4 1/4 (prev note: D3) at index: 672
+P 1/8 at index: 674
+E3 1/4 (next note: G4) at index: 676
+G#4 1/4 (prev note: E#3) at index: 677
+P 1/8 at index: 679
+E3 1/4 (next note: E4) at index: 681
+E4 1/4 (prev note: E3) at index: 682
+P 1/8 at index: 684
+E3 1/4 (next note: A4) at index: 686
+A4 1/4 (prev note: E3) at index: 687
+P 1/8 at index: 689
+E3 1/4 (next note: B4) at index: 691
+B4 1/4 (prev note: E3) at index: 692
+P 1/8 at index: 694
+A2 1/4 (next note: E3) at index: 696
+E3 1/4 (next note: C5) (prev note: A2) at index: 697
+C#5 1/4 (prev note: E#3) at index: 698
+P 1/8 at index: 700
+A2 1/4 (next note: E3) at index: 702
+E3 1/4 (prev note: A2) at index: 703
+P 1/8 at index: 705
+A2 1/4 (next note: E3) at index: 707
+E3 1/4 (next note: A4) (prev note: A2) at index: 708
+A4 1/4 (prev note: E3) at index: 709
+P 1/8 at index: 711
+A2 1/4 (next note: E3) at index: 713
+E3 1/4 (next note: B4) (prev note: A2) at index: 714
+B4 1/4 (prev note: E3) at index: 715
+P 1/8 at index: 717
+A2 1/4 (next note: E3) at index: 719
+E3 1/4 (next note: C5) (prev note: A2) at index: 720
+C#5 1/4 (prev note: E#3) at index: 721
+P 1/8 at index: 723
+A2 1/4 (next note: E3) at index: 725
+E3 1/4 (next note: B4) (prev note: A2) at index: 726
+B4 1/4 (prev note: E3) at index: 727
+P 1/8 at index: 729
+A2 1/4 (next note: E3) at index: 731
+E3 1/4 (next note: A4) (prev note: A2) at index: 732
+A4 1/4 (prev note: E3) at index: 733
+P 1/8 at index: 735
+A2 1/4 (next note: E3) at index: 737
+E3 1/4 (next note: G4) (prev note: A2) at index: 738
+G#4 1/4 (prev note: E#3) at index: 739
+P 1/8 at index: 741
+D3 1/4 (next note: F4) at index: 743
+F#4 1/4 (prev note: D#3) at index: 744
+P 1/8 at index: 746
+D3 1/4 (next note: B4) at index: 748
+B4 1/4 (prev note: D3) at index: 749
+P 1/8 at index: 751
+E3 1/4 (next note: G4) at index: 753
+G#4 1/4 (prev note: E#3) at index: 754
+P 1/8 at index: 756
+E3 1/4 (next note: E4) at index: 758
+E4 1/4 (prev note: E3) at index: 759
+P 1/8 at index: 761
+A2 1/4 (next note: A4) at index: 763
+A4 1/4 (prev note: A2) at index: 764
+P 1/8 at index: 766
+A4 1/4 at index: 767
+P 1/8 at index: 768
+B4 1/4 at index: 769
+P 1/8 at index: 770
+A2 1/4 (next note: E3) at index: 772
+E3 1/4 (next note: C5) (prev note: A2) at index: 773
+C#5 1/4 (prev note: E#3) at index: 774
+P 1/8 at index: 776
+A2 1/4 (next note: E3) at index: 778
+E3 1/4 (prev note: A2) at index: 779
+P 1/8 at index: 781
+A2 1/4 (next note: E3) at index: 783
+E3 1/4 (next note: A4) (prev note: A2) at index: 784
+A4 1/4 (prev note: E3) at index: 785
+P 1/8 at index: 787
+A2 1/4 (next note: E3) at index: 789
+E3 1/4 (next note: B4) (prev note: A2) at index: 790
+B4 1/4 (prev note: E3) at index: 791
+P 1/8 at index: 793
+A2 1/4 (next note: E3) at index: 795
+E3 1/4 (next note: C5) (prev note: A2) at index: 796
+C#5 1/4 (prev note: E#3) at index: 797
+P 1/8 at index: 799
+A2 1/4 (next note: E3) at index: 801
+E3 1/4 (next note: B4) (prev note: A2) at index: 802
+B4 1/4 (prev note: E3) at index: 803
+P 1/8 at index: 805
+A2 1/4 (next note: E3) at index: 807
+E3 1/4 (next note: A4) (prev note: A2) at index: 808
+A4 1/4 (prev note: E3) at index: 809
+P 1/8 at index: 811
+A2 1/4 (next note: E3) at index: 813
+E3 1/4 (next note: G4) (prev note: A2) at index: 814
+G#4 1/4 (prev note: E#3) at index: 815
+P 1/8 at index: 817
+D3 1/4 (next note: F4) at index: 819
+F#4 1/4 (prev note: D#3) at index: 820
+P 1/8 at index: 822
+D3 1/4 (next note: G4) at index: 824
+G#4 1/4 (prev note: D#3) at index: 825
+P 1/8 at index: 827
+A4 1/4 at index: 829
+P 1/8 at index: 831
+D#3 1/4 (next note: B#4) at index: 833
+B4 1/4 (prev note: D3) at index: 834
+P 1/8 at index: 836
+E3 1/4 (next note: G4) at index: 838
+G#4 1/4 (prev note: E#3) at index: 839
+P 1/8 at index: 841
+E3 1/4 (next note: E4) at index: 843
+E4 1/4 (prev note: E3) at index: 844
+P 1/8 at index: 846
+E3 1/4 (next note: A4) at index: 848
+A4 1/4 (prev note: E3) at index: 849
+P 1/8 at index: 851
+E3 1/4 (next note: B4) at index: 853
+B4 1/4 (prev note: E3) at index: 854
+P 1/8 at index: 856
+A2 1/4 (next note: E3) at index: 858
+E3 1/4 (next note: C5) (prev note: A2) at index: 859
+C#5 1/4 (prev note: E#3) at index: 860
+P 1/8 at index: 862
+A2 1/4 (next note: E3) at index: 864
+E3 1/4 (prev note: A2) at index: 865
+P 1/8 at index: 867
+A2 1/4 (next note: E3) at index: 869
+E3 1/4 (next note: A4) (prev note: A2) at index: 870
+A4 1/4 (prev note: E3) at index: 871
+P 1/8 at index: 873
+A2 1/4 (next note: E3) at index: 875
+E3 1/4 (next note: B4) (prev note: A2) at index: 876
+B4 1/4 (prev note: E3) at index: 877
+P 1/8 at index: 879
+A2 1/4 (next note: E3) at index: 881
+E3 1/4 (next note: C5) (prev note: A2) at index: 882
+C#5 1/4 (prev note: E#3) at index: 883
+P 1/8 at index: 885
+A2 1/4 (next note: E3) at index: 887
+E3 1/4 (next note: B4) (prev note: A2) at index: 888
+B4 1/4 (prev note: E3) at index: 889
+A2 1/4 (next note: E3) at index: 892
+E3 1/4 (next note: A4) (prev note: A2) at index: 893
+A4 1/4 (prev note: E3) at index: 894
+P 1/8 at index: 896
+A2 1/4 (next note: E3) at index: 898
+E3 1/4 (next note: G4) (prev note: A2) at index: 899
+G#4 1/4 (prev note: E#3) at index: 900
+P 1/8 at index: 902
+D3 1/4 (next note: F4) at index: 904
+F#4 1/4 (prev note: D#3) at index: 905
+P 1/8 at index: 907
+D3 1/4 (next note: B4) at index: 909
+B4 1/4 (prev note: D3) at index: 910
+P 1/8 at index: 912
+E3 1/4 (next note: G4) at index: 914
+G#4 1/4 (prev note: E#3) at index: 915
+P 1/8 at index: 917
+E3 1/4 (next note: E4) at index: 919
+E4 1/4 (prev note: E3) at index: 920
+P 1/8 at index: 922
+A2 1/4 (next note: A4) at index: 924
+A4 1/4 (prev note: A2) at index: 925
+P 1/8 at index: 927
+C#5 1/4 at index: 928
+P 1/8 at index: 929
+D5 1/4 at index: 930
+P 1/8 at index: 931
+C#5 1/4 at index: 932
+P 1/8 at index: 933
+B4 1/4 at index: 934
+P 1/8 at index: 935
+F#3 1/4 (next note: A#4) at index: 937
+A4 1/4 (prev note: F3) at index: 938
+P 1/8 at index: 940
+B4 1/4 at index: 941
+P 1/8 at index: 942
+A3 1/4 (next note: A4) at index: 944
+A4 1/4 (prev note: A3) at index: 945
+P 1/8 at index: 947
+G#4 1/4 at index: 948
+A3 1/4 (next note: F4) at index: 950
+F#4 1/4 (prev note: A#3) at index: 951
+P 1/8 at index: 953
+A4 1/4 at index: 954
+P 1/8 at index: 955
+A3 1/4 (next note: G4) at index: 957
+G#4 1/4 (prev note: A#3) at index: 958
+P 1/8 at index: 960
+F#4 1/4 at index: 961
+P 1/8 at index: 962
+G#3 1/4 (next note: F#4) at index: 964
+F4 1/4 (prev note: G3) at index: 965
+P 1/8 at index: 967
+F#4 1/4 at index: 968
+P 1/8 at index: 969
+B3 1/4 (next note: G4) at index: 971
+G#4 1/4 (prev note: B#3) at index: 972
+P 1/8 at index: 974
+F4 1/4 at index: 975
+B3 1/4 (next note: C4) at index: 977
+C#4 1/4 (prev note: B#3) at index: 978
+P 1/8 at index: 980
+D#4 1/4 at index: 981
+P 1/8 at index: 982
+B3 1/4 (next note: F4) at index: 984
+F4 1/4 (prev note: B3) at index: 985
+P 1/8 at index: 987
+C#4 1/4 at index: 988
+P 1/8 at index: 989
+F#3 1/4 (next note: F#4) at index: 991
+F#4 1/4 (prev note: F#3) at index: 992
+P 1/8 at index: 994
+F4 1/4 at index: 995
+P 1/8 at index: 996
+A3 1/4 (next note: F4) at index: 998
+F#4 1/4 (prev note: A#3) at index: 999
+P 1/8 at index: 1001
+G#4 1/4 at index: 1002
+A3 1/4 (next note: A4) at index: 1004
+A4 1/4 (prev note: A3) at index: 1005
+P 1/8 at index: 1007
+G#4 1/4 at index: 1008
+P 1/8 at index: 1009
+A3 1/4 (next note: A4) at index: 1011
+A4 1/4 (prev note: A3) at index: 1012
+P 1/8 at index: 1014
+B4 1/4 at index: 1015
+P 1/8 at index: 1016
+F3 1/4 (next note: C5) at index: 1018
+C#5 1/4 (prev note: F#3) at index: 1019
+P 1/8 at index: 1021
+C5 1/4 at index: 1022
+P 1/8 at index: 1023
+G#3 1/4 (next note: C#5) at index: 1025
+C#5 1/4 (prev note: G#3) at index: 1026
+P 1/8 at index: 1028
+C5 1/4 at index: 1029
+G#3 1/4 (next note: C#5) at index: 1031
+C#5 1/4 (prev note: G#3) at index: 1032
+P 1/8 at index: 1034
+D5 1/4 at index: 1035
+P 1/8 at index: 1036
+G#3 1/4 (next note: C#5) at index: 1038
+C#5 1/4 (prev note: G#3) at index: 1039
+P 1/8 at index: 1041
+B4 1/4 at index: 1042
+P 1/8 at index: 1043
+F#3 1/4 (next note: A#4) at index: 1045
+A4 1/4 (prev note: F3) at index: 1046
+P 1/8 at index: 1048
+B4 1/4 at index: 1049
+P 1/8 at index: 1050
+A3 1/4 (next note: A4) at index: 1052
+A4 1/4 (prev note: A3) at index: 1053
+P 1/8 at index: 1055
+G#4 1/4 at index: 1056
+A3 1/4 (next note: F4) at index: 1058
+F#4 1/4 (prev note: A#3) at index: 1059
+P 1/8 at index: 1061
+A4 1/4 at index: 1062
+P 1/8 at index: 1063
+A3 1/4 (next note: G4) at index: 1065
+G#4 1/4 (prev note: A#3) at index: 1066
+P 1/8 at index: 1068
+F#4 1/4 at index: 1069
+P 1/8 at index: 1070
+G#3 1/4 (next note: E#4) at index: 1072
+E4 1/4 (prev note: G3) at index: 1073
+P 1/8 at index: 1075
+F#4 1/4 at index: 1076
+P 1/8 at index: 1077
+C#4 1/4 (next note: G#4) at index: 1079
+G#4 1/4 (prev note: C#4) at index: 1080
+P 1/8 at index: 1082
+E4 1/4 at index: 1083
+C#4 1/4 at index: 1084
+P 1/8 at index: 1085
+D#4 1/4 at index: 1086
+P 1/8 at index: 1087
+C#4 1/4 (next note: E#4) at index: 1089
+E4 1/4 (prev note: C4) at index: 1090
+P 1/8 at index: 1092
+C#4 1/4 at index: 1093
+P 1/8 at index: 1094
+G#3 1/4 (next note: D#4) at index: 1096
+D#4 1/4 (prev note: G#3) at index: 1097
+P 1/8 at index: 1099
+E4 1/4 at index: 1100
+P 1/8 at index: 1101
+D#4 1/4 (next note: F#4) at index: 1103
+F#4 1/4 (prev note: D#4) at index: 1104
+P 1/8 at index: 1106
+D#4 1/4 at index: 1107
+C4 1/4 (next note: D4) at index: 1109
+D#4 1/4 (prev note: C#4) at index: 1110
+P 1/8 at index: 1112
+C#4 1/4 at index: 1113
+P 1/8 at index: 1114
+D#4 1/4 at index: 1115
+P 1/8 at index: 1116
+C4 1/4 at index: 1117
+P 1/8 at index: 1118
+C#4 1/4 at index: 1119
+E4 1/4 at index: 1120
+P 1/8 at index: 1121
+D4 1/4 at index: 1122
+P 1/8 at index: 1123
+C#4 1/4 at index: 1124
+P 1/8 at index: 1125
+B3 1/4 at index: 1126
+P 1/8 at index: 1127
+A3 1/4 at index: 1128
+P 1/8 at index: 1129
+B3 1/4 at index: 1130
+P 1/8 at index: 1131
+C#4 1/4 at index: 1132
+P 1/8 at index: 1133
+D4 1/4 at index: 1134
+C#4 1/4 (next note: E#4) at index: 1136
+E4 1/4 (prev note: C4) at index: 1137
+P 1/8 at index: 1139
+F#4 1/4 at index: 1140
+P 1/8 at index: 1141
+C#4 1/4 (next note: G#4) at index: 1143
+G#4 1/4 (prev note: C#4) at index: 1144
+P 1/8 at index: 1146
+A4 1/4 at index: 1147
+P 1/8 at index: 1148
+B3 1/4 (next note: A4) at index: 1150
+A4 1/4 (prev note: B3) at index: 1151
+P 1/8 at index: 1153
+G#4 1/4 at index: 1154
+P 1/8 at index: 1155
+D4 1/4 (next note: F4) at index: 1157
+F#4 1/4 (prev note: D#4) at index: 1158
+P 1/8 at index: 1160
+E4 1/4 at index: 1161
+G#3 1/4 (next note: E#4) at index: 1163
+E4 1/4 (prev note: G3) at index: 1164
+P 1/8 at index: 1166
+D4 1/4 at index: 1167
+P 1/8 at index: 1168
+C#4 1/4 (next note: D#4) at index: 1170
+D4 1/4 (prev note: C4) at index: 1171
+P 1/8 at index: 1173
+B3 1/4 at index: 1174
+P 1/8 at index: 1175
+A3 1/4 at index: 1176
+P 1/8 at index: 1177
+B3 1/4 at index: 1178
+P 1/8 at index: 1179
+C#4 1/4 at index: 1180
+P 1/8 at index: 1181
+D4 1/4 at index: 1182
+C#4 1/4 (next note: E#4) at index: 1184
+E4 1/4 (prev note: C4) at index: 1185
+P 1/8 at index: 1187
+F#4 1/4 at index: 1188
+P 1/8 at index: 1189
+C#4 1/4 (next note: G#4) at index: 1191
+G#4 1/4 (prev note: C#4) at index: 1192
+P 1/8 at index: 1194
+A4 1/4 at index: 1195
+P 1/8 at index: 1196
+E3 1/4 (next note: A4) at index: 1198
+A#4 1/4 (prev note: E#3) at index: 1199
+P 1/8 at index: 1201
+G#3 1/4 (next note: B#4) at index: 1203
+B4 1/4 (prev note: G3) at index: 1204
+P 1/8 at index: 1206
+G#3 1/4 (next note: E#4) at index: 1208
+E4 1/4 (prev note: G3) at index: 1209
+P 1/8 at index: 1211
+D4 1/4 at index: 1212
+P 1/8 at index: 1213
+G#3 1/4 (next note: C#4) at index: 1215
+C#4 1/4 (prev note: G#3) at index: 1216
+P 1/8 at index: 1218
+B3 1/4 at index: 1219
+P 1/8 at index: 1220
+A3 1/4 at index: 1221
+P 1/8 at index: 1222
+B3 1/4 at index: 1223
+P 1/8 at index: 1224
+C#4 1/4 at index: 1225
+P 1/8 at index: 1226
+D4 1/4 at index: 1227
+C#4 1/4 (next note: E#4) at index: 1229
+E4 1/4 (prev note: C4) at index: 1230
+P 1/8 at index: 1232
+F#4 1/4 at index: 1233
+P 1/8 at index: 1234
+C#4 1/4 (next note: G#4) at index: 1236
+G#4 1/4 (prev note: C#4) at index: 1237
+P 1/8 at index: 1239
+A4 1/4 at index: 1240
+P 1/8 at index: 1241
+B3 1/4 (next note: A4) at index: 1243
+A4 1/4 (prev note: B3) at index: 1244
+P 1/8 at index: 1246
+G#4 1/4 at index: 1247
+P 1/8 at index: 1248
+D4 1/4 (next note: F4) at index: 1250
+F#4 1/4 (prev note: D#4) at index: 1251
+P 1/8 at index: 1253
+E4 1/4 at index: 1254
+G#3 1/4 (next note: E#4) at index: 1256
+E4 1/4 (prev note: G3) at index: 1257
+P 1/8 at index: 1259
+D4 1/4 at index: 1260
+P 1/8 at index: 1261
+C#4 1/4 (next note: D#4) at index: 1263
+D4 1/4 (prev note: C4) at index: 1264
+P 1/8 at index: 1266
+B3 1/4 at index: 1267
+P 1/8 at index: 1268
+A3 1/4 (next note: C4) at index: 1270
+C#4 1/4 (prev note: A#3) at index: 1271
+P 1/8 at index: 1273
+E4 1/4 at index: 1274
+P 1/8 at index: 1275
+F#3 1/4 (next note: A#3) at index: 1277
+A3 1/4 (prev note: F3) at index: 1278
+P 1/8 at index: 1280
+C#4 1/4 at index: 1281
+D3 1/4 (next note: B3) at index: 1283
+B3 1/4 (prev note: D3) at index: 1284
+P 1/8 at index: 1286
+D4 1/4 at index: 1287
+P 1/8 at index: 1288
+E3 1/4 (next note: G3) at index: 1290
+G#3 1/4 (prev note: E#3) at index: 1291
+P 1/8 at index: 1293
+B3 1/4 at index: 1294
+P 1/8 at index: 1295
+A2 1/4 (next note: A3) at index: 1297
+A3 1/4 (prev note: A2) at index: 1298
+P 1/8 at index: 1300
+C#4 1/4 at index: 1301
+P 1/8 at index: 1302
+D4 1/4 at index: 1303
+P 1/8 at index: 1304
+C#4 1/4 at index: 1305
+P 1/8 at index: 1306
+B3 1/4 at index: 1307
+P 1/8 at index: 1308
+A3 1/4 (next note: F4) at index: 1310
+F#4 1/4 (prev note: A#3) at index: 1311
+P 1/8 at index: 1313
+B3 1/4 at index: 1314
+P 1/8 at index: 1315
+A3 1/4 (next note: A4) at index: 1317
+A4 1/4 (prev note: A3) at index: 1318
+P 1/8 at index: 1320
+G#3 1/4 at index: 1321
+F#3 1/4 (next note: A#4) at index: 1323
+A4 1/4 (prev note: F3) at index: 1324
+P 1/8 at index: 1326
+A3 1/4 at index: 1327
+G#3 1/4 (next note: A#4) at index: 1329
+A4 1/4 (prev note: G3) at index: 1330
+P 1/8 at index: 1332
+F#3 1/4 at index: 1333
+P 1/8 at index: 1334
+F3 1/4 (next note: G4) at index: 1336
+G#4 1/4 (prev note: F#3) at index: 1337
+P 1/8 at index: 1339
+F#3 1/4 at index: 1340
+P 1/8 at index: 1341
+G#3 1/4 (next note: B#4) at index: 1343
+B4 1/4 (prev note: G3) at index: 1344
+P 1/8 at index: 1346
+F3 1/4 at index: 1347
+C#3 1/4 (next note: B#4) at index: 1349
+B4 1/4 (prev note: C3) at index: 1350
+P 1/8 at index: 1352
+P 1/8 at index: 1354
+F3 1/4 (next note: B4) at index: 1356
+B4 1/4 (prev note: F3) at index: 1357
+P 1/8 at index: 1359
+P 1/8 at index: 1361
+F#3 1/4 (next note: F#4) at index: 1363
+F#4 1/4 (prev note: F#3) at index: 1364
+P 1/8 at index: 1366
+F3 1/4 at index: 1367
+P 1/8 at index: 1368
+F#3 1/4 (next note: A#4) at index: 1370
+A4 1/4 (prev note: F3) at index: 1371
+P 1/8 at index: 1373
+G#3 1/4 at index: 1374
+A3 1/4 (next note: A4) at index: 1376
+A4 1/4 (prev note: A3) at index: 1377
+P 1/8 at index: 1379
+G#3 1/4 at index: 1380
+P 1/8 at index: 1381
+A3 1/4 (next note: A4) at index: 1383
+A4 1/4 (prev note: A3) at index: 1384
+P 1/8 at index: 1386
+B3 1/4 at index: 1387
+P 1/8 at index: 1388
+C#4 1/4 at index: 1389
+P 1/8 at index: 1390
+C4 1/4 at index: 1391
+P 1/8 at index: 1392
+C#4 1/4 (next note: G#4) at index: 1394
+G#4 1/4 (prev note: C#4) at index: 1395
+P 1/8 at index: 1397
+C4 1/4 at index: 1398
+C#4 1/4 (next note: G#4) at index: 1400
+G4 1/4 (prev note: C4) at index: 1401
+P 1/8 at index: 1403
+C4 1/4 at index: 1404
+P 1/8 at index: 1405
+C#4 1/4 (next note: F#4) at index: 1407
+F#4 1/4 (prev note: C#4) at index: 1408
+P 1/8 at index: 1410
+A#3 1/4 at index: 1411
+P 1/8 at index: 1412
+B3 1/4 (next note: D4) at index: 1414
+D4 1/4 (prev note: B3) at index: 1415
+P 1/8 at index: 1417
+C#4 1/4 at index: 1418
+P 1/8 at index: 1419
+D4 1/4 (next note: F4) at index: 1421
+F#4 1/4 (prev note: D#4) at index: 1422
+P 1/8 at index: 1424
+C#4 1/4 at index: 1425
+D4 1/4 (next note: F4) at index: 1427
+F#4 1/4 (prev note: D#4) at index: 1428
+P 1/8 at index: 1430
+C#4 1/4 at index: 1431
+P 1/8 at index: 1432
+D4 1/4 (next note: F4) at index: 1434
+F#4 1/4 (prev note: D#4) at index: 1435
+P 1/8 at index: 1437
+C#4 1/4 at index: 1438
+P 1/8 at index: 1439
+B3 1/4 (next note: D4) at index: 1441
+D4 1/4 (prev note: B3) at index: 1442
+P 1/8 at index: 1444
+C#4 1/4 at index: 1445
+P 1/8 at index: 1446
+B3 1/4 (next note: G4) at index: 1448
+G#4 1/4 (prev note: B#3) at index: 1449
+P 1/8 at index: 1451
+A3 1/4 at index: 1452
+G#3 1/4 (next note: G#4) at index: 1454
+G#4 1/4 (prev note: G#3) at index: 1455
+P 1/8 at index: 1457
+A3 1/4 at index: 1458
+P 1/8 at index: 1459
+B3 1/4 (next note: G4) at index: 1461
+G#4 1/4 (prev note: B#3) at index: 1462
+P 1/8 at index: 1464
+G#3 1/4 at index: 1465
+P 1/8 at index: 1466
+A3 1/4 (next note: C4) at index: 1468
+C#4 1/4 (prev note: A#3) at index: 1469
+P 1/8 at index: 1471
+B3 1/4 at index: 1472
+P 1/8 at index: 1473
+C#4 1/4 (next note: F#4) at index: 1475
+F#4 1/4 (prev note: C#4) at index: 1476
+P 1/8 at index: 1478
+F#3 1/4 at index: 1479
+F3 1/4 (next note: C4) at index: 1481
+C#4 1/4 (prev note: F#3) at index: 1482
+P 1/8 at index: 1484
+F#3 1/4 at index: 1485
+P 1/8 at index: 1486
+G#3 1/4 (next note: G#4) at index: 1488
+G#4 1/4 (prev note: G#3) at index: 1489
+P 1/8 at index: 1491
+F3 1/4 at index: 1492
+P 1/8 at index: 1493
+F#3 1/4 (next note: F#4) at index: 1495
+F#4 1/4 (prev note: F#3) at index: 1496
+P 1/8 at index: 1498
+A4 1/4 at index: 1499
+P 1/8 at index: 1500
+B4 1/4 at index: 1501
+P 1/8 at index: 1502
+A2 1/4 (next note: E3) at index: 1504
+E3 1/4 (next note: C5) (prev note: A2) at index: 1505
+C#5 1/4 (prev note: E#3) at index: 1506
+P 1/8 at index: 1508
+A2 1/4 (next note: E3) at index: 1510
+E3 1/4 (prev note: A2) at index: 1511
+P 1/8 at index: 1513
+A2 1/4 (next note: E3) at index: 1515
+E3 1/4 (next note: A4) (prev note: A2) at index: 1516
+A4 1/4 (prev note: E3) at index: 1517
+P 1/8 at index: 1519
+A2 1/4 (next note: E3) at index: 1521
+E3 1/4 (next note: B4) (prev note: A2) at index: 1522
+B4 1/4 (prev note: E3) at index: 1523
+P 1/8 at index: 1525
+A2 1/4 (next note: E3) at index: 1527
+E3 1/4 (next note: C5) (prev note: A2) at index: 1528
+C#5 1/4 (prev note: E#3) at index: 1529
+P 1/8 at index: 1531
+A2 1/4 (next note: E3) at index: 1533
+E3 1/4 (next note: B4) (prev note: A2) at index: 1534
+B4 1/4 (prev note: E3) at index: 1535
+P 1/8 at index: 1537
+A2 1/4 (next note: E3) at index: 1539
+E3 1/4 (next note: A4) (prev note: A2) at index: 1540
+A4 1/4 (prev note: E3) at index: 1541
+P 1/8 at index: 1543
+A2 1/4 (next note: E3) at index: 1545
+E3 1/4 (next note: G4) (prev note: A2) at index: 1546
+G#4 1/4 (prev note: E#3) at index: 1547
+P 1/8 at index: 1549
+D3 1/4 (next note: F4) at index: 1551
+F#4 1/4 (prev note: D#3) at index: 1552
+P 1/8 at index: 1554
+D3 1/4 (next note: G4) at index: 1556
+G#4 1/4 (prev note: D#3) at index: 1557
+P 1/8 at index: 1559
+D#3 1/4 (next note: A#4) at index: 1561
+A4 1/4 (prev note: D3) at index: 1562
+P 1/8 at index: 1564
+D#3 1/4 (next note: B#4) at index: 1566
+B4 1/4 (prev note: D3) at index: 1567
+P 1/8 at index: 1569
+E3 1/4 (next note: G4) at index: 1571
+G#4 1/4 (prev note: E#3) at index: 1572
+P 1/8 at index: 1574
+E3 1/4 (next note: E4) at index: 1576
+E4 1/4 (prev note: E3) at index: 1577
+P 1/8 at index: 1579
+E3 1/4 (next note: A4) at index: 1581
+A4 1/4 (prev note: E3) at index: 1582
+P 1/8 at index: 1584
+E3 1/4 (next note: B4) at index: 1586
+B4 1/4 (prev note: E3) at index: 1587
+P 1/8 at index: 1589
+A2 1/4 (next note: E3) at index: 1591
+E3 1/4 (next note: C5) (prev note: A2) at index: 1592
+C#5 1/4 (prev note: E#3) at index: 1593
+P 1/8 at index: 1595
+A2 1/4 (next note: E3) at index: 1597
+E3 1/4 (prev note: A2) at index: 1598
+P 1/8 at index: 1600
+A2 1/4 (next note: E3) at index: 1602
+E3 1/4 (next note: A4) (prev note: A2) at index: 1603
+A4 1/4 (prev note: E3) at index: 1604
+P 1/8 at index: 1606
+A2 1/4 (next note: E3) at index: 1608
+E3 1/4 (next note: B4) (prev note: A2) at index: 1609
+B4 1/4 (prev note: E3) at index: 1610
+P 1/8 at index: 1612
+A2 1/4 (next note: E3) at index: 1614
+E3 1/4 (next note: C5) (prev note: A2) at index: 1615
+C#5 1/4 (prev note: E#3) at index: 1616
+P 1/8 at index: 1618
+A2 1/4 (next note: E3) at index: 1620
+E3 1/4 (next note: B4) (prev note: A2) at index: 1621
+B4 1/4 (prev note: E3) at index: 1622
+P 1/8 at index: 1624
+A2 1/4 (next note: E3) at index: 1626
+E3 1/4 (next note: A4) (prev note: A2) at index: 1627
+A4 1/4 (prev note: E3) at index: 1628
+P 1/8 at index: 1630
+A2 1/4 (next note: E3) at index: 1632
+E3 1/4 (next note: G4) (prev note: A2) at index: 1633
+G#4 1/4 (prev note: E#3) at index: 1634
+P 1/8 at index: 1636
+D3 1/4 (next note: F4) at index: 1638
+F#4 1/4 (prev note: D#3) at index: 1639
+P 1/8 at index: 1641
+D3 1/4 (next note: B4) at index: 1643
+B4 1/4 (prev note: D3) at index: 1644
+P 1/8 at index: 1646
+E3 1/4 (next note: G4) at index: 1648
+G#4 1/4 (prev note: E#3) at index: 1649
+P 1/8 at index: 1651
+E3 1/4 (next note: E4) at index: 1653
+E4 1/4 (prev note: E3) at index: 1654
+P 1/8 at index: 1656
+A2 1/4 (next note: A4) at index: 1658
+A4 1/4 (prev note: A2) at index: 1659
+P 1/8 at index: 1661
+A4 1/4 at index: 1662
+P 1/8 at index: 1663
+B4 1/4 at index: 1664
+P 1/8 at index: 1665
+A2 1/4 (next note: E3) at index: 1667
+E3 1/4 (next note: C5) (prev note: A2) at index: 1668
+C#5 1/4 (prev note: E#3) at index: 1669
+P 1/8 at index: 1671
+A2 1/4 (next note: E3) at index: 1673
+E3 1/4 (prev note: A2) at index: 1674
+P 1/8 at index: 1676
+A2 1/4 (next note: E3) at index: 1678
+E3 1/4 (next note: A4) (prev note: A2) at index: 1679
+A4 1/4 (prev note: E3) at index: 1680
+P 1/8 at index: 1682
+A2 1/4 (next note: E3) at index: 1684
+E3 1/4 (next note: B4) (prev note: A2) at index: 1685
+B4 1/4 (prev note: E3) at index: 1686
+P 1/8 at index: 1688
+A2 1/4 (next note: E3) at index: 1690
+E3 1/4 (next note: C5) (prev note: A2) at index: 1691
+C#5 1/4 (prev note: E#3) at index: 1692
+P 1/8 at index: 1694
+A2 1/4 (next note: E3) at index: 1696
+E3 1/4 (next note: B4) (prev note: A2) at index: 1697
+B4 1/4 (prev note: E3) at index: 1698
+P 1/8 at index: 1700
+A2 1/4 (next note: E3) at index: 1702
+E3 1/4 (next note: A4) (prev note: A2) at index: 1703
+A4 1/4 (prev note: E3) at index: 1704
+P 1/8 at index: 1706
+A2 1/4 (next note: E3) at index: 1708
+E3 1/4 (next note: G4) (prev note: A2) at index: 1709
+G#4 1/4 (prev note: E#3) at index: 1710
+P 1/8 at index: 1712
+D3 1/4 (next note: F4) at index: 1714
+F#4 1/4 (prev note: D#3) at index: 1715
+P 1/8 at index: 1717
+D3 1/4 (next note: G4) at index: 1719
+G#4 1/4 (prev note: D#3) at index: 1720
+P 1/8 at index: 1722
+D#3 1/4 (next note: A#4) at index: 1724
+A4 1/4 (prev note: D3) at index: 1725
+P 1/8 at index: 1727
+D#3 1/4 (next note: B#4) at index: 1729
+B4 1/4 (prev note: D3) at index: 1730
+P 1/8 at index: 1732
+E3 1/4 (next note: G4) at index: 1734
+G#4 1/4 (prev note: E#3) at index: 1735
+P 1/8 at index: 1737
+E3 1/4 (next note: E4) at index: 1739
+E4 1/4 (prev note: E3) at index: 1740
+P 1/8 at index: 1742
+E3 1/4 (next note: A4) at index: 1744
+A4 1/4 (prev note: E3) at index: 1745
+P 1/8 at index: 1747
+E3 1/4 (next note: B4) at index: 1749
+B4 1/4 (prev note: E3) at index: 1750
+P 1/8 at index: 1752
+A2 1/4 (next note: E3) at index: 1754
+E3 1/4 (next note: C5) (prev note: A2) at index: 1755
+C#5 1/4 (prev note: E#3) at index: 1756
+A2 1/4 (next note: E3) at index: 1759
+E3 1/4 (prev note: A2) at index: 1760
+P 1/8 at index: 1762
+A2 1/4 (next note: E3) at index: 1764
+E3 1/4 (next note: A4) (prev note: A2) at index: 1765
+A4 1/4 (prev note: E3) at index: 1766
+P 1/8 at index: 1768
+A2 1/4 (next note: E3) at index: 1770
+E3 1/4 (next note: B4) (prev note: A2) at index: 1771
+B4 1/4 (prev note: E3) at index: 1772
+P 1/8 at index: 1774
+A2 1/4 (next note: E3) at index: 1776
+E3 1/4 (next note: C5) (prev note: A2) at index: 1777
+C#5 1/4 (prev note: E#3) at index: 1778
+P 1/8 at index: 1780
+A2 1/4 (next note: E3) at index: 1782
+E3 1/4 (next note: B4) (prev note: A2) at index: 1783
+B4 1/4 (prev note: E3) at index: 1784
+P 1/8 at index: 1786
+A2 1/4 (next note: E3) at index: 1788
+E3 1/4 (next note: A4) (prev note: A2) at index: 1789
+A4 1/4 (prev note: E3) at index: 1790
+P 1/8 at index: 1792
+A2 1/4 (next note: E3) at index: 1794
+E3 1/4 (next note: G4) (prev note: A2) at index: 1795
+G#4 1/4 (prev note: E#3) at index: 1796
+P 1/8 at index: 1798
+D3 1/4 (next note: F4) at index: 1800
+F#4 1/4 (prev note: D#3) at index: 1801
+P 1/8 at index: 1803
+D3 1/4 (next note: B4) at index: 1805
+B4 1/4 (prev note: D3) at index: 1806
+P 1/8 at index: 1808
+E3 1/4 (next note: G4) at index: 1810
+G#4 1/4 (prev note: E#3) at index: 1811
+P 1/8 at index: 1813
+E3 1/4 (next note: E4) at index: 1815
+E4 1/4 (prev note: E3) at index: 1816
+P 1/8 at index: 1818
+A2 1/4 (next note: A4) at index: 1820
+A4 1/4 (prev note: A2) at index: 1821
+P 1/8 at index: 1823
+B3 1/4 at index: 1824
+P 1/8 at index: 1825
+A3 1/4 at index: 1826
+P 1/8 at index: 1827
+G#3 1/4 at index: 1828
+P 1/8 at index: 1829
+A3 1/4 at index: 1830
+P 1/8 at index: 1831
+A2 1/4 (next note: C4) at index: 1833
+C4 1/4 (prev note: A2) at index: 1834
+P 1/8 at index: 1836
+C4 1/4 at index: 1837
+C4 1/4 (next note: D4) at index: 1839
+D4 1/4 (prev note: C4) at index: 1840
+P 1/8 at index: 1842
+C4 1/4 at index: 1843
+P 1/8 at index: 1844
+B3 1/4 (next note: C4) at index: 1846
+C4 1/4 (prev note: B3) at index: 1847
+P 1/8 at index: 1849
+C4 1/4 at index: 1850
+P 1/8 at index: 1851
+A2 1/4 (next note: E4) at index: 1853
+E4 1/4 (prev note: A2) at index: 1854
+P 1/8 at index: 1856
+C4 1/4 at index: 1857
+C4 1/4 (next note: F4) at index: 1859
+F4 1/4 (prev note: C4) at index: 1860
+P 1/8 at index: 1862
+E4 1/4 at index: 1863
+P 1/8 at index: 1864
+C4 1/4 (next note: D4) at index: 1866
+D#4 1/4 (prev note: C#4) at index: 1867
+P 1/8 at index: 1869
+E4 1/4 at index: 1870
+P 1/8 at index: 1871
+A2 1/4 (next note: B4) at index: 1873
+B4 1/4 (prev note: A2) at index: 1874
+P 1/8 at index: 1876
+A4 1/4 at index: 1877
+P 1/8 at index: 1878
+C4 1/4 (next note: G4) at index: 1880
+G#4 1/4 (prev note: C#4) at index: 1881
+P 1/8 at index: 1883
+A4 1/4 at index: 1884
+C4 1/4 (next note: B4) at index: 1886
+B4 1/4 (prev note: C4) at index: 1887
+P 1/8 at index: 1889
+A4 1/4 at index: 1890
+P 1/8 at index: 1891
+C4 1/4 (next note: G4) at index: 1893
+G#4 1/4 (prev note: C#4) at index: 1894
+P 1/8 at index: 1896
+A4 1/4 at index: 1897
+P 1/8 at index: 1898
+A2 1/4 (next note: C5) at index: 1900
+C5 1/4 (prev note: A2) at index: 1901
+P 1/8 at index: 1903
+C4 1/4 at index: 1904
+C4 1/4 (next note: A4) at index: 1906
+A4 1/4 (prev note: C4) at index: 1907
+P 1/8 at index: 1909
+C4 1/4 (next note: C5) at index: 1911
+C5 1/4 (prev note: C4) at index: 1912
+P 1/8 at index: 1914
+G4 1/4 at index: 1915
+P 1/8 at index: 1916
+A4 1/4 at index: 1917
+P 1/8 at index: 1918
+E2 1/4 (next note: B4) at index: 1920
+B4 1/4 (prev note: E2) at index: 1921
+P 1/8 at index: 1923
+G3 1/4 (next note: A4) at index: 1925
+A4 1/4 (prev note: G3) at index: 1926
+P 1/8 at index: 1928
+G3 1/4 (next note: G4) at index: 1930
+G4 1/4 (prev note: G3) at index: 1931
+P 1/8 at index: 1933
+G3 1/4 (next note: A4) at index: 1935
+A4 1/4 (prev note: G3) at index: 1936
+P 1/8 at index: 1938
+G4 1/4 at index: 1939
+P 1/8 at index: 1940
+A4 1/4 at index: 1941
+P 1/8 at index: 1942
+E2 1/4 (next note: B4) at index: 1944
+B4 1/4 (prev note: E2) at index: 1945
+P 1/8 at index: 1947
+G3 1/4 (next note: A4) at index: 1949
+A4 1/4 (prev note: G3) at index: 1950
+P 1/8 at index: 1952
+G3 1/4 (next note: G4) at index: 1954
+G4 1/4 (prev note: G3) at index: 1955
+P 1/8 at index: 1957
+G3 1/4 (next note: A4) at index: 1959
+A4 1/4 (prev note: G3) at index: 1960
+P 1/8 at index: 1962
+G4 1/4 at index: 1963
+P 1/8 at index: 1964
+A4 1/4 at index: 1965
+P 1/8 at index: 1966
+E2 1/4 (next note: B4) at index: 1968
+B4 1/4 (prev note: E2) at index: 1969
+P 1/8 at index: 1971
+A4 1/4 at index: 1972
+B2 1/4 (next note: G4) at index: 1974
+G4 1/4 (prev note: B2) at index: 1975
+P 1/8 at index: 1977
+F#4 1/4 at index: 1978
+P 1/8 at index: 1979
+E2 1/4 (next note: E4) at index: 1981
+E4 1/4 (prev note: E2) at index: 1982
+P 1/8 at index: 1984
+B3 1/4 at index: 1985
+P 1/8 at index: 1986
+A3 1/4 at index: 1987
+P 1/8 at index: 1988
+G#3 1/4 at index: 1989
+P 1/8 at index: 1990
+A3 1/4 at index: 1991
+P 1/8 at index: 1992
+A2 1/4 (next note: C4) at index: 1994
+C4 1/4 (prev note: A2) at index: 1995
+P 1/8 at index: 1997
+C4 1/4 at index: 1998
+C4 1/4 (next note: D4) at index: 2000
+D4 1/4 (prev note: C4) at index: 2001
+P 1/8 at index: 2003
+C4 1/4 at index: 2004
+P 1/8 at index: 2005
+B3 1/4 (next note: C4) at index: 2007
+C4 1/4 (prev note: B3) at index: 2008
+P 1/8 at index: 2010
+C4 1/4 at index: 2011
+P 1/8 at index: 2012
+A2 1/4 (next note: E4) at index: 2014
+E4 1/4 (prev note: A2) at index: 2015
+P 1/8 at index: 2017
+C4 1/4 at index: 2018
+C4 1/4 (next note: F4) at index: 2020
+F4 1/4 (prev note: C4) at index: 2021
+P 1/8 at index: 2023
+E4 1/4 at index: 2024
+P 1/8 at index: 2025
+C4 1/4 (next note: D4) at index: 2027
+D#4 1/4 (prev note: C#4) at index: 2028
+P 1/8 at index: 2030
+E4 1/4 at index: 2031
+P 1/8 at index: 2032
+A2 1/4 (next note: B4) at index: 2034
+B4 1/4 (prev note: A2) at index: 2035
+P 1/8 at index: 2037
+A4 1/4 at index: 2038
+P 1/8 at index: 2039
+C4 1/4 (next note: G4) at index: 2041
+G#4 1/4 (prev note: C#4) at index: 2042
+P 1/8 at index: 2044
+A4 1/4 at index: 2045
+C4 1/4 (next note: B4) at index: 2047
+B4 1/4 (prev note: C4) at index: 2048
+P 1/8 at index: 2050
+A4 1/4 at index: 2051
+P 1/8 at index: 2052
+C4 1/4 (next note: G4) at index: 2054
+G#4 1/4 (prev note: C#4) at index: 2055
+P 1/8 at index: 2057
+A4 1/4 at index: 2058
+P 1/8 at index: 2059
+A2 1/4 (next note: C5) at index: 2061
+C5 1/4 (prev note: A2) at index: 2062
+P 1/8 at index: 2064
+C4 1/4 at index: 2065
+C4 1/4 (next note: A4) at index: 2067
+A4 1/4 (prev note: C4) at index: 2068
+P 1/8 at index: 2070
+C4 1/4 (next note: C5) at index: 2072
+C5 1/4 (prev note: C4) at index: 2073
+P 1/8 at index: 2075
+G4 1/4 at index: 2076
+P 1/8 at index: 2077
+A4 1/4 at index: 2078
+P 1/8 at index: 2079
+E2 1/4 (next note: B4) at index: 2081
+B4 1/4 (prev note: E2) at index: 2082
+P 1/8 at index: 2084
+G3 1/4 (next note: A4) at index: 2086
+A4 1/4 (prev note: G3) at index: 2087
+P 1/8 at index: 2089
+G3 1/4 (next note: G4) at index: 2091
+G4 1/4 (prev note: G3) at index: 2092
+P 1/8 at index: 2094
+G3 1/4 (next note: A4) at index: 2096
+A4 1/4 (prev note: G3) at index: 2097
+P 1/8 at index: 2099
+G4 1/4 at index: 2100
+P 1/8 at index: 2101
+A4 1/4 at index: 2102
+P 1/8 at index: 2103
+E2 1/4 (next note: B4) at index: 2105
+B4 1/4 (prev note: E2) at index: 2106
+P 1/8 at index: 2108
+G3 1/4 (next note: A4) at index: 2110
+A4 1/4 (prev note: G3) at index: 2111
+P 1/8 at index: 2113
+G3 1/4 (next note: G4) at index: 2115
+G4 1/4 (prev note: G3) at index: 2116
+P 1/8 at index: 2118
+G3 1/4 (next note: A4) at index: 2120
+A4 1/4 (prev note: G3) at index: 2121
+P 1/8 at index: 2123
+G4 1/4 at index: 2124
+P 1/8 at index: 2125
+A4 1/4 at index: 2126
+P 1/8 at index: 2127
+E2 1/4 (next note: B4) at index: 2129
+B4 1/4 (prev note: E2) at index: 2130
+P 1/8 at index: 2132
+A4 1/4 at index: 2133
+B2 1/4 (next note: G4) at index: 2135
+G4 1/4 (prev note: B2) at index: 2136
+P 1/8 at index: 2138
+F#4 1/4 at index: 2139
+P 1/8 at index: 2140
+E2 1/4 (next note: E4) at index: 2142
+E4 1/4 (prev note: E2) at index: 2143
+P 1/8 at index: 2145
+E4 1/4 at index: 2146
+P 1/8 at index: 2147
+F4 1/4 at index: 2148
+P 1/8 at index: 2149
+C2 1/4 (next note: G4) at index: 2151
+G4 1/4 (prev note: C2) at index: 2152
+P 1/8 at index: 2154
+C4 1/4 (next note: G4) at index: 2156
+G4 1/4 (prev note: C4) at index: 2157
+P 1/8 at index: 2159
+E2 1/4 (next note: A4) at index: 2161
+A4 1/4 (prev note: E2) at index: 2162
+P 1/8 at index: 2164
+G4 1/4 at index: 2165
+P 1/8 at index: 2166
+C4 1/4 (next note: F4) at index: 2168
+F4 1/4 (prev note: C4) at index: 2169
+P 1/8 at index: 2171
+E4 1/4 at index: 2172
+P 1/8 at index: 2173
+G2 1/4 (next note: D4) at index: 2175
+D4 1/4 (prev note: G2) at index: 2176
+P 1/8 at index: 2178
+E4 1/4 at index: 2179
+P 1/8 at index: 2180
+F4 1/4 at index: 2181
+P 1/8 at index: 2182
+C2 1/4 (next note: G4) at index: 2184
+G4 1/4 (prev note: C2) at index: 2185
+P 1/8 at index: 2187
+C4 1/4 (next note: G4) at index: 2189
+G4 1/4 (prev note: C4) at index: 2190
+P 1/8 at index: 2192
+E2 1/4 (next note: A4) at index: 2194
+A4 1/4 (prev note: E2) at index: 2195
+P 1/8 at index: 2197
+G4 1/4 at index: 2198
+P 1/8 at index: 2199
+C4 1/4 (next note: F4) at index: 2201
+F4 1/4 (prev note: C4) at index: 2202
+P 1/8 at index: 2204
+E4 1/4 at index: 2205
+P 1/8 at index: 2206
+G2 1/4 (next note: D4) at index: 2208
+D4 1/4 (prev note: G2) at index: 2209
+P 1/8 at index: 2211
+C4 1/4 at index: 2212
+P 1/8 at index: 2213
+D4 1/4 at index: 2214
+P 1/8 at index: 2215
+A2 1/4 (next note: E4) at index: 2217
+E4 1/4 (prev note: A2) at index: 2218
+P 1/8 at index: 2220
+A3 1/4 (next note: E4) at index: 2222
+E4 1/4 (prev note: A3) at index: 2223
+P 1/8 at index: 2225
+C3 1/4 (next note: F4) at index: 2227
+F4 1/4 (prev note: C3) at index: 2228
+P 1/8 at index: 2230
+E4 1/4 at index: 2231
+P 1/8 at index: 2232
+A3 1/4 (next note: D4) at index: 2234
+D4 1/4 (prev note: A3) at index: 2235
+P 1/8 at index: 2237
+C4 1/4 at index: 2238
+P 1/8 at index: 2239
+E3 1/4 (next note: B3) at index: 2241
+B3 1/4 (prev note: E3) at index: 2242
+P 1/8 at index: 2244
+C4 1/4 at index: 2245
+P 1/8 at index: 2246
+D4 1/4 at index: 2247
+P 1/8 at index: 2248
+A2 1/4 (next note: E4) at index: 2250
+E4 1/4 (prev note: A2) at index: 2251
+P 1/8 at index: 2253
+A3 1/4 (next note: E4) at index: 2255
+E4 1/4 (prev note: A3) at index: 2256
+P 1/8 at index: 2258
+C3 1/4 (next note: F4) at index: 2260
+F4 1/4 (prev note: C3) at index: 2261
+P 1/8 at index: 2263
+E4 1/4 at index: 2264
+P 1/8 at index: 2265
+A3 1/4 (next note: D4) at index: 2267
+D4 1/4 (prev note: A3) at index: 2268
+P 1/8 at index: 2270
+C4 1/4 at index: 2271
+P 1/8 at index: 2272
+E3 1/4 (next note: B3) at index: 2274
+B3 1/4 (prev note: E3) at index: 2275
+P 1/8 at index: 2277
+B3 1/4 at index: 2278
+P 1/8 at index: 2279
+A3 1/4 at index: 2280
+P 1/8 at index: 2281
+G#3 1/4 at index: 2282
+P 1/8 at index: 2283
+A3 1/4 at index: 2284
+P 1/8 at index: 2285
+A2 1/4 (next note: C4) at index: 2287
+C4 1/4 (prev note: A2) at index: 2288
+P 1/8 at index: 2290
+C4 1/4 at index: 2291
+C4 1/4 (next note: D4) at index: 2293
+D4 1/4 (prev note: C4) at index: 2294
+P 1/8 at index: 2296
+C4 1/4 at index: 2297
+P 1/8 at index: 2298
+B3 1/4 (next note: C4) at index: 2300
+C4 1/4 (prev note: B3) at index: 2301
+P 1/8 at index: 2303
+C4 1/4 at index: 2304
+P 1/8 at index: 2305
+A2 1/4 (next note: E4) at index: 2307
+E4 1/4 (prev note: A2) at index: 2308
+P 1/8 at index: 2310
+C4 1/4 at index: 2311
+C4 1/4 (next note: F4) at index: 2313
+F4 1/4 (prev note: C4) at index: 2314
+P 1/8 at index: 2316
+E4 1/4 at index: 2317
+P 1/8 at index: 2318
+C4 1/4 (next note: D4) at index: 2320
+D#4 1/4 (prev note: C#4) at index: 2321
+P 1/8 at index: 2323
+E4 1/4 at index: 2324
+P 1/8 at index: 2325
+A2 1/4 (next note: B4) at index: 2327
+B4 1/4 (prev note: A2) at index: 2328
+P 1/8 at index: 2330
+A4 1/4 at index: 2331
+P 1/8 at index: 2332
+C4 1/4 (next note: G4) at index: 2334
+G#4 1/4 (prev note: C#4) at index: 2335
+P 1/8 at index: 2337
+A4 1/4 at index: 2338
+C4 1/4 (next note: B4) at index: 2340
+B4 1/4 (prev note: C4) at index: 2341
+P 1/8 at index: 2343
+A4 1/4 at index: 2344
+P 1/8 at index: 2345
+C4 1/4 (next note: G4) at index: 2347
+G#4 1/4 (prev note: C#4) at index: 2348
+P 1/8 at index: 2350
+A4 1/4 at index: 2351
+P 1/8 at index: 2352
+F2 1/4 (next note: C5) at index: 2354
+C5 1/4 (prev note: F2) at index: 2355
+P 1/8 at index: 2357
+A3 1/4 at index: 2358
+A3 1/4 (next note: A4) at index: 2360
+A4 1/4 (prev note: A3) at index: 2361
+P 1/8 at index: 2363
+A3 1/4 (next note: B4) at index: 2365
+B4 1/4 (prev note: A3) at index: 2366
+P 1/8 at index: 2368
+E3 1/4 (next note: C5) at index: 2370
+C5 1/4 (prev note: E3) at index: 2371
+P 1/8 at index: 2373
+A3 1/4 (next note: B4) at index: 2375
+B4 1/4 (prev note: A3) at index: 2376
+P 1/8 at index: 2378
+D3 1/4 (next note: A4) at index: 2380
+A4 1/4 (prev note: D3) at index: 2381
+P 1/8 at index: 2383
+B3 1/4 (next note: G4) at index: 2385
+G#4 1/4 (prev note: B#3) at index: 2386
+P 1/8 at index: 2388
+C3 1/4 (next note: A4) at index: 2390
+A4 1/4 (prev note: C3) at index: 2391
+P 1/8 at index: 2393
+A3 1/4 (next note: E4) at index: 2395
+E4 1/4 (prev note: A3) at index: 2396
+P 1/8 at index: 2398
+D3 1/4 (next note: F4) at index: 2400
+F4 1/4 (prev note: D3) at index: 2401
+P 1/8 at index: 2403
+B3 1/4 (next note: D4) at index: 2405
+D4 1/4 (prev note: B3) at index: 2406
+P 1/8 at index: 2408
+E3 1/4 (next note: C4) at index: 2410
+C4 1/4 (prev note: E3) at index: 2411
+P 1/8 at index: 2413
+A3 1/4 at index: 2414
+E2 1/4 (next note: B3) at index: 2416
+B3 1/4 (prev note: E2) at index: 2417
+P 1/8 at index: 2419
+E3 1/4 (next note: A3) at index: 2421
+A3 1/4 (prev note: E3) at index: 2422
+P 1/8 at index: 2424
+B3 1/4 at index: 2425
+P 1/8 at index: 2426
+A2 1/4 (next note: A3) at index: 2428
+A3 1/4 (prev note: A2) at index: 2429
+P 1/8 at index: 2431
+A4 1/4 at index: 2432
+P 1/8 at index: 2433
+B4 1/4 at index: 2434
+P 1/8 at index: 2435
+A2 1/4 (next note: E3) at index: 2437
+E3 1/4 (next note: C5) (prev note: A2) at index: 2438
+C#5 1/4 (prev note: E#3) at index: 2439
+P 1/8 at index: 2441
+A2 1/4 (next note: E3) at index: 2443
+E3 1/4 (prev note: A2) at index: 2444
+P 1/8 at index: 2446
+A2 1/4 (next note: E3) at index: 2448
+E3 1/4 (next note: A4) (prev note: A2) at index: 2449
+A4 1/4 (prev note: E3) at index: 2450
+P 1/8 at index: 2452
+A2 1/4 (next note: E3) at index: 2454
+E3 1/4 (next note: B4) (prev note: A2) at index: 2455
+B4 1/4 (prev note: E3) at index: 2456
+P 1/8 at index: 2458
+A2 1/4 (next note: E3) at index: 2460
+E3 1/4 (next note: C5) (prev note: A2) at index: 2461
+C#5 1/4 (prev note: E#3) at index: 2462
+P 1/8 at index: 2464
+A2 1/4 (next note: E3) at index: 2466
+E3 1/4 (next note: B4) (prev note: A2) at index: 2467
+B4 1/4 (prev note: E3) at index: 2468
+P 1/8 at index: 2470
+A2 1/4 (next note: E3) at index: 2472
+E3 1/4 (next note: A4) (prev note: A2) at index: 2473
+A4 1/4 (prev note: E3) at index: 2474
+P 1/8 at index: 2476
+A2 1/4 (next note: E3) at index: 2478
+E3 1/4 (next note: G4) (prev note: A2) at index: 2479
+G#4 1/4 (prev note: E#3) at index: 2480
+P 1/8 at index: 2482
+D3 1/4 (next note: F4) at index: 2484
+F#4 1/4 (prev note: D#3) at index: 2485
+P 1/8 at index: 2487
+D3 1/4 (next note: G4) at index: 2489
+G#4 1/4 (prev note: D#3) at index: 2490
+P 1/8 at index: 2492
+D#3 1/4 (next note: A#4) at index: 2494
+A4 1/4 (prev note: D3) at index: 2495
+P 1/8 at index: 2497
+D#3 1/4 (next note: B#4) at index: 2499
+B4 1/4 (prev note: D3) at index: 2500
+P 1/8 at index: 2502
+E3 1/4 (next note: G4) at index: 2504
+G#4 1/4 (prev note: E#3) at index: 2505
+P 1/8 at index: 2507
+E3 1/4 (next note: E4) at index: 2509
+E4 1/4 (prev note: E3) at index: 2510
+P 1/8 at index: 2512
+E3 1/4 (next note: A4) at index: 2514
+A4 1/4 (prev note: E3) at index: 2515
+P 1/8 at index: 2517
+E3 1/4 (next note: B4) at index: 2519
+B4 1/4 (prev note: E3) at index: 2520
+P 1/8 at index: 2522
+A2 1/4 (next note: E3) at index: 2524
+E3 1/4 (next note: C5) (prev note: A2) at index: 2525
+C#5 1/4 (prev note: E#3) at index: 2526
+P 1/8 at index: 2528
+A2 1/4 (next note: E3) at index: 2530
+E3 1/4 (prev note: A2) at index: 2531
+P 1/8 at index: 2533
+A2 1/4 (next note: E3) at index: 2535
+E3 1/4 (next note: A4) (prev note: A2) at index: 2536
+A4 1/4 (prev note: E3) at index: 2537
+P 1/8 at index: 2539
+A2 1/4 (next note: E3) at index: 2541
+E3 1/4 (next note: B4) (prev note: A2) at index: 2542
+B4 1/4 (prev note: E3) at index: 2543
+P 1/8 at index: 2545
+A2 1/4 (next note: E3) at index: 2547
+E3 1/4 (next note: C5) (prev note: A2) at index: 2548
+C#5 1/4 (prev note: E#3) at index: 2549
+P 1/8 at index: 2551
+A2 1/4 (next note: E3) at index: 2553
+E3 1/4 (next note: B4) (prev note: A2) at index: 2554
+B4 1/4 (prev note: E3) at index: 2555
+P 1/8 at index: 2557
+A2 1/4 (next note: E3) at index: 2559
+E3 1/4 (next note: A4) (prev note: A2) at index: 2560
+A4 1/4 (prev note: E3) at index: 2561
+P 1/8 at index: 2563
+A2 1/4 (next note: E3) at index: 2565
+E3 1/4 (next note: G4) (prev note: A2) at index: 2566
+G#4 1/4 (prev note: E#3) at index: 2567
+P 1/8 at index: 2569
+D3 1/4 (next note: F4) at index: 2571
+F#4 1/4 (prev note: D#3) at index: 2572
+P 1/8 at index: 2574
+D3 1/4 (next note: B4) at index: 2576
+B4 1/4 (prev note: D3) at index: 2577
+E3 1/4 (next note: G4) at index: 2580
+G#4 1/4 (prev note: E#3) at index: 2581
+P 1/8 at index: 2583
+E3 1/4 (next note: E4) at index: 2585
+E4 1/4 (prev note: E3) at index: 2586
+P 1/8 at index: 2588
+A2 1/4 (next note: A4) at index: 2590
+A4 1/4 (prev note: A2) at index: 2591
+P 1/8 at index: 2593
+A4 1/4 at index: 2594
+P 1/8 at index: 2595
+B4 1/4 at index: 2596
+P 1/8 at index: 2597
+A2 1/4 (next note: E3) at index: 2599
+E3 1/4 (next note: C5) (prev note: A2) at index: 2600
+C#5 1/4 (prev note: E#3) at index: 2601
+P 1/8 at index: 2603
+A2 1/4 (next note: E3) at index: 2605
+E3 1/4 (prev note: A2) at index: 2606
+P 1/8 at index: 2608
+A2 1/4 (next note: E3) at index: 2610
+E3 1/4 (next note: A4) (prev note: A2) at index: 2611
+A4 1/4 (prev note: E3) at index: 2612
+P 1/8 at index: 2614
+A2 1/4 (next note: E3) at index: 2616
+E3 1/4 (next note: B4) (prev note: A2) at index: 2617
+B4 1/4 (prev note: E3) at index: 2618
+P 1/8 at index: 2620
+A2 1/4 (next note: E3) at index: 2622
+E3 1/4 (next note: C5) (prev note: A2) at index: 2623
+C#5 1/4 (prev note: E#3) at index: 2624
+P 1/8 at index: 2626
+A2 1/4 (next note: E3) at index: 2628
+E3 1/4 (next note: B4) (prev note: A2) at index: 2629
+B4 1/4 (prev note: E3) at index: 2630
+P 1/8 at index: 2632
+A2 1/4 (next note: E3) at index: 2634
+E3 1/4 (next note: A4) (prev note: A2) at index: 2635
+A4 1/4 (prev note: E3) at index: 2636
+P 1/8 at index: 2638
+A2 1/4 (next note: E3) at index: 2640
+E3 1/4 (next note: G4) (prev note: A2) at index: 2641
+G#4 1/4 (prev note: E#3) at index: 2642
+P 1/8 at index: 2644
+D3 1/4 (next note: F4) at index: 2646
+F#4 1/4 (prev note: D#3) at index: 2647
+P 1/8 at index: 2649
+D3 1/4 (next note: G4) at index: 2651
+G#4 1/4 (prev note: D#3) at index: 2652
+P 1/8 at index: 2654
+D#3 1/4 (next note: A#4) at index: 2656
+A4 1/4 (prev note: D3) at index: 2657
+P 1/8 at index: 2659
+D#3 1/4 (next note: B#4) at index: 2661
+B4 1/4 (prev note: D3) at index: 2662
+P 1/8 at index: 2664
+E3 1/4 (next note: G4) at index: 2666
+G#4 1/4 (prev note: E#3) at index: 2667
+P 1/8 at index: 2669
+E3 1/4 (next note: E4) at index: 2671
+E4 1/4 (prev note: E3) at index: 2672
+P 1/8 at index: 2674
+E3 1/4 (next note: A4) at index: 2676
+A4 1/4 (prev note: E3) at index: 2677
+P 1/8 at index: 2679
+E3 1/4 (next note: B4) at index: 2681
+B4 1/4 (prev note: E3) at index: 2682
+P 1/8 at index: 2684
+A2 1/4 (next note: E3) at index: 2686
+E3 1/4 (next note: C5) (prev note: A2) at index: 2687
+C#5 1/4 (prev note: E#3) at index: 2688
+P 1/8 at index: 2690
+A2 1/4 (next note: E3) at index: 2692
+E3 1/4 (prev note: A2) at index: 2693
+P 1/8 at index: 2695
+A2 1/4 (next note: E3) at index: 2697
+E3 1/4 (next note: A4) (prev note: A2) at index: 2698
+A4 1/4 (prev note: E3) at index: 2699
+P 1/8 at index: 2701
+A2 1/4 (next note: E3) at index: 2703
+E3 1/4 (next note: B4) (prev note: A2) at index: 2704
+B4 1/4 (prev note: E3) at index: 2705
+P 1/8 at index: 2707
+A2 1/4 (next note: E3) at index: 2709
+E3 1/4 (next note: C5) (prev note: A2) at index: 2710
+C#5 1/4 (prev note: E#3) at index: 2711
+P 1/8 at index: 2713
+A2 1/4 (next note: E3) at index: 2715
+E3 1/4 (next note: B4) (prev note: A2) at index: 2716
+B4 1/4 (prev note: E3) at index: 2717
+P 1/8 at index: 2719
+A2 1/4 (next note: E3) at index: 2721
+E3 1/4 (next note: A4) (prev note: A2) at index: 2722
+A4 1/4 (prev note: E3) at index: 2723
+P 1/8 at index: 2725
+A2 1/4 (next note: E3) at index: 2727
+E3 1/4 (next note: G4) (prev note: A2) at index: 2728
+G#4 1/4 (prev note: E#3) at index: 2729
+P 1/8 at index: 2731
+D3 1/4 (next note: F4) at index: 2733
+F#4 1/4 (prev note: D#3) at index: 2734
+P 1/8 at index: 2736
+D3 1/4 (next note: B4) at index: 2738
+B4 1/4 (prev note: D3) at index: 2739
+P 1/8 at index: 2741
+E3 1/4 (next note: G4) at index: 2743
+G#4 1/4 (prev note: E#3) at index: 2744
+P 1/8 at index: 2746
+E3 1/4 (next note: E4) at index: 2748
+E4 1/4 (prev note: E3) at index: 2749
+P 1/8 at index: 2751
+A2 1/4 (next note: A4) at index: 2753
+A4 1/4 (prev note: A2) at index: 2754
+P 1/8 at index: 2756
+A2 1/4 (next note: C5) at index: 2758
+C#5 1/4 (prev note: A#2) at index: 2759
+P 1/8 at index: 2761
+A2 1/4 at index: 2762
+P 1/8 at index: 2763
+C#5 1/4 at index: 2764
+P 1/8 at index: 2765
+A2 1/4 (next note: E3) at index: 2767
+E3 1/4 (next note: E4) (prev note: A2) at index: 2768
+E4 1/4 (next note: C5) (prev note: E3) at index: 2769
+C#5 1/4 (prev note: E#4) at index: 2770
+P 1/8 at index: 2772
+A2 1/4 (next note: E3) at index: 2774
+E3 1/4 (prev note: A2) at index: 2775
+P 1/8 at index: 2777
+A2 1/4 (next note: E3) at index: 2779
+E3 1/4 (prev note: A2) at index: 2780
+P 1/8 at index: 2782
+A2 1/4 at index: 2784
+E3 1/4 at index: 2785
+A2 1/4 (next note: E3) at index: 2787
+E3 1/4 (next note: E4) (prev note: A2) at index: 2788
+E4 1/4 (next note: C5) (prev note: E3) at index: 2789
+C#5 1/4 (prev note: E#4) at index: 2790
+P 1/8 at index: 2792
+A2 1/4 (next note: E3) at index: 2794
+E3 1/4 (prev note: A2) at index: 2795
+P 1/8 at index: 2797
+A2 1/4 (next note: E3) at index: 2799
+E3 1/4 (prev note: A2) at index: 2800
+P 1/8 at index: 2802
+A2 1/4 (next note: E3) at index: 2804
+E3 1/4 (prev note: A2) at index: 2805
+P 1/8 at index: 2807
+A2 1/4 (next note: D5) at index: 2809
+D5 1/4 (prev note: A2) at index: 2810
+P 1/8 at index: 2812
+C#5 1/4 at index: 2813
+P 1/8 at index: 2814
+A2 1/4 (next note: B4) at index: 2816
+B4 1/4 (prev note: A2) at index: 2817
+P 1/8 at index: 2819
+C#5 1/4 at index: 2820
+A2 1/4 (next note: D5) at index: 2822
+D5 1/4 (prev note: A2) at index: 2823
+P 1/8 at index: 2825
+C#5 1/4 at index: 2826
+P 1/8 at index: 2827
+A2 1/4 (next note: B4) at index: 2829
+B4 1/4 (prev note: A2) at index: 2830
+P 1/8 at index: 2832
+C#5 1/4 at index: 2833
+P 1/8 at index: 2834
+D3 1/4 (next note: D5) at index: 2836
+D5 1/4 (prev note: D3) at index: 2837
+P 1/8 at index: 2839
+D3 1/4 at index: 2840
+D3 1/4 at index: 2841
+P 1/8 at index: 2842
+D3 1/4 at index: 2843
+P 1/8 at index: 2844
+D5 1/4 at index: 2845
+P 1/8 at index: 2846
+A2 1/4 (next note: E3) at index: 2848
+E3 1/4 (next note: C5) (prev note: A2) at index: 2849
+C#5 1/4 (prev note: E#3) at index: 2850
+P 1/8 at index: 2852
+D5 1/4 at index: 2853
+P 1/8 at index: 2854
+A2 1/4 (next note: E3) at index: 2856
+E3 1/4 (next note: C5) (prev note: A2) at index: 2857
+C#5 1/4 (prev note: E#3) at index: 2858
+P 1/8 at index: 2860
+D5 1/4 at index: 2861
+A2 1/4 (next note: E3) at index: 2863
+E3 1/4 (next note: C5) (prev note: A2) at index: 2864
+C#5 1/4 (prev note: E#3) at index: 2865
+P 1/8 at index: 2867
+D5 1/4 at index: 2868
+P 1/8 at index: 2869
+A2 1/4 (next note: E3) at index: 2871
+E3 1/4 (next note: C5) (prev note: A2) at index: 2872
+C#5 1/4 (prev note: E#3) at index: 2873
+P 1/8 at index: 2875
+E2 1/4 (next note: B4) at index: 2877
+B4 1/4 (prev note: E2) at index: 2878
+P 1/8 at index: 2880
+E3 1/4 at index: 2881
+E3 1/4 at index: 2882
+P 1/8 at index: 2883
+E3 1/4 (next note: E5) at index: 2885
+E5 1/4 (prev note: E3) at index: 2886
+P 1/8 at index: 2888
+A2 1/4 (next note: E3) at index: 2890
+E3 1/4 (next note: E4) (prev note: A2) at index: 2891
+E4 1/4 (next note: C5) (prev note: E3) at index: 2892
+C#5 1/4 (prev note: E#4) at index: 2893
+P 1/8 at index: 2895
+A2 1/4 (next note: E3) at index: 2897
+E3 1/4 (prev note: A2) at index: 2898
+P 1/8 at index: 2900
+A2 1/4 (next note: E3) at index: 2902
+E3 1/4 (prev note: A2) at index: 2903
+P 1/8 at index: 2905
+A2 1/4 (next note: E3) at index: 2907
+E3 1/4 (prev note: A2) at index: 2908
+P 1/8 at index: 2910
+A2 1/4 (next note: E3) at index: 2912
+E3 1/4 (next note: E4) (prev note: A2) at index: 2913
+E4 1/4 (next note: C5) (prev note: E3) at index: 2914
+C#5 1/4 (prev note: E#4) at index: 2915
+P 1/8 at index: 2917
+A2 1/4 (next note: E3) at index: 2919
+E3 1/4 (prev note: A2) at index: 2920
+P 1/8 at index: 2922
+A2 1/4 (next note: E3) at index: 2924
+E3 1/4 (prev note: A2) at index: 2925
+P 1/8 at index: 2927
+A2 1/4 (next note: E3) at index: 2929
+E3 1/4 (prev note: A2) at index: 2930
+P 1/8 at index: 2932
+A2 1/4 (next note: D5) at index: 2934
+D5 1/4 (prev note: A2) at index: 2935
+P 1/8 at index: 2937
+C#5 1/4 at index: 2938
+P 1/8 at index: 2939
+A2 1/4 (next note: B4) at index: 2941
+B4 1/4 (prev note: A2) at index: 2942
+P 1/8 at index: 2944
+C#5 1/4 at index: 2945
+A2 1/4 (next note: D5) at index: 2947
+D5 1/4 (prev note: A2) at index: 2948
+P 1/8 at index: 2950
+C#5 1/4 at index: 2951
+P 1/8 at index: 2952
+A2 1/4 (next note: B4) at index: 2954
+B4 1/4 (prev note: A2) at index: 2955
+P 1/8 at index: 2957
+C#5 1/4 at index: 2958
+P 1/8 at index: 2959
+D3 1/4 (next note: D5) at index: 2961
+D5 1/4 (prev note: D3) at index: 2962
+P 1/8 at index: 2964
+D3 1/4 at index: 2965
+D3 1/4 at index: 2966
+P 1/8 at index: 2967
+D3 1/4 at index: 2968
+P 1/8 at index: 2969
+D5 1/4 at index: 2970
+P 1/8 at index: 2971
+A2 1/4 (next note: C5) at index: 2973
+C#5 1/4 (prev note: A#2) at index: 2974
+P 1/8 at index: 2976
+A2 1/4 at index: 2977
+A2 1/4 at index: 2978
+P 1/8 at index: 2979
+A2 1/4 at index: 2980
+P 1/8 at index: 2981
+C#5 1/4 at index: 2982
+P 1/8 at index: 2983
+E3 1/4 (next note: B4) at index: 2985
+B4 1/4 (prev note: E3) at index: 2986
+P 1/8 at index: 2988
+C#5 1/4 at index: 2989
+P 1/8 at index: 2990
+E3 1/4 (next note: B4) at index: 2992
+B4 1/4 (prev note: E3) at index: 2993
+P 1/8 at index: 2995
+C#5 1/4 at index: 2996
+E3 1/4 (next note: B4) at index: 2998
+B4 1/4 (prev note: E3) at index: 2999
+C#5 1/4 at index: 3001
+P 1/8 at index: 3002
+E3 1/4 (next note: B4) at index: 3004
+B4 1/4 (prev note: E3) at index: 3005
+P 1/8 at index: 3007
+A2 1/4 (next note: A4) at index: 3009
+A4 1/4 (prev note: A2) at index: 3010
+P 1/8 at index: 3012
+A2 1/4 at index: 3013
+P 1/8 at index: 3014
+E4 1/4 at index: 3015
+P 1/8 at index: 3016
+A4 1/4 at index: 3017
+A2 1/4 (next note: C5) at index: 3019
+C#5 1/4 (prev note: A#2) at index: 3020
+P 1/8 at index: 3022
+A2 1/4 at index: 3023
+P 1/8 at index: 3024
+C#5 1/4 at index: 3025
+P 1/8 at index: 3026
+A2 1/4 (next note: E3) at index: 3028
+E3 1/4 (next note: C5) (prev note: A2) at index: 3029
+C#5 1/4 (prev note: E#3) at index: 3030
+P 1/8 at index: 3032
+A2 1/4 (next note: E3) at index: 3034
+E3 1/4 (prev note: A2) at index: 3035
+P 1/8 at index: 3037
+A2 1/4 (next note: E3) at index: 3039
+E3 1/4 (prev note: A2) at index: 3040
+P 1/8 at index: 3042
+A2 1/4 (next note: E3) at index: 3044
+E3 1/4 (prev note: A2) at index: 3045
+P 1/8 at index: 3047
+A2 1/4 (next note: E3) at index: 3049
+E3 1/4 (next note: C5) (prev note: A2) at index: 3050
+C#5 1/4 (prev note: E#3) at index: 3051
+P 1/8 at index: 3053
+A2 1/4 (next note: E3) at index: 3055
+E3 1/4 (prev note: A2) at index: 3056
+P 1/8 at index: 3058
+A2 1/4 (next note: E3) at index: 3060
+E3 1/4 (prev note: A2) at index: 3061
+P 1/8 at index: 3063
+A2 1/4 (next note: E3) at index: 3065
+E3 1/4 (prev note: A2) at index: 3066
+P 1/8 at index: 3068
+A2 1/4 (next note: D5) at index: 3070
+D5 1/4 (prev note: A2) at index: 3071
+P 1/8 at index: 3073
+C#5 1/4 at index: 3074
+P 1/8 at index: 3075
+A2 1/4 (next note: B4) at index: 3077
+B4 1/4 (prev note: A2) at index: 3078
+P 1/8 at index: 3080
+C#5 1/4 at index: 3081
+A2 1/4 (next note: D5) at index: 3083
+D5 1/4 (prev note: A2) at index: 3084
+P 1/8 at index: 3086
+C#5 1/4 at index: 3087
+P 1/8 at index: 3088
+A2 1/4 (next note: B4) at index: 3090
+B4 1/4 (prev note: A2) at index: 3091
+P 1/8 at index: 3093
+C#5 1/4 at index: 3094
+P 1/8 at index: 3095
+D3 1/4 (next note: D5) at index: 3097
+D5 1/4 (prev note: D3) at index: 3098
+P 1/8 at index: 3100
+D3 1/4 at index: 3101
+D3 1/4 at index: 3102
+P 1/8 at index: 3103
+D3 1/4 at index: 3104
+P 1/8 at index: 3105
+D5 1/4 at index: 3106
+P 1/8 at index: 3107
+A2 1/4 (next note: C5) at index: 3109
+C#5 1/4 (prev note: A#2) at index: 3110
+P 1/8 at index: 3112
+D5 1/4 at index: 3113
+P 1/8 at index: 3114
+A2 1/4 (next note: C5) at index: 3116
+C#5 1/4 (prev note: A#2) at index: 3117
+P 1/8 at index: 3119
+D5 1/4 at index: 3120
+A2 1/4 (next note: C5) at index: 3122
+C#5 1/4 (prev note: A#2) at index: 3123
+P 1/8 at index: 3125
+D5 1/4 at index: 3126
+P 1/8 at index: 3127
+A2 1/4 (next note: C5) at index: 3129
+C#5 1/4 (prev note: A#2) at index: 3130
+P 1/8 at index: 3132
+E3 1/4 (next note: B4) at index: 3134
+B4 1/4 (prev note: E3) at index: 3135
+P 1/8 at index: 3137
+E3 1/4 at index: 3138
+E3 1/4 at index: 3139
+P 1/8 at index: 3140
+E3 1/4 (next note: E5) at index: 3142
+E5 1/4 (prev note: E3) at index: 3143
+P 1/8 at index: 3145
+A2 1/4 (next note: E3) at index: 3147
+E3 1/4 (next note: C5) (prev note: A2) at index: 3148
+C#5 1/4 (prev note: E#3) at index: 3149
+P 1/8 at index: 3151
+A2 1/4 (next note: E3) at index: 3153
+E3 1/4 (prev note: A2) at index: 3154
+P 1/8 at index: 3156
+A2 1/4 (next note: E3) at index: 3158
+E3 1/4 (prev note: A2) at index: 3159
+P 1/8 at index: 3161
+A2 1/4 (next note: E3) at index: 3163
+E3 1/4 (prev note: A2) at index: 3164
+P 1/8 at index: 3166
+A2 1/4 (next note: E3) at index: 3168
+E3 1/4 (next note: C5) (prev note: A2) at index: 3169
+C#5 1/4 (prev note: E#3) at index: 3170
+P 1/8 at index: 3172
+A2 1/4 (next note: E3) at index: 3174
+E3 1/4 (prev note: A2) at index: 3175
+P 1/8 at index: 3177
+A2 1/4 (next note: E3) at index: 3179
+E3 1/4 (prev note: A2) at index: 3180
+P 1/8 at index: 3182
+A2 1/4 (next note: E3) at index: 3184
+E3 1/4 (prev note: A2) at index: 3185
+P 1/8 at index: 3187
+A2 1/4 (next note: D5) at index: 3189
+D5 1/4 (prev note: A2) at index: 3190
+P 1/8 at index: 3192
+C#5 1/4 at index: 3193
+P 1/8 at index: 3194
+A2 1/4 (next note: B4) at index: 3196
+B4 1/4 (prev note: A2) at index: 3197
+P 1/8 at index: 3199
+C#5 1/4 at index: 3200
+A2 1/4 (next note: D5) at index: 3202
+D5 1/4 (prev note: A2) at index: 3203
+P 1/8 at index: 3205
+C#5 1/4 at index: 3206
+P 1/8 at index: 3207
+A2 1/4 (next note: B4) at index: 3209
+B4 1/4 (prev note: A2) at index: 3210
+P 1/8 at index: 3212
+C#5 1/4 at index: 3213
+P 1/8 at index: 3214
+D3 1/4 (next note: D5) at index: 3216
+D5 1/4 (prev note: D3) at index: 3217
+P 1/8 at index: 3219
+D3 1/4 at index: 3220
+D3 1/4 at index: 3221
+P 1/8 at index: 3222
+D3 1/4 at index: 3223
+P 1/8 at index: 3224
+D5 1/4 at index: 3225
+P 1/8 at index: 3226
+A2 1/4 (next note: C5) at index: 3228
+C#5 1/4 (prev note: A#2) at index: 3229
+P 1/8 at index: 3231
+A2 1/4 at index: 3232
+A2 1/4 at index: 3233
+P 1/8 at index: 3234
+A2 1/4 at index: 3235
+P 1/8 at index: 3236
+C#5 1/4 at index: 3237
+P 1/8 at index: 3238
+E3 1/4 (next note: B4) at index: 3240
+B4 1/4 (prev note: E3) at index: 3241
+P 1/8 at index: 3243
+C#5 1/4 at index: 3244
+P 1/8 at index: 3245
+E3 1/4 (next note: B4) at index: 3247
+B4 1/4 (prev note: E3) at index: 3248
+P 1/8 at index: 3250
+C#5 1/4 at index: 3251
+E3 1/4 (next note: B4) at index: 3253
+B4 1/4 (prev note: E3) at index: 3254
+P 1/8 at index: 3256
+C#5 1/4 at index: 3257
+P 1/8 at index: 3258
+E3 1/4 (next note: B4) at index: 3260
+B4 1/4 (prev note: E3) at index: 3261
+P 1/8 at index: 3263
+A2 1/4 (next note: E3) at index: 3265
+E3 1/4 (next note: A4) (prev note: A2) at index: 3266
+A4 1/4 (prev note: E3) at index: 3267
+P 1/8 at index: 3269
+A2 1/4 (next note: E3) at index: 3271
+E3 1/4 (prev note: A2) at index: 3272
+P 1/8 at index: 3274
+A2 1/4 (next note: E3) at index: 3276
+E3 1/4 (prev note: A2) at index: 3277
+P 1/8 at index: 3279
+A2 1/4 (next note: E3) at index: 3281
+E3 1/4 (next note: C5) (prev note: A2) at index: 3282
+C#5 1/4 (prev note: E#3) at index: 3283
+P 1/8 at index: 3285
+A2 1/4 (next note: A4) at index: 3287
+A4 1/4 (prev note: A2) at index: 3288
+P 1/8 at index: 3290
+A2 1/4 at index: 3291
+A2 1/4 at index: 3292
+P 1/8 at index: 3293
+A2 1/4 (next note: E5) at index: 3295
+E5 1/4 (prev note: A2) at index: 3296
+P 1/8 at index: 3298
+A2 1/4 (next note: E3) at index: 3300
+E3 1/4 (next note: A4) (prev note: A2) at index: 3301
+A4 1/4 (prev note: E3) at index: 3302
+P 1/8 at index: 3304
+A2 1/4 (next note: E3) at index: 3306
+E3 1/4 (prev note: A2) at index: 3307
+P 1/8 at index: 3309
+A2 1/4 (next note: E3) at index: 3311
+E3 1/4 (prev note: A2) at index: 3312
+P 1/8 at index: 3314
+A2 1/4 (next note: E3) at index: 3316
+E3 1/4 (next note: C5) (prev note: A2) at index: 3317
+C#5 1/4 (prev note: E#3) at index: 3318
+P 1/8 at index: 3320
+A2 1/4 (next note: A4) at index: 3322
+A4 1/4 (prev note: A2) at index: 3323
+P 1/8 at index: 3325
+A2 1/4 (next note: C5) at index: 3327
+C#5 1/4 (prev note: A#2) at index: 3328
+P 1/8 at index: 3330
+A2 1/4 (next note: A4) at index: 3332
+A4 1/4 (prev note: A2) at index: 3333
+P 1/8 at index: 3335
+A2 1/4 (next note: E5) at index: 3337
+E5 1/4 (prev note: A2) at index: 3338
+P 1/8 at index: 3340
+A2 1/4 (next note: A4) at index: 3342
+A4 1/4 (prev note: A2) at index: 3343
+P 1/8 at index: 3345
+C#5 1/4 (next note: A#2) at index: 3347
+A2 1/4 (next note: E3) (prev note: C5) at index: 3348
+E3 1/4 (next note: A5) (prev note: A2) at index: 3349
+A5 1/4 (prev note: E3) at index: 3350
+P 1/8 at index: 3352
+C#5 1/4 (next note: A#2) at index: 3354
+A2 1/4 (next note: E3) (prev note: C5) at index: 3355
+E3 1/4 (next note: A5) (prev note: A2) at index: 3356
+A5 1/4 (prev note: E3) at index: 3357

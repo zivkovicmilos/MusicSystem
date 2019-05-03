@@ -1,40 +1,3372 @@
 Measure 0:
-R: E4 1/4 e4 1/8 
-L: P 1/4 P 1/8 
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
 
 Measure 1:
-R: e4 1/8 F4 1/4 
-L: P 1/8 P 1/4 
+R: P 1/4 P 1/8 
+L: A3 1/4 P 1/8 
 
 Measure 2:
-R: G4 1/4 g4 1/8 
-L: P 1/4 P 1/8 
+R: P 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
 
 Measure 3:
-R: g4 1/8 F4 1/4 
-L: P 1/8 P 1/4 
+R: P 1/4 c4 1/8 
+L: A3 1/4 a2 1/8 
 
 Measure 4:
-R: E4 1/4 d4 1/8 
-L: P 1/4 P 1/8 
+R: c4 1/8 P 1/8 c4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
 
 Measure 5:
-R: d4 1/8 C4 1/4 
-L: P 1/8 P 1/4 
+R: c4 1/8 P 1/8 c4 1/8 (next note: D4) 
+L: P 1/8 P 1/8 P 1/8 
 
 Measure 6:
-R: C4 1/4 d4 1/8 
-L: P 1/4 P 1/8 
+R: c4 1/8 (next note: D4) P 1/8 c4 1/8 
+L: P 1/8 P 1/8 P 1/8 
 
 Measure 7:
-R: d4 1/8 E4 1/4 
-L: P 1/8 P 1/4 
+R: c4 1/8 P 1/8 c4 1/8 
+L: P 1/8 P 1/8 b3 1/8 
 
 Measure 8:
+R: c4 1/8 P 1/8 c4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 9:
+R: c4 1/8 E4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 10:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 11:
+R: P 1/8 C4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 12:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 13:
+R: P 1/8 C4 1/4 (next note: D4) 
+L: P 1/8 P 1/4 
+
+Measure 14:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 15:
+R: B4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 16:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 17:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 18:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 19:
+R: C4 1/4 (next note: B4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 20:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 21:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 22:
+R: A4 1/4 c5 1/8 
+L: P 1/4 a2 1/8 
+
+Measure 23:
+R: c5 1/8 P 1/8 c4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 24:
+R: c4 1/8 P 1/8 c4 1/8 (next note: A4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 25:
+R: c4 1/8 (next note: A4) P 1/8 c4 1/8 (next note: C5) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 26:
+R: c4 1/8 (next note: C5) P 1/8 g4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 27:
+R: g4 1/8 P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 28:
+R: a4 1/8 B4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 29:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 30:
+R: P 1/8 G4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 31:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 32:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 33:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 34:
+R: B4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 35:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 36:
+R: G4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 37:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 38:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 39:
+R: A4 1/4 b4 1/8 
+L: P 1/4 e2 1/8 
+
+Measure 40:
+R: b4 1/8 P 1/8 a4 1/8 
+L: e2 1/8 P 1/8 P 1/8 
+
+Measure 41:
+R: a4 1/8 P 1/8 g4 1/8 
+L: P 1/8 P 1/8 b2 1/8 
+
+Measure 42:
+R: g4 1/8 P 1/8 f#4 1/8 
+L: b2 1/8 P 1/8 P 1/8 
+
+Measure 43:
+R: f#4 1/8 E4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 44:
+R: P 1/8 P 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 45:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 46:
+R: P 1/8 P 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 47:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 48:
+R: P 1/8 C4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 49:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 50:
+R: C4 1/4 (next note: D4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 51:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 52:
+R: C4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 53:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 54:
+R: E4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 55:
+R: C4 1/4 c4 1/8 (next note: F4) 
+L: P 1/4 P 1/8 
+
+Measure 56:
+R: c4 1/8 (next note: F4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 57:
+R: e4 1/8 P 1/8 c4 1/8 (next note: D4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 58:
+R: c4 1/8 (next note: D4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 59:
+R: e4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 60:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 61:
+R: a4 1/8 P 1/8 c4 1/8 (next note: G4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 62:
+R: c4 1/8 (next note: G4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 63:
+R: a4 1/8 C4 1/4 (next note: B4) 
+L: P 1/8 P 1/4 
+
+Measure 64:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 65:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 66:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 67:
+R: C5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 68:
+R: C4 1/4 c4 1/8 (next note: A4) 
+L: P 1/4 P 1/8 
+
+Measure 69:
+R: c4 1/8 (next note: A4) P 1/8 c4 1/8 (next note: C5) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 70:
+R: c4 1/8 (next note: C5) P 1/8 g4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 71:
+R: g4 1/8 P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 72:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 e2 1/8 
+
+Measure 73:
+R: b4 1/8 P 1/8 a4 1/8 
+L: e2 1/8 P 1/8 g3 1/8 
+
+Measure 74:
+R: a4 1/8 P 1/8 g4 1/8 
+L: g3 1/8 P 1/8 g3 1/8 
+
+Measure 75:
+R: g4 1/8 P 1/8 a4 1/8 
+L: g3 1/8 P 1/8 g3 1/8 
+
+Measure 76:
+R: a4 1/8 P 1/8 g4 1/8 
+L: g3 1/8 P 1/8 P 1/8 
+
+Measure 77:
+R: g4 1/8 P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 78:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 e2 1/8 
+
+Measure 79:
+R: b4 1/8 P 1/8 a4 1/8 
+L: e2 1/8 P 1/8 g3 1/8 
+
+Measure 80:
+R: a4 1/8 P 1/8 g4 1/8 
+L: g3 1/8 P 1/8 g3 1/8 
+
+Measure 81:
+R: g4 1/8 P 1/8 a4 1/8 
+L: g3 1/8 P 1/8 g3 1/8 
+
+Measure 82:
+R: a4 1/8 P 1/8 g4 1/8 
+L: g3 1/8 P 1/8 P 1/8 
+
+Measure 83:
+R: g4 1/8 P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 84:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 e2 1/8 
+
+Measure 85:
+R: b4 1/8 P 1/8 a4 1/8 
+L: e2 1/8 P 1/8 P 1/8 
+
+Measure 86:
+R: a4 1/8 G4 1/4 
+L: P 1/8 B2 1/4 
+
+Measure 87:
+R: P 1/8 F#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 88:
+R: P 1/8 E4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 89:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 90:
+R: P 1/8 F4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 91:
+R: P 1/8 G4 1/4 
+L: P 1/8 C3 1/4 
+
+Measure 92:
+R: P 1/8 C4 1/4 (next note: G4) 
+L: P 1/8 P 1/4 
+
+Measure 93:
+R: P 1/8 A4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 94:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 95:
+R: P 1/8 C4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 96:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 97:
+R: P 1/8 D4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 98:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 99:
+R: P 1/8 F4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 100:
+R: P 1/8 G4 1/4 
+L: P 1/8 C3 1/4 
+
+Measure 101:
+R: P 1/8 C4 1/4 (next note: G4) 
+L: P 1/8 P 1/4 
+
+Measure 102:
+R: P 1/8 A4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 103:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 104:
+R: P 1/8 C4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 105:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 106:
+R: P 1/8 D4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 107:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 108:
+R: P 1/8 D4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 109:
+R: P 1/8 E4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 110:
+R: P 1/8 E4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 111:
+R: P 1/8 F4 1/4 
+L: P 1/8 C3 1/4 
+
+Measure 112:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 113:
+R: P 1/8 D4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 114:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 115:
+R: P 1/8 P 1/4 
+L: P 1/8 E3 1/4 (next note: B3) 
+
+Measure 116:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 117:
+R: P 1/8 D4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 118:
+R: P 1/8 E4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 119:
+R: P 1/8 E4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 120:
+R: P 1/8 F4 1/4 
+L: P 1/8 C3 1/4 
+
+Measure 121:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 122:
+R: P 1/8 D4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 123:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 124:
+R: P 1/8 P 1/4 
+L: P 1/8 E3 1/4 (next note: B3) 
+
+Measure 125:
+R: P 1/8 P 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 126:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 127:
+R: P 1/8 P 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 128:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 129:
+R: P 1/8 C4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 130:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 131:
+R: C4 1/4 (next note: D4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 132:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 133:
+R: C4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 134:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 135:
+R: E4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 136:
+R: C4 1/4 c4 1/8 (next note: F4) 
+L: P 1/4 P 1/8 
+
+Measure 137:
+R: c4 1/8 (next note: F4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 138:
+R: e4 1/8 P 1/8 c4 1/8 (next note: D4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 139:
+R: c4 1/8 (next note: D4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 140:
+R: e4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 141:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 142:
+R: a4 1/8 P 1/8 c4 1/8 (next note: G4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 143:
+R: c4 1/8 (next note: G4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 144:
+R: a4 1/8 C4 1/4 (next note: B4) 
+L: P 1/8 P 1/4 
+
+Measure 145:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 146:
+R: P 1/8 C4 1/4 (next note: G4) 
+L: P 1/8 P 1/4 
+
+Measure 147:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 148:
+R: P 1/8 C5 1/4 
+L: P 1/8 F2 1/4 
+
+Measure 149:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 150:
+R: A4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 151:
+R: B4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 152:
+R: C5 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 153:
+R: B4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 154:
+R: A4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 155:
+R: G#4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 156:
+R: A4 1/4 P 1/8 
+L: C3 1/4 P 1/8 
+
+Measure 157:
+R: E4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 158:
+R: F4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 159:
+R: D4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 160:
+R: C4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 161:
+R: P 1/4 P 1/8 
+L: A3 1/4 e3 1/8 (next note: B3) 
+
+Measure 162:
+R: P 1/8 P 1/8 P 1/8 
+L: e3 1/8 (next note: B3) P 1/8 e2 1/8 (next note: A3) 
+
+Measure 163:
+R: P 1/8 P 1/8 P 1/8 
+L: e2 1/8 (next note: A3) P 1/8 b3 1/8 
+
+Measure 164:
+R: P 1/8 P 1/8 P 1/8 
+L: b3 1/8 P 1/8 a2 1/8 (next note: A3) 
+
+Measure 165:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: A3) P 1/8 P 1/8 
+
+Measure 166:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 167:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 168:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 169:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 170:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 171:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 172:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 173:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 174:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 175:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 176:
+R: f#4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 177:
+R: g#4 1/8 P 1/8 a4 1/8 
+L: d3 1/8 P 1/8 d#3 1/8 
+
+Measure 178:
+R: a4 1/8 P 1/8 b4 1/8 
+L: d#3 1/8 P 1/8 d#3 1/8 
+
+Measure 179:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d#3 1/8 P 1/8 e3 1/8 
+
+Measure 180:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 181:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 182:
+R: a4 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 183:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 184:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 185:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 186:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 187:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 188:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 189:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 190:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 191:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 192:
+R: f#4 1/8 P 1/8 b4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 193:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 e3 1/8 
+
+Measure 194:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 195:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 a2 1/8 
+
+Measure 196:
+R: a4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 197:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 198:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 199:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 200:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 201:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 202:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 203:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 204:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 205:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 206:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 207:
+R: f#4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 208:
+R: g#4 1/8 P 1/8 a4 1/8 
+L: d3 1/8 P 1/8 P 1/8 
+
+Measure 209:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 d#3 1/8 
+
+Measure 210:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d#3 1/8 P 1/8 e3 1/8 
+
+Measure 211:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 212:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 213:
+R: a4 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 214:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 215:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 216:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 217:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 218:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 219:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 220:
+R: b4 1/8 A4 1/4 
+L: a2 1/8 (next note: E3) A2 1/4 (next note: E3) 
+
+Measure 221:
+R: P 1/8 G#4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 222:
+R: P 1/8 F#4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 223:
+R: P 1/8 B4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 224:
+R: P 1/8 G#4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 225:
+R: P 1/8 E4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 226:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 227:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 228:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 229:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 230:
+R: P 1/8 B4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 231:
+R: P 1/8 A4 1/4 
+L: P 1/8 F#3 1/4 
+
+Measure 232:
+R: P 1/8 B4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 233:
+R: P 1/8 A4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 234:
+R: P 1/8 G#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 235:
+R: F#4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 236:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 237:
+R: G#4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 238:
+R: F#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 239:
+R: F4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 240:
+R: F#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 241:
+R: G#4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 242:
+R: F4 1/4 c#4 1/8 
+L: P 1/4 b3 1/8 
+
+Measure 243:
+R: c#4 1/8 P 1/8 d#4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 244:
+R: d#4 1/8 P 1/8 f4 1/8 
+L: P 1/8 P 1/8 b3 1/8 
+
+Measure 245:
+R: f4 1/8 P 1/8 c#4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 246:
+R: c#4 1/8 P 1/8 f#4 1/8 
+L: P 1/8 P 1/8 f#3 1/8 
+
+Measure 247:
+R: f#4 1/8 P 1/8 f4 1/8 
+L: f#3 1/8 P 1/8 P 1/8 
+
+Measure 248:
+R: f4 1/8 P 1/8 f#4 1/8 
+L: P 1/8 P 1/8 a3 1/8 
+
+Measure 249:
+R: f#4 1/8 P 1/8 g#4 1/8 
+L: a3 1/8 P 1/8 P 1/8 
+
+Measure 250:
+R: g#4 1/8 A4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 251:
+R: P 1/8 G#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 252:
+R: P 1/8 A4 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 253:
+R: P 1/8 B4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 254:
+R: P 1/8 C#5 1/4 
+L: P 1/8 F3 1/4 
+
+Measure 255:
+R: P 1/8 C5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 256:
+R: P 1/8 C#5 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 257:
+R: P 1/8 C5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 258:
+R: C#5 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 259:
+R: D5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 260:
+R: C#5 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 261:
+R: B4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 262:
+R: A4 1/4 P 1/8 
+L: F#3 1/4 P 1/8 
+
+Measure 263:
+R: B4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 264:
+R: A4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 265:
+R: G#4 1/4 f#4 1/8 
+L: P 1/4 a3 1/8 
+
+Measure 266:
+R: f#4 1/8 P 1/8 a4 1/8 
+L: a3 1/8 P 1/8 P 1/8 
+
+Measure 267:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: P 1/8 P 1/8 a3 1/8 
+
+Measure 268:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a3 1/8 P 1/8 P 1/8 
+
+Measure 269:
+R: f#4 1/8 P 1/8 e4 1/8 
+L: P 1/8 P 1/8 g#3 1/8 
+
+Measure 270:
+R: e4 1/8 P 1/8 f#4 1/8 
+L: g#3 1/8 P 1/8 P 1/8 
+
+Measure 271:
+R: f#4 1/8 P 1/8 c#4 1/8 (next note: G#4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 272:
+R: c#4 1/8 (next note: G#4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 273:
+R: e4 1/8 C#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 274:
+R: P 1/8 D#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 275:
+R: P 1/8 C#4 1/4 (next note: E#4) 
+L: P 1/8 P 1/4 
+
+Measure 276:
+R: P 1/8 C#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 277:
+R: P 1/8 D#4 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 278:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 279:
+R: P 1/8 D#4 1/4 (next note: F#4) 
+L: P 1/8 P 1/4 
+
+Measure 280:
+R: P 1/8 D#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 281:
+R: C4 1/4 (next note: D4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 282:
+R: C#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 283:
+R: D#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 284:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 285:
+R: C#4 1/4 e4 1/8 
+L: P 1/4 P 1/8 
+
+Measure 286:
+R: e4 1/8 P 1/8 d4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 287:
+R: d4 1/8 P 1/8 c#4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 288:
+R: c#4 1/8 P 1/8 P 1/8 
+L: P 1/8 P 1/8 b3 1/8 
+
+Measure 289:
+R: P 1/8 P 1/8 P 1/8 
+L: b3 1/8 P 1/8 a3 1/8 
+
+Measure 290:
+R: P 1/8 P 1/8 P 1/8 
+L: a3 1/8 P 1/8 b3 1/8 
+
+Measure 291:
+R: P 1/8 P 1/8 c#4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 292:
+R: c#4 1/8 P 1/8 d4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 293:
+R: d4 1/8 C#4 1/4 (next note: E#4) 
+L: P 1/8 P 1/4 
+
+Measure 294:
+R: P 1/8 F#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 295:
+R: P 1/8 C#4 1/4 (next note: G#4) 
+L: P 1/8 P 1/4 
+
+Measure 296:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 297:
+R: P 1/8 A4 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 298:
+R: P 1/8 G#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 299:
+R: P 1/8 D4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 300:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 301:
+R: E4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 302:
+R: D4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 303:
+R: C#4 1/4 (next note: D#4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 304:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 305:
+R: P 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 306:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 307:
+R: C#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 308:
+R: D4 1/4 c#4 1/8 (next note: E#4) 
+L: P 1/4 P 1/8 
+
+Measure 309:
+R: c#4 1/8 (next note: E#4) P 1/8 f#4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 310:
+R: f#4 1/8 P 1/8 c#4 1/8 (next note: G#4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 311:
+R: c#4 1/8 (next note: G#4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 312:
+R: a4 1/8 P 1/8 a#4 1/8 
+L: P 1/8 P 1/8 e3 1/8 
+
+Measure 313:
+R: a#4 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 g#3 1/8 
+
+Measure 314:
+R: b4 1/8 P 1/8 e4 1/8 
+L: g#3 1/8 P 1/8 g#3 1/8 
+
+Measure 315:
+R: e4 1/8 P 1/8 d4 1/8 
+L: g#3 1/8 P 1/8 P 1/8 
+
+Measure 316:
+R: d4 1/8 P 1/8 c#4 1/8 
+L: P 1/8 P 1/8 g#3 1/8 
+
+Measure 317:
+R: c#4 1/8 P 1/8 P 1/8 
+L: g#3 1/8 P 1/8 b3 1/8 
+
+Measure 318:
+R: P 1/8 P 1/8 P 1/8 
+L: b3 1/8 P 1/8 a3 1/8 
+
+Measure 319:
+R: P 1/8 P 1/8 P 1/8 
+L: a3 1/8 P 1/8 b3 1/8 
+
+Measure 320:
+R: P 1/8 P 1/8 c#4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 321:
+R: c#4 1/8 P 1/8 d4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 322:
+R: d4 1/8 C#4 1/4 (next note: E#4) 
+L: P 1/8 P 1/4 
+
+Measure 323:
+R: P 1/8 F#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 324:
+R: P 1/8 C#4 1/4 (next note: G#4) 
+L: P 1/8 P 1/4 
+
+Measure 325:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 326:
+R: P 1/8 A4 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 327:
+R: P 1/8 G#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 328:
+R: P 1/8 D4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 329:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 330:
+R: E4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 331:
+R: D4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 332:
+R: C#4 1/4 (next note: D#4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 333:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 334:
+R: C#4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 335:
 R: E4 1/4 P 1/8 
 L: P 1/4 P 1/8 
 
-Measure 9:
-R: d4 1/8 P 1/8 d4 1/8 
+Measure 336:
+R: P 1/4 P 1/8 
+L: F#3 1/4 (next note: A#3) P 1/8 
+
+Measure 337:
+R: C#4 1/4 P 1/8 
+L: P 1/4 d3 1/8 (next note: B3) 
+
+Measure 338:
+R: P 1/8 P 1/8 d4 1/8 
+L: d3 1/8 (next note: B3) P 1/8 P 1/8 
+
+Measure 339:
+R: d4 1/8 P 1/8 P 1/8 
+L: P 1/8 P 1/8 e3 1/8 (next note: G3) 
+
+Measure 340:
+R: P 1/8 P 1/8 P 1/8 
+L: e3 1/8 (next note: G3) P 1/8 b3 1/8 
+
+Measure 341:
+R: P 1/8 P 1/8 P 1/8 
+L: b3 1/8 P 1/8 a2 1/8 (next note: A3) 
+
+Measure 342:
+R: P 1/8 P 1/8 c#4 1/8 
+L: a2 1/8 (next note: A3) P 1/8 P 1/8 
+
+Measure 343:
+R: c#4 1/8 P 1/8 d4 1/8 
 L: P 1/8 P 1/8 P 1/8 
+
+Measure 344:
+R: d4 1/8 P 1/8 c#4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 345:
+R: c#4 1/8 P 1/8 P 1/8 
+L: P 1/8 P 1/8 b3 1/8 
+
+Measure 346:
+R: P 1/8 P 1/8 f#4 1/8 
+L: b3 1/8 P 1/8 a3 1/8 
+
+Measure 347:
+R: f#4 1/8 P 1/8 P 1/8 
+L: a3 1/8 P 1/8 b3 1/8 
+
+Measure 348:
+R: P 1/8 P 1/8 a4 1/8 
+L: b3 1/8 P 1/8 a3 1/8 
+
+Measure 349:
+R: a4 1/8 P 1/8 P 1/8 
+L: a3 1/8 P 1/8 g#3 1/8 
+
+Measure 350:
+R: P 1/8 A4 1/4 
+L: g#3 1/8 F#3 1/4 
+
+Measure 351:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 352:
+R: A4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 353:
+R: P 1/4 P 1/8 
+L: F#3 1/4 P 1/8 
+
+Measure 354:
+R: G#4 1/4 P 1/8 
+L: F3 1/4 P 1/8 
+
+Measure 355:
+R: P 1/4 P 1/8 
+L: F#3 1/4 P 1/8 
+
+Measure 356:
+R: B4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 357:
+R: P 1/4 b4 1/8 
+L: F3 1/4 c#3 1/8 
+
+Measure 358:
+R: b4 1/8 P 1/8 P 1/8 
+L: c#3 1/8 P 1/8 P 1/8 
+
+Measure 359:
+R: B4 1/4 P 1/8 
+L: F3 1/4 P 1/8 
+
+Measure 360:
+R: P 1/8 F#4 1/4 
+L: P 1/8 F#3 1/4 
+
+Measure 361:
+R: P 1/8 P 1/4 
+L: P 1/8 F3 1/4 
+
+Measure 362:
+R: P 1/8 A4 1/4 
+L: P 1/8 F#3 1/4 
+
+Measure 363:
+R: P 1/8 P 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 364:
+R: A4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 365:
+R: P 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 366:
+R: A4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 367:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 368:
+R: C#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 369:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 370:
+R: C#4 1/4 (next note: G#4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 371:
+R: C4 1/4 c#4 1/8 (next note: G#4) 
+L: P 1/4 P 1/8 
+
+Measure 372:
+R: c#4 1/8 (next note: G#4) P 1/8 c4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 373:
+R: c4 1/8 P 1/8 c#4 1/8 (next note: F#4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 374:
+R: c#4 1/8 (next note: F#4) P 1/8 P 1/8 
+L: P 1/8 P 1/8 a#3 1/8 
+
+Measure 375:
+R: P 1/8 P 1/8 d4 1/8 
+L: a#3 1/8 P 1/8 b3 1/8 
+
+Measure 376:
+R: d4 1/8 P 1/8 c#4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 377:
+R: c#4 1/8 P 1/8 d4 1/8 (next note: F4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 378:
+R: d4 1/8 (next note: F4) P 1/8 c#4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 379:
+R: c#4 1/8 D4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 380:
+R: P 1/8 C#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 381:
+R: P 1/8 D4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 382:
+R: P 1/8 C#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 383:
+R: P 1/8 D4 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 384:
+R: P 1/8 C#4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 385:
+R: P 1/8 G#4 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 386:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 387:
+R: G#4 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 388:
+R: P 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 389:
+R: G#4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 390:
+R: P 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 391:
+R: C#4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 392:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 393:
+R: C#4 1/4 (next note: F#4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 394:
+R: P 1/4 c#4 1/8 
+L: F#3 1/4 f3 1/8 
+
+Measure 395:
+R: c#4 1/8 P 1/8 P 1/8 
+L: f3 1/8 P 1/8 f#3 1/8 
+
+Measure 396:
+R: P 1/8 P 1/8 g#4 1/8 
+L: f#3 1/8 P 1/8 g#3 1/8 
+
+Measure 397:
+R: g#4 1/8 P 1/8 P 1/8 
+L: g#3 1/8 P 1/8 f3 1/8 
+
+Measure 398:
+R: P 1/8 P 1/8 f#4 1/8 
+L: f3 1/8 P 1/8 f#3 1/8 
+
+Measure 399:
+R: f#4 1/8 P 1/8 a4 1/8 
+L: f#3 1/8 P 1/8 P 1/8 
+
+Measure 400:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 401:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 402:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 403:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 404:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 405:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 406:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 407:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 408:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 409:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 410:
+R: f#4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 411:
+R: g#4 1/8 P 1/8 a4 1/8 
+L: d3 1/8 P 1/8 d#3 1/8 
+
+Measure 412:
+R: a4 1/8 P 1/8 b4 1/8 
+L: d#3 1/8 P 1/8 d#3 1/8 
+
+Measure 413:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d#3 1/8 P 1/8 e3 1/8 
+
+Measure 414:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 415:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 416:
+R: a4 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 417:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 418:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 419:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 420:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 421:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 422:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 423:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 424:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 425:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 426:
+R: f#4 1/8 P 1/8 b4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 427:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 e3 1/8 
+
+Measure 428:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 429:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 a2 1/8 
+
+Measure 430:
+R: a4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 431:
+R: a4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 432:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 433:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 434:
+R: P 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 435:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 436:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 437:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 438:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 439:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 440:
+R: g#4 1/8 P 1/8 f#4 1/8 
+L: a2 1/8 (next note: E3) P 1/8 d3 1/8 
+
+Measure 441:
+R: f#4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 442:
+R: g#4 1/8 P 1/8 a4 1/8 
+L: d3 1/8 P 1/8 d#3 1/8 
+
+Measure 443:
+R: a4 1/8 P 1/8 b4 1/8 
+L: d#3 1/8 P 1/8 d#3 1/8 
+
+Measure 444:
+R: b4 1/8 P 1/8 g#4 1/8 
+L: d#3 1/8 P 1/8 e3 1/8 
+
+Measure 445:
+R: g#4 1/8 P 1/8 e4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 446:
+R: e4 1/8 P 1/8 a4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 447:
+R: a4 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 448:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 449:
+R: c#5 1/8 P 1/4 
+L: a2 1/8 (next note: E3) A2 1/4 (next note: E3) 
+
+Measure 450:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 451:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 452:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 453:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 454:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 455:
+R: P 1/8 G#4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 456:
+R: P 1/8 F#4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 457:
+R: P 1/8 B4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 458:
+R: P 1/8 G#4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 459:
+R: P 1/8 E4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 460:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 461:
+R: P 1/8 P 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 462:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 463:
+R: P 1/8 P 1/4 
+L: P 1/8 G#3 1/4 
+
+Measure 464:
+R: P 1/8 P 1/4 
+L: P 1/8 A3 1/4 
+
+Measure 465:
+R: P 1/8 C4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 466:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 467:
+R: C4 1/4 (next note: D4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 468:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 469:
+R: C4 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 470:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 471:
+R: E4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 472:
+R: C4 1/4 c4 1/8 (next note: F4) 
+L: P 1/4 P 1/8 
+
+Measure 473:
+R: c4 1/8 (next note: F4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 474:
+R: e4 1/8 P 1/8 c4 1/8 (next note: D4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 475:
+R: c4 1/8 (next note: D4) P 1/8 e4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 476:
+R: e4 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 477:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 478:
+R: a4 1/8 P 1/8 c4 1/8 (next note: G4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 479:
+R: c4 1/8 (next note: G4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 480:
+R: a4 1/8 C4 1/4 (next note: B4) 
+L: P 1/8 P 1/4 
+
+Measure 481:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 482:
+R: P 1/8 C4 1/4 (next note: G4) 
+L: P 1/8 P 1/4 
+
+Measure 483:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 484:
+R: P 1/8 C5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 485:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 486:
+R: C4 1/4 (next note: A4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 487:
+R: C4 1/4 (next note: C5) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 488:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 489:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 490:
+R: B4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 491:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 492:
+R: G4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 493:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 494:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 495:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 496:
+R: B4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 497:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 498:
+R: G4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 499:
+R: A4 1/4 P 1/8 
+L: G3 1/4 P 1/8 
+
+Measure 500:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 501:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 502:
+R: B4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 503:
+R: A4 1/4 g4 1/8 
+L: P 1/4 b2 1/8 
+
+Measure 504:
+R: g4 1/8 P 1/8 f#4 1/8 
+L: b2 1/8 P 1/8 P 1/8 
+
+Measure 505:
+R: f#4 1/8 P 1/8 e4 1/8 
+L: P 1/8 P 1/8 e2 1/8 
+
+Measure 506:
+R: e4 1/8 P 1/8 P 1/8 
+L: e2 1/8 P 1/8 b3 1/8 
+
+Measure 507:
+R: P 1/8 P 1/8 P 1/8 
+L: b3 1/8 P 1/8 a3 1/8 
+
+Measure 508:
+R: P 1/8 P 1/8 P 1/8 
+L: a3 1/8 P 1/8 g#3 1/8 
+
+Measure 509:
+R: P 1/8 P 1/8 P 1/8 
+L: g#3 1/8 P 1/8 a3 1/8 
+
+Measure 510:
+R: P 1/8 P 1/8 c4 1/8 
+L: a3 1/8 P 1/8 a2 1/8 
+
+Measure 511:
+R: c4 1/8 P 1/8 c4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 512:
+R: c4 1/8 C4 1/4 (next note: D4) 
+L: P 1/8 P 1/4 
+
+Measure 513:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 514:
+R: P 1/8 C4 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 515:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 516:
+R: P 1/8 E4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 517:
+R: P 1/8 C4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 518:
+R: C4 1/4 (next note: F4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 519:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 520:
+R: C4 1/4 (next note: D4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 521:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 522:
+R: B4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 523:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 524:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 525:
+R: A4 1/4 c4 1/8 (next note: B4) 
+L: P 1/4 P 1/8 
+
+Measure 526:
+R: c4 1/8 (next note: B4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 527:
+R: a4 1/8 P 1/8 c4 1/8 (next note: G4) 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 528:
+R: c4 1/8 (next note: G4) P 1/8 a4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 529:
+R: a4 1/8 P 1/8 c5 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 530:
+R: c5 1/8 P 1/8 c4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 531:
+R: c4 1/8 C4 1/4 (next note: A4) 
+L: P 1/8 P 1/4 
+
+Measure 532:
+R: P 1/8 C4 1/4 (next note: C5) 
+L: P 1/8 P 1/4 
+
+Measure 533:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 534:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 535:
+R: P 1/8 B4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 536:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 537:
+R: P 1/8 G4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 538:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 539:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 540:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 541:
+R: P 1/8 B4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 542:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 543:
+R: P 1/8 G4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 544:
+R: P 1/8 A4 1/4 
+L: P 1/8 G3 1/4 
+
+Measure 545:
+R: P 1/8 G4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 546:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 547:
+R: P 1/8 B4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 548:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 549:
+R: G4 1/4 P 1/8 
+L: B2 1/4 P 1/8 
+
+Measure 550:
+R: F#4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 551:
+R: E4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 552:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 553:
+R: F4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 554:
+R: G4 1/4 P 1/8 
+L: C2 1/4 P 1/8 
+
+Measure 555:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 556:
+R: A4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 557:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 558:
+R: C4 1/4 (next note: F4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 559:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 560:
+R: D4 1/4 P 1/8 
+L: G2 1/4 P 1/8 
+
+Measure 561:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 562:
+R: F4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 563:
+R: G4 1/4 P 1/8 
+L: C2 1/4 P 1/8 
+
+Measure 564:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 565:
+R: A4 1/4 P 1/8 
+L: E2 1/4 P 1/8 
+
+Measure 566:
+R: G4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 567:
+R: C4 1/4 (next note: F4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 568:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 569:
+R: D4 1/4 P 1/8 
+L: G2 1/4 P 1/8 
+
+Measure 570:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 571:
+R: D4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 572:
+R: E4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 573:
+R: E4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 574:
+R: F4 1/4 P 1/8 
+L: C3 1/4 P 1/8 
+
+Measure 575:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 576:
+R: D4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 577:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 578:
+R: P 1/4 P 1/8 
+L: E3 1/4 (next note: B3) P 1/8 
+
+Measure 579:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 580:
+R: D4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 581:
+R: E4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 582:
+R: E4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 583:
+R: F4 1/4 P 1/8 
+L: C3 1/4 P 1/8 
+
+Measure 584:
+R: E4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 585:
+R: D4 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 586:
+R: C4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 587:
+R: P 1/4 P 1/8 
+L: E3 1/4 (next note: B3) P 1/8 
+
+Measure 588:
+R: P 1/4 P 1/8 
+L: B3 1/4 P 1/8 
+
+Measure 589:
+R: P 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 590:
+R: P 1/4 P 1/8 
+L: G#3 1/4 P 1/8 
+
+Measure 591:
+R: P 1/4 P 1/8 
+L: A3 1/4 P 1/8 
+
+Measure 592:
+R: C4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 593:
+R: C4 1/4 c4 1/8 (next note: D4) 
+L: P 1/4 P 1/8 
+
+Measure 594:
+R: c4 1/8 (next note: D4) P 1/8 c4 1/8 
+L: P 1/8 P 1/8 P 1/8 
+
+Measure 595:
+R: c4 1/8 P 1/8 c4 1/8 
+L: P 1/8 P 1/8 b3 1/8 
+
+Measure 596:
+R: c4 1/8 P 1/8 c4 1/8 
+L: b3 1/8 P 1/8 P 1/8 
+
+Measure 597:
+R: c4 1/8 P 1/8 e4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 598:
+R: e4 1/8 P 1/8 c4 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 599:
+R: c4 1/8 C4 1/4 (next note: F4) 
+L: P 1/8 P 1/4 
+
+Measure 600:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 601:
+R: P 1/8 C4 1/4 (next note: D4) 
+L: P 1/8 P 1/4 
+
+Measure 602:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 603:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 604:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 605:
+R: P 1/8 C4 1/4 (next note: G4) 
+L: P 1/8 P 1/4 
+
+Measure 606:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 607:
+R: C4 1/4 (next note: B4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 608:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 609:
+R: C4 1/4 (next note: G4) P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 610:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 611:
+R: C5 1/4 P 1/8 
+L: F2 1/4 P 1/8 
+
+Measure 612:
+R: P 1/4 a4 1/8 
+L: A3 1/4 a3 1/8 
+
+Measure 613:
+R: a4 1/8 P 1/8 b4 1/8 
+L: a3 1/8 P 1/8 a3 1/8 
+
+Measure 614:
+R: b4 1/8 P 1/8 c5 1/8 
+L: a3 1/8 P 1/8 e3 1/8 
+
+Measure 615:
+R: c5 1/8 P 1/8 b4 1/8 
+L: e3 1/8 P 1/8 a3 1/8 
+
+Measure 616:
+R: b4 1/8 P 1/8 a4 1/8 
+L: a3 1/8 P 1/8 d3 1/8 
+
+Measure 617:
+R: a4 1/8 P 1/8 g#4 1/8 
+L: d3 1/8 P 1/8 b3 1/8 
+
+Measure 618:
+R: g#4 1/8 P 1/8 a4 1/8 
+L: b3 1/8 P 1/8 c3 1/8 
+
+Measure 619:
+R: a4 1/8 P 1/8 e4 1/8 
+L: c3 1/8 P 1/8 a3 1/8 
+
+Measure 620:
+R: e4 1/8 P 1/8 f4 1/8 
+L: a3 1/8 P 1/8 d3 1/8 
+
+Measure 621:
+R: f4 1/8 P 1/8 d4 1/8 
+L: d3 1/8 P 1/8 b3 1/8 
+
+Measure 622:
+R: d4 1/8 P 1/8 c4 1/8 
+L: b3 1/8 P 1/8 e3 1/8 
+
+Measure 623:
+R: c4 1/8 P 1/8 P 1/8 
+L: e3 1/8 P 1/8 a3 1/8 
+
+Measure 624:
+R: P 1/8 P 1/4 
+L: a3 1/8 E2 1/4 (next note: B3) 
+
+Measure 625:
+R: P 1/8 P 1/4 
+L: P 1/8 E3 1/4 (next note: A3) 
+
+Measure 626:
+R: P 1/8 P 1/4 
+L: P 1/8 B3 1/4 
+
+Measure 627:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: A3) 
+
+Measure 628:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 629:
+R: P 1/8 B4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 630:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 631:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 632:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 633:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 634:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 635:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 636:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 637:
+R: P 1/8 G#4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 638:
+R: P 1/8 F#4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 639:
+R: P 1/8 G#4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 640:
+R: P 1/8 A4 1/4 
+L: P 1/8 D#3 1/4 
+
+Measure 641:
+R: P 1/8 B4 1/4 
+L: P 1/8 D#3 1/4 
+
+Measure 642:
+R: P 1/8 G#4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 643:
+R: P 1/8 E4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 644:
+R: P 1/8 A4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 645:
+R: P 1/8 B4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 646:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 647:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 648:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 649:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 650:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 651:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 652:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 653:
+R: P 1/8 G#4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 654:
+R: P 1/8 F#4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 655:
+R: P 1/8 B4 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 656:
+R: G#4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 657:
+R: E4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 658:
+R: A4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 659:
+R: A4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 660:
+R: B4 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 661:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 662:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 663:
+R: A4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 664:
+R: B4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 665:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 666:
+R: B4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 667:
+R: A4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 668:
+R: G#4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 669:
+R: F#4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 670:
+R: G#4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 671:
+R: A4 1/4 P 1/8 
+L: D#3 1/4 P 1/8 
+
+Measure 672:
+R: B4 1/4 P 1/8 
+L: D#3 1/4 P 1/8 
+
+Measure 673:
+R: G#4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 674:
+R: E4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 675:
+R: A4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 676:
+R: B4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 677:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 678:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 679:
+R: A4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 680:
+R: B4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 681:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 682:
+R: B4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 683:
+R: A4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 684:
+R: G#4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 685:
+R: F#4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 686:
+R: B4 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 687:
+R: G#4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 688:
+R: E4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 689:
+R: A4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 690:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 691:
+R: P 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 692:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 693:
+R: E4 1/4 (next note: C5) P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 694:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 695:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 696:
+R: P 1/4 P 1/8 
+L: A2 1/4 e3 1/8 
+
+Measure 697:
+R: P 1/8 E4 1/4 (next note: C5) 
+L: e3 1/8 A2 1/4 (next note: E3) 
+
+Measure 698:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 699:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 700:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 701:
+R: P 1/8 D5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 702:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 703:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 704:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 705:
+R: D5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 706:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 707:
+R: B4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 708:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 709:
+R: D5 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 710:
+R: P 1/4 P 1/8 
+L: D3 1/4 d3 1/8 
+
+Measure 711:
+R: P 1/8 P 1/8 P 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 712:
+R: P 1/8 P 1/8 d5 1/8 
+L: d3 1/8 P 1/8 P 1/8 
+
+Measure 713:
+R: d5 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 714:
+R: c#5 1/8 P 1/8 d5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 P 1/8 
+
+Measure 715:
+R: d5 1/8 P 1/8 c#5 1/8 
+L: P 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 716:
+R: c#5 1/8 P 1/8 d5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 P 1/8 
+
+Measure 717:
+R: d5 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 718:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 719:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 720:
+R: P 1/8 B4 1/4 
+L: P 1/8 E2 1/4 
+
+Measure 721:
+R: P 1/8 P 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 722:
+R: P 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 723:
+R: E5 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 724:
+R: E4 1/4 (next note: C5) P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 725:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 726:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 727:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 728:
+R: E4 1/4 (next note: C5) P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 729:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 730:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 731:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 732:
+R: D5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 733:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 734:
+R: B4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 735:
+R: C#5 1/4 d5 1/8 
+L: P 1/4 a2 1/8 
+
+Measure 736:
+R: d5 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 737:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 738:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 739:
+R: c#5 1/8 P 1/8 d5 1/8 
+L: P 1/8 P 1/8 d3 1/8 
+
+Measure 740:
+R: d5 1/8 P 1/8 P 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 741:
+R: P 1/8 P 1/4 
+L: d3 1/8 D3 1/4 
+
+Measure 742:
+R: P 1/8 P 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 743:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 744:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 745:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 746:
+R: P 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 747:
+R: P 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 748:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 749:
+R: B4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 750:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 751:
+R: B4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 752:
+R: C#5 1/4 b4 1/8 
+L: P 1/4 e3 1/8 
+
+Measure 753:
+R: b4 1/8 C#5 1/4 
+L: e3 1/8 P 1/4 
+
+Measure 754:
+R: P 1/8 B4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 755:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 756:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 757:
+R: P 1/8 E4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 758:
+R: P 1/8 A4 1/4 
+L: P 1/8 P 1/4 
+
+Measure 759:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 760:
+R: P 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 761:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 762:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 763:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 764:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 765:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 766:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 767:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 768:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 769:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 770:
+R: D5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 771:
+R: C#5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 772:
+R: B4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 773:
+R: C#5 1/4 d5 1/8 
+L: P 1/4 a2 1/8 
+
+Measure 774:
+R: d5 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 775:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 776:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 777:
+R: c#5 1/8 P 1/8 d5 1/8 
+L: P 1/8 P 1/8 d3 1/8 
+
+Measure 778:
+R: d5 1/8 P 1/8 P 1/8 
+L: d3 1/8 P 1/8 d3 1/8 
+
+Measure 779:
+R: P 1/8 P 1/4 
+L: d3 1/8 D3 1/4 
+
+Measure 780:
+R: P 1/8 P 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 781:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 782:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 783:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 784:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 785:
+R: P 1/8 D5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 786:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 787:
+R: D5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 788:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 789:
+R: B4 1/4 P 1/8 
+L: E3 1/4 P 1/8 
+
+Measure 790:
+R: P 1/4 P 1/8 
+L: E3 1/4 e3 1/8 
+
+Measure 791:
+R: P 1/8 P 1/8 e5 1/8 
+L: e3 1/8 P 1/8 e3 1/8 
+
+Measure 792:
+R: e5 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 a2 1/8 (next note: E3) 
+
+Measure 793:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 794:
+R: P 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 795:
+R: P 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 796:
+R: P 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 797:
+R: c#5 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 798:
+R: P 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 799:
+R: P 1/8 P 1/8 P 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 (next note: E3) 
+
+Measure 800:
+R: P 1/8 P 1/8 d5 1/8 
+L: a2 1/8 (next note: E3) P 1/8 a2 1/8 
+
+Measure 801:
+R: d5 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 802:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 a2 1/8 
+
+Measure 803:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 804:
+R: c#5 1/8 D5 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 805:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 806:
+R: P 1/8 B4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 807:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 808:
+R: P 1/8 D5 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 809:
+R: P 1/8 P 1/4 
+L: P 1/8 D3 1/4 
+
+Measure 810:
+R: P 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 811:
+R: P 1/4 P 1/8 
+L: D3 1/4 P 1/8 
+
+Measure 812:
+R: D5 1/4 P 1/8 
+L: P 1/4 P 1/8 
+
+Measure 813:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 814:
+R: P 1/4 P 1/8 
+L: A2 1/4 a2 1/8 
+
+Measure 815:
+R: P 1/8 P 1/8 P 1/8 
+L: a2 1/8 P 1/8 a2 1/8 
+
+Measure 816:
+R: P 1/8 P 1/8 c#5 1/8 
+L: a2 1/8 P 1/8 P 1/8 
+
+Measure 817:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 e3 1/8 
+
+Measure 818:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 P 1/8 
+
+Measure 819:
+R: c#5 1/8 P 1/8 b4 1/8 
+L: P 1/8 P 1/8 e3 1/8 
+
+Measure 820:
+R: b4 1/8 P 1/8 c#5 1/8 
+L: e3 1/8 P 1/8 P 1/8 
+
+Measure 821:
+R: c#5 1/8 B4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 822:
+R: P 1/8 C#5 1/4 
+L: P 1/8 P 1/4 
+
+Measure 823:
+R: P 1/8 B4 1/4 
+L: P 1/8 E3 1/4 
+
+Measure 824:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 825:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 826:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 827:
+R: P 1/8 C#5 1/4 
+L: P 1/8 A2 1/4 (next note: E3) 
+
+Measure 828:
+R: P 1/8 A4 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 829:
+R: P 1/8 P 1/4 
+L: P 1/8 A2 1/4 
+
+Measure 830:
+R: P 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 831:
+R: E5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 832:
+R: A4 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 833:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 834:
+R: P 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 835:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 836:
+R: A4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 837:
+R: C#5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 838:
+R: A4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 839:
+R: E5 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 840:
+R: A4 1/4 P 1/8 
+L: A2 1/4 P 1/8 
+
+Measure 841:
+R: C#5 1/4 (next note: A#5) P 1/8 
+L: A2 1/4 (next note: E3) P 1/8 
+
+Measure 842:
+R: C#5 1/4 (next note: A#5) 
+L: A2 1/4 (next note: E3) 
 
