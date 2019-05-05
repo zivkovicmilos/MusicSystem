@@ -17,6 +17,7 @@
 #include "Composition.h"
 #include "MXMLFormatter.h"
 #include "MIDIFormatter.h"
+#include "BMPFormatter.h"
 
 using namespace std;
 
@@ -234,5 +235,7 @@ int main() {
 	MIDIFormatter* midi = new MIDIFormatter(comp, &midiMap);
 	midi->format();
 
+	BMPFormatter* bmp = new BMPFormatter(comp);
+	bmp->format();
 	return 0;
 }

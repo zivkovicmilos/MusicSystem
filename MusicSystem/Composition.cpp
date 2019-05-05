@@ -31,15 +31,6 @@ void addToList(Note*& first, Note* temp) {
 	}
 }
 
-/*
-There is only one flag on the notes to mark them as split
-When outputting the MXML file, this flag is checked and accordingly handled.
-Onaj u sledecem taktu ne treba da bude split
-
-!!!!! TODO !!!!!
-Samo preko dva vektora muzickih simbola i jednog flaga da sve realizujes
-*/
-
 void Composition::selectiveAdd(Measure* m, MusicSymbol* ms, bool split) {
 
 	vector<MusicSymbol*>* left = m->getLeft();

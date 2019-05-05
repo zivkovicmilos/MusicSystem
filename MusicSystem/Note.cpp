@@ -11,6 +11,23 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	this->isSharp = isSharp;
 }
 
+string Note::getNoteStr() {
+	string note;
+	switch (p) {
+	case C: note.push_back('C');  break;
+	case D: note.push_back('D');  break;
+	case E: note.push_back('E');  break;
+	case F: note.push_back('F');  break;
+	case G: note.push_back('G');  break;
+	case A: note.push_back('A');  break;
+	case B: note.push_back('B');  break;
+	}
+	if (isSharp) {
+		note.push_back('#');
+	}
+	return note;
+}
+
 void Note::setNext(Note* n) {
 	nextNote = n;
 }

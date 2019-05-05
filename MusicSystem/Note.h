@@ -38,6 +38,7 @@ public:
 
 	int midiStart();
 	int midiEnd();
+	string getNoteStr();
 
 	bool checkSharp() const;
 	bool checkSplit() const;
