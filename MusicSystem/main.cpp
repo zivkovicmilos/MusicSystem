@@ -235,7 +235,8 @@ int main() {
 	MIDIFormatter* midi = new MIDIFormatter(comp, &midiMap);
 	midi->format();
 
-	BMPFormatter* bmp = new BMPFormatter(comp);
+	BMPFormatter* bmp = new BMPFormatter(comp, 10);
 	bmp->format();
+
 	return 0;
 }
