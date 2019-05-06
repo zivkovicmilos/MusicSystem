@@ -18,7 +18,6 @@
 #include "MXMLFormatter.h"
 #include "MIDIFormatter.h"
 #include "BMPFormatter.h"
-
 using namespace std;
 
 Composition* addSymbols(map<char, string>& noteMap) {
@@ -226,7 +225,18 @@ int main() {
 	}
 
 	file.close();
+	
+	ofstream testFile;
+	testFile.open("test.bmp");
+	//testFile << (unsigned char)'B';
+	//uint16_t
+	//uint32_t num= 40;
+	//testFile.put(num & 0xFFu).put((num >> 8) & 0xFFu).put((num >> 16) & 0xFFu).put((num >> 24) & 0xFFu);
+	unsigned int num = 10;
+	//testFile.write(reinterpret_cast<const char *>(&num), sizeof(num));
+	//testFile.write(prvi, sizeof(prvi)).put((broj >> 8) & 0xFFu).put((broj >> 16) & 0xFFu).put((broj >> 24) & 0xFFu);
 
+	
 	Composition* comp = addSymbols(noteMap);
 
 	MXMLFormatter* mxml = new MXMLFormatter(comp);

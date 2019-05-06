@@ -2,6 +2,7 @@
 #include "Formatter.h";
 #include <tuple>
 #include <regex>
+#include <cstdint>
 
 class BMPFormatter : Formatter {
 	map<string, tuple<int, int, int>> colorMap;

@@ -1,4 +1,5 @@
 #include "BMPFormatter.h"
+typedef unsigned char byte;
 
 BMPFormatter::BMPFormatter(Composition* c, int width) : Formatter(c), width(width) {}
 
@@ -154,16 +155,56 @@ string hexamize(string str) {
 	return ret;
 }
 
+void write8bit(ofstream& output, char num) {
+	output.put(num);
+}
+
+void write16bit(ofstream& output, uint16_t num) {
+	output.put(num & 0xFFu).put((num >> 8) & 0xFFu);
+}
+
+
+void write32bit(ofstream& output, uint32_t num) {
+	output.put(num & 0xFFu).put((num >> 8) & 0xFFu).put((num >> 16) & 0xFFu).put((num >> 24) & 0xFFu);
+}
+
 void BMPFormatter::generateBoilerplate(ofstream& output, int totalSize, int width, int height) {
-	int bitmapSize = totalSize + 54;
-	output << "BM ";
-	output << hexamize(numToHex(totalSize + 54));
-	output << "00 00 " << "00 00 " << "36 00 00 00 " << "28 00 00 00 ";
+	unsigned char headerAndDIB[55] = { 'B', 'M', totalSize + 54, 0,0,0,0,0,0,0, 54,0,0,0,40,0,0,0, 
+								width, height, 1,0,0, 24, 0, 0,0,0,0, totalSize, 2835, 2835, 0,0,0,0,0,0,0,0};
+
+	write8bit(output, 'B');
+	write8bit(output, 'M');
+	write32bit(output, totalSize + 54);
+	write32bit(output, 0);
+	write32bit(output, 54);
+	write32bit(output, 40);
+	write32bit(output, width);
+	write32bit(output, height);
+	write16bit(output, 1);
+	write16bit(output, 24);
+	write32bit(output, 0);
+	write32bit(output, totalSize);
+	write32bit(output, 2835);
+	write32bit(output, 2835);
+	write32bit(output, 0);
+	write32bit(output, 0);
+
+	//int bitmapSize = totalSize + 54;
+	/*
+	output << (byte) 'B' << (byte) 'M';
+	output << (byte) (totalSize + 54);// hexamize(numToHex(totalSize + 54));
+	for (int i = 0; i < 7; i++) {
+		output << (byte) 0;
+	}
+	output << (byte)54 << (byte)0 << (byte)0 << (byte)0 << (byte)40;
+
+	output << "28 00 00 00 ";
 	output << hexamize(numToHex(width)); // add width
 	output << hexamize(numToHex(height)); // add height
 	output << "01 00 " << "18 00 " << "00 00 00 00 ";
 	output << hexamize(numToHex(totalSize)); // add bitmap size;
 	output << "13 0B 00 00 " << "13 0B 00 00 " << "00 00 00 00 " << "00 00 00 00 ";
+	*/
 }
 
 int getClosest(int rowPixelCnt) {
@@ -177,12 +218,13 @@ int getClosest(int rowPixelCnt) {
 void BMPFormatter::format() {
 	readColorMap(); // Load in the color map;
 	ofstream output;
-	output.open("colorStorage.txt");
+	//output.open("colorStorage.txt");
 
 	// Pause is white (255, 255, 255)
 	// 1/4 is two pixels
 	// 1/8 is one pixel
 
+	vector<byte> colors;
 	vector<Measure*>* measureArr = comp->getMeasureArr();
 	vector<MusicSymbol*>* right = nullptr;
 	vector<MusicSymbol*>* left = nullptr;
@@ -265,13 +307,18 @@ void BMPFormatter::format() {
 
 			// Add an according number of pixels
 			for (int dur = 0; dur < pixels; dur++) {
-				output << numToHex(r) << " " << numToHex(g) << " " << numToHex(b) << " "; // One pixel
+				//output << (byte)r << (byte)g << (byte)b; // One pixel
+				colors.push_back(r);
+				colors.push_back(g);
+				colors.push_back(b);
+
 				rowPixelCnt++;
 				if (rowPixelCnt == width) {
 					int padd = getClosest(rowPixelCnt); // Number of 00 pairs
 					for (int padding = 0; padding < padd; padding++) {
-						output << "00 ";
-						totalSize++;
+						//output << (byte)0;
+						colors.push_back(0);
+						totalSize+=2;
 					}
 					rowPixelCnt = 0; // Reset the counter
 					height++;
@@ -284,22 +331,30 @@ void BMPFormatter::format() {
 	if (rowPixelCnt > 0 && rowPixelCnt < width) {
 		int remaining = getClosest(rowPixelCnt);
 		for (int i = 0; i < remaining; i++) {
-			output << "FF" << " " << "FF" << " " << "FF" << " "; // One white pixel
+			//output << (byte)255 << (byte)255 << (byte)255; // One white pixel
+			colors.push_back(255);
+			colors.push_back(255);
+			colors.push_back(255);
 		}
 		totalSize += (remaining * 3);
 	}
-	output.close();
+	//output.close();
 
 	output.open("bmpOutput.bmp");
 	generateBoilerplate(output, totalSize, width, height);
+	for (int i = 0; i < colors.size(); i++) {
+		output << colors[i];
+	}
+	/*
 	ifstream reader;
 	reader.open("colorStorage.txt");
 	string textLine;
 	while (getline(reader, textLine)) {
 		output << textLine;
 	}
+	*/
 	output.close();
-	reader.close();
+	//reader.close();
 	cout << "end";
 
 }
