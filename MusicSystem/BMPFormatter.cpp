@@ -44,7 +44,7 @@ int BMPFormatter::getValue(string note, int color) {
 	return value;
 }
 
-int BMPFormatter::getColorMix(vector<int>& colors) {
+uint8_t BMPFormatter::getColorMix(vector<uint8_t>& colors) {
 	int sum = 0;
 	for (int i = 0; i < colors.size(); i++) {
 		sum += colors[i];
@@ -85,7 +85,7 @@ void BMPFormatter::addColors(int octave, string note) {
 
 	auto x6 = [this](string note, int color) -> int {
 		int val = getValue(note, color);
-		return (val - ((255 - val) / 8) * 6);
+		return (val + ((255 - val) / 8) * 6);
 	};
 
 	switch (octave) {
@@ -155,8 +155,16 @@ string hexamize(string str) {
 	return ret;
 }
 
+void write8bit(std::ostream& out, char const* c, std::size_t n) {
+	out.write(c, n);
+}
+
 void write8bit(ofstream& output, char num) {
 	output.put(num);
+}
+
+void write8bit(std::ostream& out, byte const* c, std::size_t n) {
+	return write8bit(out, reinterpret_cast<char const*>(c), n);
 }
 
 void write16bit(ofstream& output, uint16_t num) {
@@ -168,9 +176,7 @@ void write32bit(ofstream& output, uint32_t num) {
 	output.put(num & 0xFFu).put((num >> 8) & 0xFFu).put((num >> 16) & 0xFFu).put((num >> 24) & 0xFFu);
 }
 
-void BMPFormatter::generateBoilerplate(ofstream& output, int totalSize, int width, int height) {
-	unsigned char headerAndDIB[55] = { 'B', 'M', totalSize + 54, 0,0,0,0,0,0,0, 54,0,0,0,40,0,0,0, 
-								width, height, 1,0,0, 24, 0, 0,0,0,0, totalSize, 2835, 2835, 0,0,0,0,0,0,0,0};
+void BMPFormatter::generateBoilerplate(ofstream& output, uint32_t totalSize, uint32_t width, uint32_t height) {
 
 	write8bit(output, 'B');
 	write8bit(output, 'M');
@@ -214,17 +220,40 @@ int getClosest(int rowPixelCnt) {
 	int closest = 8 + (rowPixelCnt - (rowPixelCnt % 8)); // Closest multiple of 8
 	return closest - rowPixelCnt;
 }
+inline std::ostream& write_binary_8bit(std::ostream& out, char c) {
+	return out.put(c);
+}
+
+inline std::ostream& write_binary_8bit(std::ostream& out, char* c, std::size_t n) {
+	return out.write(c, n);
+}
+
+inline std::ostream& write_binary_8bit(std::ostream& out, byte* c, std::size_t n) {
+	return write_binary_8bit(out, reinterpret_cast<char*>(c), n);
+}
 
 void BMPFormatter::format() {
 	readColorMap(); // Load in the color map;
-	ofstream output;
+
+	string outputFileName;
+	cout << "Enter the BMP output file name: ";
+	cout << "> ";
+	cin >> outputFileName;
 	//output.open("colorStorage.txt");
 
 	// Pause is white (255, 255, 255)
 	// 1/4 is two pixels
 	// 1/8 is one pixel
+	struct PIXEL {
+		uint8_t r, g, b;
+		PIXEL(uint8_t r, uint8_t g, uint8_t b) {
+			this->r = r;
+			this->g = g;
+			this->b = b;
+		}
+	};
 
-	vector<byte> colors;
+	vector<PIXEL> colors;
 	vector<Measure*>* measureArr = comp->getMeasureArr();
 	vector<MusicSymbol*>* right = nullptr;
 	vector<MusicSymbol*>* left = nullptr;
@@ -235,8 +264,8 @@ void BMPFormatter::format() {
 	int rowPixelCnt = 0;
 	int totalSize = 0;
 
-	int r, g ,b;
-
+	
+	
 	for (int i = 0; i < measureArr->size(); i++) {
 		
 		right = (*measureArr)[i]->getRight();
@@ -301,25 +330,22 @@ void BMPFormatter::format() {
 				}
 			}
 			// Mix all of the colors
-			r = getColorMix(red);
-			g = getColorMix(green);
-			b = getColorMix(blue);
+			PIXEL temp(getColorMix(red), getColorMix(green), getColorMix(blue));
 
 			// Add an according number of pixels
 			for (int dur = 0; dur < pixels; dur++) {
 				//output << (byte)r << (byte)g << (byte)b; // One pixel
-				colors.push_back(r);
-				colors.push_back(g);
-				colors.push_back(b);
+				colors.push_back(temp);
 
 				rowPixelCnt++;
 				if (rowPixelCnt == width) {
+					
 					int padd = getClosest(rowPixelCnt); // Number of 00 pairs
 					for (int padding = 0; padding < padd; padding++) {
-						//output << (byte)0;
-						colors.push_back(0);
-						totalSize+=2;
+						//colors.push_back(0); // Maybe this is the cause of black
+						totalSize++;
 					}
+					
 					rowPixelCnt = 0; // Reset the counter
 					height++;
 				}
@@ -329,32 +355,52 @@ void BMPFormatter::format() {
 	}
 	// Fill in the last row with white pixels if there is space
 	if (rowPixelCnt > 0 && rowPixelCnt < width) {
-		int remaining = getClosest(rowPixelCnt);
+		// changed getClosest
+		int remaining = width - rowPixelCnt;
 		for (int i = 0; i < remaining; i++) {
-			//output << (byte)255 << (byte)255 << (byte)255; // One white pixel
-			colors.push_back(255);
-			colors.push_back(255);
-			colors.push_back(255);
+			// One white pixel
+			colors.push_back(PIXEL(255, 255, 255));
 		}
 		totalSize += (remaining * 3);
 	}
-	//output.close();
 
-	output.open("bmpOutput.bmp");
-	generateBoilerplate(output, totalSize, width, height);
+	//output.close();
+	ofstream output("BMP\\"+outputFileName+".bmp", std::ios::binary);
+	uint32_t bWidth = 3 * width; // How many bytes in a row
+	uint8_t padding = (8 - (width * 3) % 8) % 8;
+
+	//FILE* ptr = fopen(("BMP\\"+outputFileName+".bmp").c_str(), "w");
+	//IMG actualImage(totalSize+54, width, height, totalSize);
+	//fwrite(&actualImage.header, sizeof(actualImage.header), 1, ptr);
+	char* buff = new char[colors.size() * 3 + 1];
+	int cnt = 0;
 	for (int i = 0; i < colors.size(); i++) {
-		output << colors[i];
+		buff[cnt] = colors[i].r;
+		buff[cnt+1] = colors[i].g;
+		buff[cnt+2] = colors[i].b;
+		cnt += 3;
 	}
-	/*
-	ifstream reader;
-	reader.open("colorStorage.txt");
-	string textLine;
-	while (getline(reader, textLine)) {
-		output << textLine;
+
+	generateBoilerplate(output, totalSize, width, height); // ok
+
+	for (int i = height -1; i >= 0; i--) {
+		output.write(buff + i * bWidth, bWidth);
+		// changed i!=0
+		for (int j = 0; j < padding; j++) {
+			write8bit(output, 0);
+		}
 	}
-	*/
+
 	output.close();
-	//reader.close();
+	/*
+	for (int i = 0; i < height; i++) {
+		write_binary_8bit(output, buffer + i*bWidth, bWidth); // read bWidth bytes from the i*bWidth location
+		output.seekp(padding, std::ios::cur); // Skip over the padding
+	}
+
+	output.close();
+
 	cout << "end";
+	*/
 
 }

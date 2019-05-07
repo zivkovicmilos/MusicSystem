@@ -7,6 +7,10 @@ MIDIFormatter::MIDIFormatter(Composition* comp, map<string, int>* mm) : Formatte
 using namespace smf;
 
 void MIDIFormatter::format() {
+	string outputFileName;
+	cout << "Enter the MIDI output file name: ";
+	cout << "> ";
+	cin >> outputFileName;
 
 	MidiFile outputfile;
 	outputfile.absoluteTicks();
@@ -60,6 +64,9 @@ void MIDIFormatter::format() {
 			while (temp) {
 				string note;
 				note.push_back(temp->getPitchC());
+				if (temp->checkSharp()) {
+					note.push_back('#');
+				}
 				note = note + to_string(temp->getOctave());
 				midiNum = (*midiMap)[note];
 
@@ -100,6 +107,9 @@ void MIDIFormatter::format() {
 			while (temp) {
 				string note;
 				note.push_back(temp->getPitchC());
+				if (temp->checkSharp()) {
+					note.push_back('#');
+				}
 				note = note + to_string(temp->getOctave());
 				midiNum = (*midiMap)[note];
 
@@ -118,5 +128,5 @@ void MIDIFormatter::format() {
 	}
 
 	outputfile.sortTracks();
-	outputfile.write("midiOutput.mid");
+	outputfile.write("MIDI\\"+outputFileName+".mid");
 }

@@ -62,11 +62,15 @@ void MXMLFormatter::printNote(ostream& os, MusicSymbol* m, bool& split) {
 void MXMLFormatter::format() {
 	ifstream reader;
 	ofstream output;
+	string outputFileName;
+	cout << "Enter the MXML output file name: ";
+	cout << "> ";
+	cin >> outputFileName;
 
 	bool openMeasure = true;
 
 	reader.open("MusicXML\\start.txt");
-	output.open("MusicXML\\output.musicxml");
+	output.open("MusicXML\\"+outputFileName+".musicxml");
 
 	string textLine;
 	while (getline(reader, textLine)) {

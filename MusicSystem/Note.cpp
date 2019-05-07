@@ -11,6 +11,44 @@ Note::Note(Duration d, int octave, bool isSharp, Pitch p) : MusicSymbol(d) {
 	this->isSharp = isSharp;
 }
 
+void Note::setSharp() {
+	isSharp = true;
+}
+
+void Note::removeSharp() {
+	isSharp = false;
+}
+
+void Note::changeOctave(int num) {
+	if (num < 2) {
+		octave = 2;
+	}
+	else if (num > 6) {
+		octave = 6;
+	}
+	else {
+		octave = num;
+	}
+}
+
+void Note::addOctave(int num) {
+	int currOctave = octave;
+	if (currOctave + num < 2) {
+		octave = 2;
+	}
+	else if (currOctave + num > 6) {
+		octave = 6;
+	}
+	else {
+		octave += num;
+	}
+}
+
+void Note::changePitch(char p) {
+	if (!(p != 'C' || p != 'D' || p != 'E' || p != 'F' || p != 'G' || p != 'A' || p != 'B')) return;
+	this->p = getPitch(p);
+}
+
 string Note::getNoteStr() {
 	string note;
 	switch (p) {
@@ -95,26 +133,24 @@ Note* Note::getPrev() const {
 }
 
 void Note::getInfo(ostream& os) {
-	char pitch;
-	bool upperCase = false;
-	if (d == Duration(1, 4)) {
-		upperCase = true;
-	}
-	switch (p) {
-	case C: upperCase ? pitch = 'C' : pitch = 'c'; break;
-	case D: upperCase ? pitch = 'D' : pitch = 'd'; break;
-	case E: upperCase ? pitch = 'E' : pitch = 'e'; break;
-	case F: upperCase ? pitch = 'F' : pitch = 'f'; break;
-	case G: upperCase ? pitch = 'G' : pitch = 'g'; break;
-	case A: upperCase ? pitch = 'A' : pitch = 'a'; break;
-	case B: upperCase ? pitch = 'B' : pitch = 'b'; break;
-	}
+	char pitch = getPitchS();
 
 	os << pitch;
 	if (isSharp) {
 		os << "#";
 	}
-	os << octave << " " << d;
+	os << octave;
+	Note* temp = this->nextNote;
+	while (temp) {
+		os << temp->getPitchS();
+		if (temp->isSharp) {
+			os << "#";
+		}
+		os << temp->getOctave();
+		temp = temp->nextNote;
+	}
+
+	/* Test for output
 	if (nextNote) {
 		os << " (next note: " << nextNote->getPitchC();
 		if (isSharp) {
@@ -129,6 +165,7 @@ void Note::getInfo(ostream& os) {
 		}
 		os << prevNote->getOctave() << ")";
 	}
+	*/
 }
 
 int Note::getOctave() const {
@@ -144,8 +181,26 @@ char Note::getPitchC() const {
 	case G: return 'G';
 	case A: return 'A';
 	case B: return 'B';
-	default: cout << "Fucked up"; break;// TODO throw exception
+	default: cout << "Bad Pitch"; break;// TODO throw exception
 	};
+}
+
+char Note::getPitchS() const {
+	bool upperCase = false;
+	char pitch;
+	if (d == Duration(1, 4)) {
+		upperCase = true;
+	}
+	switch (p) {
+	case C: upperCase ? pitch = 'C' : pitch = 'c'; break;
+	case D: upperCase ? pitch = 'D' : pitch = 'd'; break;
+	case E: upperCase ? pitch = 'E' : pitch = 'e'; break;
+	case F: upperCase ? pitch = 'F' : pitch = 'f'; break;
+	case G: upperCase ? pitch = 'G' : pitch = 'g'; break;
+	case A: upperCase ? pitch = 'A' : pitch = 'a'; break;
+	case B: upperCase ? pitch = 'B' : pitch = 'b'; break;
+	}
+	return pitch;
 }
 
 Note::Pitch Note::getPitch(char c) {
@@ -158,7 +213,7 @@ Note::Pitch Note::getPitch(char c) {
 	case 'G': ret = Note::Pitch::G; break;
 	case 'A': ret = Note::Pitch::A; break;
 	case 'B': ret = Note::Pitch::B; break;
-	default: cout << "Fucked up"; break;// TODO throw exception
+	default: cout << "Bad Pitch"; break;// TODO throw exception
 	};
 	return ret;
 }
@@ -173,4 +228,18 @@ bool Note::checkSplit() const {
 
 void Note::setSplit() {
 	split = true;
+}
+
+Note::~Note() {
+	Note* temp = nextNote;
+	Note* prev = nullptr;
+	while (temp) {
+		prev = temp;
+		temp = temp->nextNote;
+		temp->prevNote = nullptr;
+		delete prev;
+	}
+
+	nextNote = nullptr;
+	prevNote = nullptr;
 }

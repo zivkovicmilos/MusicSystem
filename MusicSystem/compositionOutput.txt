@@ -1,272 +1,126 @@
-Measure 0:
-R: E4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 1:
-R: g#4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 2:
-R: G#4 1/4 f#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 3:
-R: f#4 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 4:
-R: B4 1/4 P 1/8 
-L: P 1/4 P 1/8 
-
-Measure 5:
-R: B4 1/4 a4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 6:
-R: a4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 7:
-R: G#4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 8:
-R: g#4 1/8 F#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 9:
-R: E4 1/4 b4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 10:
-R: b4 1/8 P 1/8 b4 1/8 
-L: P 1/8 P 1/8 P 1/8 
-
-Measure 11:
-R: b4 1/8 A4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 12:
-R: G#4 1/4 a4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 13:
-R: a4 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 14:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 15:
-R: g#4 1/8 F#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 16:
-R: P 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 17:
-R: G#4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 18:
-R: g#4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 19:
-R: F#4 1/4 e4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 20:
-R: e4 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 21:
-R: P 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 22:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 23:
-R: g#4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 24:
-R: G#4 1/4 f#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 25:
-R: f#4 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 26:
-R: B4 1/4 P 1/8 
-L: P 1/4 P 1/8 
-
-Measure 27:
-R: B4 1/4 a4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 28:
-R: a4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 29:
-R: A4 1/4 b4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 30:
-R: b4 1/8 A4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 31:
-R: G#4 1/4 f#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 32:
-R: f#4 1/8 P 1/8 g#4 1/8 
-L: P 1/8 P 1/8 P 1/8 
-
-Measure 33:
-R: g#4 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 34:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 35:
-R: g#4 1/8 A4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 36:
-R: B4 1/4 c#5 1/8 
-L: P 1/4 P 1/8 
-
-Measure 37:
-R: c#5 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 38:
-R: P 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 39:
-R: B4 1/4 a4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 40:
-R: a4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 41:
-R: A4 1/4 b4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 42:
-R: b4 1/8 C#5 1/4 
-L: P 1/8 P 1/4 
-
-Measure 43:
-R: B4 1/4 P 1/8 
-L: P 1/4 P 1/8 
-
-Measure 44:
-R: E4 1/4 c#5 1/8 
-L: P 1/4 P 1/8 
-
-Measure 45:
-R: c#5 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 46:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 47:
-R: g#4 1/8 F#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 48:
-R: E4 1/4 f#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 49:
-R: f#4 1/8 P 1/8 e4 1/8 
-L: P 1/8 P 1/8 P 1/8 
-
-Measure 50:
-R: e4 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 51:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 52:
-R: g#4 1/8 A4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 53:
-R: B4 1/4 c#5 1/8 
-L: P 1/4 P 1/8 
-
-Measure 54:
-R: c#5 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 55:
-R: P 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 56:
-R: B4 1/4 a4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 57:
-R: a4 1/8 G#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 58:
-R: A4 1/4 b4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 59:
-R: b4 1/8 C#5 1/4 
-L: P 1/8 P 1/4 
-
-Measure 60:
-R: B4 1/4 P 1/8 
-L: P 1/4 P 1/8 
-
-Measure 61:
-R: E4 1/4 c#5 1/8 
-L: P 1/4 P 1/8 
-
-Measure 62:
-R: c#5 1/8 B4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 63:
-R: A4 1/4 g#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 64:
-R: g#4 1/8 F#4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 65:
-R: E4 1/4 f#4 1/8 
-L: P 1/4 P 1/8 
-
-Measure 66:
-R: f#4 1/8 E4 1/4 
-L: P 1/8 P 1/4 
-
-Measure 67:
-R: E4 1/4 
-L: P 1/4 
+R: E4 e4 |
+L: P P   |
+
+R: e4 F4 |
+L: P P   |
+
+R: G4 g4 |
+L: P P   |
+
+R: g4 F4 |
+L: P P   |
+
+R: E4 d4 |
+L: P P   |
+
+R: d4 C4 |
+L: P P   |
+
+R: C4 d4 |
+L: P P   |
+
+R: d4 E4 |
+L: P P   |
+
+R: E4 P |
+L: P P |
+
+R: d4 P d4 |
+L: P P P   |
+
+R: P E4 |
+L: P P   |
+
+R: E4 f4 |
+L: P P   |
+
+R: f4 G4 |
+L: P P   |
+
+R: G4 f4 |
+L: P P   |
+
+R: f4 E4 |
+L: P P   |
+
+R: D4 c4 |
+L: P P   |
+
+R: c4 C4 |
+L: P P   |
+
+R: D4 e4 |
+L: P P   |
+
+R: e4 D4 |
+L: P P   |
+
+R: P c4 P |
+L: P P   P    |
+
+R: c4 P d4 |
+L: P P P   |
+
+R: d4 D4 |
+L: P P   |
+
+R: E4 c4 |
+L: P P   |
+
+R: c4 D4 |
+L: P P   |
+
+R: e4 P f4 |
+L: P P P   |
+
+R: P e4 c4 |
+L: P P   P     |
+
+R: c4 D4 |
+L: P P   |
+
+R: e4 P f4 |
+L: P P P   |
+
+R: P e4 d4 |
+L: P P   P     |
+
+R: d4 C4 |
+L: P P   |
+
+R: D4 P  |
+L: P g3 |
+
+R: P  P  e4  |
+L: g3 P P   |
+
+R: e4 E4 |
+L: P P   |
+
+R: F4 g4 |
+L: P P   |
+
+R: g4 G4 |
+L: P P   |
+
+R: F4 e4 |
+L: P P   |
+
+R: e4 D4 |
+L: P P   |
+
+R: C4 c4 |
+L: P P   |
+
+R: c4 D4 |
+L: P P   |
+
+R: E4 d4 |
+L: P P   |
+
+R: d4 P c4 |
+L: P P P   |
+
+R: P c4 |
+L: P P   |
 

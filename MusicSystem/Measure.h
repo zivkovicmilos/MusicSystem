@@ -21,5 +21,6 @@ public:
 	void addDuration(Duration);
 
 	friend ostream& operator<<(ostream&, const Measure&);
+	~Measure();
 };
 

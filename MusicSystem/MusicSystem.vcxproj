@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="Binasc.cpp" />
     <ClCompile Include="BMPFormatter.cpp" />
+    <ClCompile Include="CompIterator.cpp" />
     <ClCompile Include="Composition.cpp" />
     <ClCompile Include="createmidifile.cpp" />
     <ClCompile Include="Duration.cpp" />
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="Binasc.h" />
     <ClInclude Include="BMPFormatter.h" />
+    <ClInclude Include="CompIterator.h" />
     <ClInclude Include="Composition.h" />
     <ClInclude Include="Duration.h" />
     <ClInclude Include="Errors.h" />

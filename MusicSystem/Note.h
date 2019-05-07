@@ -25,6 +25,7 @@ public:
 	void getInfo(ostream&) override;
 	int getOctave() const;
 	char getPitchC() const;
+	char getPitchS() const;
 	Note* getNext() const;
 	Note* getPrev() const;
 	void setSplit();
@@ -39,6 +40,11 @@ public:
 	int midiStart();
 	int midiEnd();
 	string getNoteStr();
+	void changeOctave(int);
+	void addOctave(int);
+	void changePitch(char);
+	void setSharp();
+	void removeSharp();
 
 	bool checkSharp() const;
 	bool checkSplit() const;

@@ -18,235 +18,351 @@
 #include "MXMLFormatter.h"
 #include "MIDIFormatter.h"
 #include "BMPFormatter.h"
+#include "CompIterator.h"
 using namespace std;
 
-Composition* addSymbols(map<char, string>& noteMap) {
-	ifstream file;
-	// TODO pass in the filename
-	file.open("test2.txt");
-	vector<pair<MusicSymbol*, int>> playing;
+void exportText() {
+	cout << endl;
+	cout << "\n  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *            Export Menu	      *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * 1. Export as MusicXML             *" << endl;
+	cout << "  * 2. Export as BMP                  *" << endl;
+	cout << "  * 3. Export as MIDI                 *" << endl;
+	cout << "  * 4. Return to Main Menu            *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << endl;
+}
 
-	regex outside("([a-zA-Z0-9]{1,}(?![^\\[\\]]*\\]))");
-	regex spaces("([ ]{1}(?![^\\[\\]]*\\]))");
-	//(?<=\[)[a-zA-Z0-9 ]*(?=\])
-	regex inside("\\[([^\\[\\]]*[^\\[\\]])\\]");
-	regex special("(\\|)");
-	vector<regex> rxs;
-
-	rxs.push_back(outside);
-	rxs.push_back(spaces);
-	rxs.push_back(inside);
-	rxs.push_back(special);
-
-	int base = 0;
-	int oldBase = 0;
-	string textLine;
-	MusicSymbol* temp = nullptr;
-
-	while (getline(file, textLine)) {
-		base = textLine.size(); // grab the offset if it's a multi-line file
-
-		for (int i = 0; i < rxs.size(); i++) {
-			regex reg = rxs[i];
-			smatch match;
-			bool first = true;
-			int num = 0;
-			int oldLength = 0;
-			Note* oldNote = nullptr;
-			string workingStr;
-			int pos;
-
-			string::const_iterator searchStart(textLine.cbegin());
-
-			while (regex_search(searchStart, textLine.cend(), match, reg)) {
-
-				workingStr = (i == 2) ? match.str(1) : match.str();
-				pos = (i == 2) ? match.position(1) : match.position();
-				oldNote = nullptr;
-
-				if (first) {
-					num = oldBase + pos;
-					first = false;
-				}
-				else {
-					num += oldLength + pos;
-					num += (i == 2 ? -1 : 0);
-				}
-				// TODO: Remove below
-				cout << "(" << workingStr << ") " << " at " << num << endl;
-				oldLength = match.str().length();
-				/////////////////////////////
-
-				int length = workingStr.length();
-				if (length > 1) {
-					char* charArr = new char[length + 1];
-					strcpy(charArr, workingStr.c_str());
-					int offset = 0;
-					bool connected = false;
-					bool added = false;
-					for (int j = 0; j < length; j++) {
-						Duration d(0);
-						if (i == 2) {
-							// Capturing inside the brackets [ ]
-							if (workingStr.find(' ') != string::npos) {
-								// There is a space between the letters
-								d.changeDuration(1, 8); // For all symbols
-							} else {
-								d.changeDuration(1, 4);
-								connected = true;
-							}
-						} else {
-							d.changeDuration(1, 4);
-						}
-						Note::Pitch pitch;
-						int octave;
-						bool isSharp = false;
-						// TODO check if char map is valid when parsing
-						char note = charArr[j];
-						if (note == ' ') {
-							// The symbol is a pause within [ ]
-							temp = new Pause(d);
-							Pause* tempP = (Pause*)temp;
-
-							playing.push_back(pair<MusicSymbol*, int>(tempP, offset + num));
-							offset++;
-							continue;
-						}
-						char cPitch = noteMap[note][0];
-						pitch = Note::getPitch(cPitch);
-
-						if ((noteMap[note])[1] != '#') {
-							octave = (int) (noteMap[note])[1] - '0';
-						}
-						else {
-							octave = (int) (noteMap[note])[2] - '0';
-							isSharp = true;
-						}
-
-						temp = new Note(d, octave, isSharp, pitch);
-						
-						// TODO ovde greska
-						playing.push_back(pair<MusicSymbol*, int>(temp, offset + num));
-
-						if (connected && oldNote) {
-							oldNote->addNext((Note*)temp);
-							Note* tmpN = (Note*)temp;
-							tmpN->addPrev(oldNote);
-						}
-						
-						offset++;
-						oldNote = (Note *) temp;
-					}
-				}
-				else {
-					if (workingStr == " ") {
-						temp = new Pause(Duration(1, 8));
-					}
-					else if (workingStr == "|") {
-						temp = new Pause(Duration(1, 4));
-						Pause* tempP = (Pause*)temp;
-					}
-					else {
-						Note::Pitch pitch;
-						int octave;
-						bool isSharp = false;
-
-						char cPitch = noteMap[workingStr[0]][0];
-						pitch = Note::getPitch(cPitch);
-
-						if (noteMap[workingStr[0]][1] != '#') {
-							octave = (int)(noteMap[workingStr[0]])[1] - 48;
-
-						}
-						else {
-							octave = (int)(noteMap[workingStr[0]])[2] - 48;
-							isSharp = true;
-						}
-
-						temp = new Note(Duration(1, 4), octave, isSharp, pitch);
-					}
-
-					playing.push_back(pair<MusicSymbol*, int> (temp, num));
-				}
-				searchStart = match.suffix().first;
+void exportMenu(Composition* comp, map<string, int>& midiMap, 
+				MXMLFormatter* mxml, MIDIFormatter* midi, BMPFormatter*bmp) {
+	int ans = 0;
+	bool inUse = true;
+	while (inUse) {
+		exportText();
+		cout << "> ";
+		cin >> ans;
+		switch (ans) {
+		case 1:
+			// MusicXML
+			if (!comp) {
+				cout << "No composition loaded";
+				inUse = false;
+				break;
 			}
+			mxml = new MXMLFormatter(comp);
+			mxml->format();
+			break;
+		case 2:
+			// BMP
+			if (!comp) {
+				cout << "No composition loaded";
+				inUse = false;
+				break;
+			}
+			cout << "Enter the image width:\n";
+			cout << "> ";
+			cin >> ans;
+			bmp = new BMPFormatter(comp, ans);
+			bmp->format();
+			break;
+		case 3:
+			// MIDI
+			if (!comp || midiMap.size() == 0) {
+				cout << "No composition / Midi map loaded";
+				inUse = false;
+				break;
+			}
+			midi = new MIDIFormatter(comp, &midiMap);
+			midi->format();
+			break;
+		case 4:
+			inUse = false;
+			break;
 		}
-		oldBase = base;
 	}
-	// Sort the symbols
-	auto lambdaRule = [] (pair<MusicSymbol*, int> m1, pair<MusicSymbol*, int> m2) {
-		return m1.second < m2.second;
-	};
+}
 
-	sort(playing.begin(), playing.end(), lambdaRule);
+void compositionText() {
+	cout << endl;
+	cout << "\n  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *         Composition Menu	      *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * 1. Print Composition              *" << endl;
+	cout << "  * 2. Iterate Composition            *" << endl;
+	cout << "  * 3. Change Duration                *" << endl;
+	cout << "  * 4. Increase / Decrease octaves    *" << endl;
+	cout << "  * 5. Return to Main Menu            *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << endl;
+}
 
-	// File parsed
-	ofstream ofile;
-	ofile.open("output.txt");
-	for (int i = 0; i < playing.size(); i++) {
-		MusicSymbol* t = playing[i].first;
-		cout << *t << " at index: " << playing[i].second << endl;
-		ofile << *t << " at index: " << playing[i].second << endl;
+void noteIterMenu() {
+	cout << endl;
+	cout << "1. Previous Note" << endl;
+	cout << "2. Next Note" << endl;
+	cout << "3. Change Pitch" << endl;
+	cout << "4. Change Octave" << endl;
+	cout << "5. Make Sharp" << endl;
+	cout << "6. Remove Sharp" << endl;
+	cout << "7. Go back" << endl;
+	cout << "> ";
+}
+
+void compIterMenu() {
+	cout << endl;
+	cout << "1. Previous Measure" << endl;
+	cout << "2. Next Measure" << endl;
+	cout << "3. Iterate Notes" << endl;
+	cout << "4. Go back" << endl;
+	cout << "> ";
+}
+
+void compositionMenu(Composition* comp, bool& changed) {
+	
+	bool inUse = true;
+	bool compIterating = true;
+	bool noteIterating = false;
+	int curr = 1;
+	int ans = 0;
+	int numerator = 0;
+	vector<Measure*>* measureArr = comp->getMeasureArr();
+	vector<Note*>* noteArr = comp->getNoteArr();
+
+	vector<Measure*>::iterator compIt = measureArr->begin();
+	vector<Note*>::iterator noteIt = noteArr->begin();
+	int denominator = 0;
+
+	while (inUse) {
+		if (!comp) {
+			cout << "No composition loaded\n";
+			inUse = false;
+			break;
+		}
+		compositionText();
+		cout << "> ";
+		cin >> ans;
+		switch (ans) {
+		case 1:
+			// TODO Fix output
+			cout << *comp;
+			break;
+		case 2:
+			compIterating = true;
+			while (compIterating) {
+				cout << "Measure " << curr << ":" << endl;
+				cout << **compIt; // Print current measure
+				compIterMenu();
+				cin >> ans;
+				switch (ans) {
+				case 1:
+					if (compIt != measureArr->begin()) {
+						--compIt;
+						curr--;
+					}
+					break;
+				case 2:
+					if (compIt != measureArr->end()) {
+						compIt++;
+						curr++;
+					}
+					break;
+				case 3:
+					noteIterating = true;
+					while (noteIterating) {
+						cout << "Note: " << **noteIt;
+						noteIterMenu();
+						cin >> ans;
+						switch (ans) {
+						case 1:
+							if (noteIt != noteArr->begin()) {
+							--noteIt;
+							}
+							break;
+						case 2:
+							if (noteIt != noteArr->end()) {
+								noteIt++;
+							}
+							break;
+						case 3:// TODO iterate through chained notes
+							cout << "Enter the new pitch: " << endl;
+							cout << "> ";
+							char pitch;
+							cin >> pitch;
+							(*noteIt)->changePitch(pitch);
+							break;
+						case 4:
+							cout << "Enter the new octave: " << endl;
+							cout << "> ";
+							int octave;
+							cin >> octave;
+							(*noteIt)->changeOctave(octave);
+							break;
+						case 5:
+							(*noteIt)->setSharp();
+							break;
+						case 6:
+							(*noteIt)->removeSharp();
+							break;
+						case 7:
+							noteIterating = false;
+							noteIt = noteArr->begin();
+							break;
+						}
+
+					}
+					break;
+				case 4:
+					compIterating = false;
+					compIt = measureArr->begin();
+					curr = 1;
+					break;
+				}
+			}
+			break;
+		case 3:
+			cout << "\nEnter a new duration (numerator denominator):\n";
+			cout << "> ";
+			cin >> numerator;
+			cin >> denominator;
+			try {
+				Duration d(numerator, denominator);
+			}
+			catch (InvalidDenominator id) {
+				cout << id.what();
+				break;
+			}
+			comp->changeDuration(Duration(numerator, denominator));
+			changed = true;
+			compIt = comp->getMeasureArr()->begin();
+			break;
+		case 4:
+			cout << "\nEnter a number (+/-):\n";
+			cout << "> ";
+			cin >> ans;
+			comp->changeOctaves(ans);
+			changed = true;
+			break;
+		case 5:
+			inUse = false;
+			break;
+		}
 	}
-	ofile.close();
-	file.close();
+}
 
-	ofile.open("compositionOutput.txt");
-
-	// TODO make the duration changeable
-	Composition* c = new Composition(Duration(3, 8));
-
-	c->attachMap(&playing);
-	c->createComposition();
-	cout << *c;
-	ofile << *c;
-	ofile.close();
-	return c;
+void mainMenu() {
+	cout << endl;
+	cout << "\n  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *            Main Menu	      *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * 1. Import Note Data               *" << endl;
+	cout << "  * 2. Import Composition Data        *" << endl;
+	cout << "  * 3. Composition Menu               *" << endl;
+	cout << "  * 4. Export Menu                    *" << endl;
+	cout << "  * 5. Stop                           *" << endl;
+	cout << "  *                                   *" << endl;
+	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
+	cout << endl;
 }
 
 int main() {
-	ifstream file;
-	file.open("map.csv");
-	string textLine;
-	regex rx("([^,]*),([^,]*),([^,]*)*");
+	ifstream input;
 	map<char, string> noteMap;
 	map<string, int> midiMap;
+	Composition* comp = nullptr;
+	MXMLFormatter* mxml = nullptr;
+	MIDIFormatter* midi = nullptr;
+	BMPFormatter* bmp = nullptr;
+	int ans = 0;
+	bool madeChanges = false;
+	string name;
+	string textLine;
 
-	while (getline(file, textLine)) {
-		smatch result;
+	while(true) {
+		mainMenu();
+		cout << "> ";
+		cin >> ans;
+		switch (ans) {
+		case 1:
+			//Note Data
+			cout << "Please specify a filename (*.csv):\n";
+			cout << "> ";
+			cin >> name;
+			input.open(name + ".csv");
+			if (!input.fail()) {
+				regex rx("([^,]*),([^,]*),([^,]*)*");
 
-		if (regex_match(textLine, result, rx)) {
-			char character = (result.str(1).c_str())[0];
-			string note = result.str(2);
-			int midiNum = atoi(result.str(3).c_str());
-			noteMap[character] = note;
-			midiMap[note] = midiNum;
+				while (getline(input, textLine)) {
+					smatch result;
+
+					if (regex_match(textLine, result, rx)) {
+						char character = (result.str(1).c_str())[0];
+						string note = result.str(2);
+						int midiNum = atoi(result.str(3).c_str());
+						noteMap[character] = note;
+						midiMap[note] = midiNum;
+					}
+				}
+				input.close();
+			}
+			else {
+				cout << "\nThere was an error opening the file";
+			}
+			break;
+		case 2:
+			// Composition Data
+			if (noteMap.size() == 0) {
+				cout << "Please load the Note data first";
+				break;
+			}
+			cout << "Please specify a filename (*.txt):\n";
+			cout << "> ";
+			cin >> name;
+			cout << "\nEnter the duration (numerator denominator):\n";
+			int num, denom;
+			cin >> num;
+			cin >> denom;
+			comp = new Composition(Duration(num, denom));
+			if (!comp) break; // Invalid duration
+			input.open("input\\" + name + ".txt");
+			if (!input.fail()) {
+				comp->addSymbols(noteMap, input);
+				input.close();
+			}
+			else {
+				cout << "\nThere was an error opening the file";
+			}
+			break;
+		case 3:
+			compositionMenu(comp, madeChanges);
+			break;
+		case 4:
+			// Export
+			exportMenu(comp, midiMap, mxml, midi, bmp); // check if pointers are good
+			break;
+		case 5:
+			// Stop
+			cout << "Are you sure? (y/n)";
+			if (madeChanges) {
+				cout << "\nChanges were not exported\n";
+			}
+			cin >> textLine;
+			if (textLine == "y") {
+				cout << "\nDo you want to export before exiting? (y/n)\n";
+				cout << "> ";
+				cin >> textLine;
+				if (textLine == "y") {
+					exportMenu(comp, midiMap, mxml, midi, bmp);
+				}
+				comp->~Composition();
+				return 0;
+			}
+			break;
 		}
 	}
-
-	file.close();
-	
-	ofstream testFile;
-	testFile.open("test.bmp");
-	//testFile << (unsigned char)'B';
-	//uint16_t
-	//uint32_t num= 40;
-	//testFile.put(num & 0xFFu).put((num >> 8) & 0xFFu).put((num >> 16) & 0xFFu).put((num >> 24) & 0xFFu);
-	unsigned int num = 10;
-	//testFile.write(reinterpret_cast<const char *>(&num), sizeof(num));
-	//testFile.write(prvi, sizeof(prvi)).put((broj >> 8) & 0xFFu).put((broj >> 16) & 0xFFu).put((broj >> 24) & 0xFFu);
-
-	
-	Composition* comp = addSymbols(noteMap);
-
-	MXMLFormatter* mxml = new MXMLFormatter(comp);
-	mxml->format();
-	
-	MIDIFormatter* midi = new MIDIFormatter(comp, &midiMap);
-	midi->format();
-
-	BMPFormatter* bmp = new BMPFormatter(comp, 10);
-	bmp->format();
-
-	return 0;
 }

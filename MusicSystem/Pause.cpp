@@ -14,5 +14,5 @@ void Pause::setSplit() {
 }
 
 void Pause::getInfo(ostream& os) {
-	os << "P " << d;
+	os << "P";
 }
