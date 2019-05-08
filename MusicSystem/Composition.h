@@ -18,22 +18,16 @@ class Composition {
 	Duration d;
 public:
 	Composition(Duration);
-	/*
-	typedef vector<Measure*>::iterator iterator;
-	iterator begin() { return measureArr.begin(); }
-	iterator end() { return measureArr.end(); }
-	*/
 
-	void attachMap(vector<pair<MusicSymbol*, int>>* symbolMap);
 	void createComposition();
 	void selectiveAdd(Measure*, MusicSymbol*, bool);
 	vector<Measure*>* getMeasureArr();
 	void addSymbols(map<char, string>&, ifstream&);
 	vector<Note*>* getNoteArr();
 
-	void changeOctaves(int);
-	void changeDuration(Duration d);
-	void updateComposition();
+	void changeOctaves(int); // Changes all the octaves in the composition
+	void changeDuration(Duration d); // Changes the duration of the composition
+	void updateComposition(); // Forces a restructuring, caused by making changes to symbols
 
 	Duration getDuration() const;
 	friend ostream& operator<<(ostream&, const Composition&);

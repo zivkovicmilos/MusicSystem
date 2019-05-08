@@ -111,13 +111,12 @@ void Note::setAdded() {
 	added = true;
 }
 
-bool Note::isAdded() {
+bool Note::isAdded() const {
 	return added;
 }
 
 void Note::addNext(Note* n) {
 	nextNote = n;
-	//n->addPrev(this);
 }
 
 void Note::addPrev(Note* n) {

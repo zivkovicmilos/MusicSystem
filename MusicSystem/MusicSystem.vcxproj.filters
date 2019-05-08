@@ -75,7 +75,7 @@
     <ClCompile Include="BMPFormatter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CompIterator.cpp">
+    <ClCompile Include="Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -131,7 +131,7 @@
     <ClInclude Include="BMPFormatter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CompIterator.h">
+    <ClInclude Include="Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

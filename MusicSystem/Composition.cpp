@@ -208,7 +208,6 @@ ostream& operator<<(ostream& os, const Composition& c) {
 	Measure* currMeasure = nullptr;
 	for (int i = 0; i < c.measureArr.size(); i++) {
 		currMeasure = c.measureArr[i];
-		//os << "Measure " << i << ":" << endl;
 		os << *currMeasure;
 		os << endl;
 	}

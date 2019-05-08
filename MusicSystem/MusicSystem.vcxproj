@@ -117,13 +117,13 @@
   <ItemGroup>
     <ClCompile Include="Binasc.cpp" />
     <ClCompile Include="BMPFormatter.cpp" />
-    <ClCompile Include="CompIterator.cpp" />
     <ClCompile Include="Composition.cpp" />
     <ClCompile Include="createmidifile.cpp" />
     <ClCompile Include="Duration.cpp" />
     <ClCompile Include="Formatter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Measure.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MidiEvent.cpp" />
     <ClCompile Include="MidiEventList.cpp" />
     <ClCompile Include="MidiFile.cpp" />
@@ -138,12 +138,12 @@
   <ItemGroup>
     <ClInclude Include="Binasc.h" />
     <ClInclude Include="BMPFormatter.h" />
-    <ClInclude Include="CompIterator.h" />
     <ClInclude Include="Composition.h" />
     <ClInclude Include="Duration.h" />
     <ClInclude Include="Errors.h" />
     <ClInclude Include="Formatter.h" />
     <ClInclude Include="Measure.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="MidiEvent.h" />
     <ClInclude Include="MidiEventList.h" />
     <ClInclude Include="MidiFile.h" />

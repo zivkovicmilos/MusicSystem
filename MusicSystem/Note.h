@@ -5,15 +5,14 @@ class Note : public MusicSymbol {
 public:
 	enum Pitch {C, D, E, F, G, A, B};
 private:
-	// somehow mark it as split
 	int octave;
 	Pitch p;
 	bool isSharp;
 	bool added;
 	Note* nextNote; // Next note to be played in [ ] section
-	Note* prevNote;
+	Note* prevNote; // Previous note in the [ ] section
 
-	// Midi actionTime start and end
+	// Midi actionTime start / end
 	int midiS;
 	int midiE;
 public:
@@ -26,28 +25,30 @@ public:
 	int getOctave() const;
 	char getPitchC() const;
 	char getPitchS() const;
+	
 	Note* getNext() const;
 	Note* getPrev() const;
+
 	void setSplit();
 	void setNext(Note*);
 	void setPrev(Note*);
 	void resetPtr();
 	void setAdded();
-	bool isAdded();
 	void splitDuration() override;
 	void setMidiTime(int, int, int);
 
 	int midiStart();
 	int midiEnd();
 	string getNoteStr();
-	void changeOctave(int);
-	void addOctave(int);
+	void changeOctave(int); // Changes the current octave to a specified number
+	void addOctave(int); // Offsets the current octave by a specified number
 	void changePitch(char);
 	void setSharp();
 	void removeSharp();
 
 	bool checkSharp() const;
 	bool checkSplit() const;
+	bool isAdded() const;
 	~Note();
 };
 

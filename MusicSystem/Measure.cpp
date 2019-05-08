@@ -32,7 +32,8 @@ void Measure::addDuration(Duration d) {
 }
 
 ostream& operator<<(ostream& os, const Measure& m) {
-	int numOfSpaces = 0;
+	int maxSize = 0;
+	int currSize = 0;
 	bool first = true; // First note in sequence
 	os << "R: ";
 	for (int i = 0; i < m.right.size(); i++) {
@@ -41,26 +42,27 @@ ostream& operator<<(ostream& os, const Measure& m) {
 			Note* temp = (Note*)m.left[i];
 			while (temp) {
 				if (first) {
-					numOfSpaces++;
+					currSize+=2;
 					first = false;
 				}
 				else {
-					numOfSpaces += 2; // Pitch + octave
+					currSize += 2; // Pitch + octave
 				}
 				if (temp->checkSharp()) {
-					numOfSpaces++;
+					currSize++;
 				}
 				temp = temp->getNext();
 			}
 		}
-		os << *m.right[i];
-		for (int j = 0; j < numOfSpaces + 1; j++) {
-			os << " ";
-		}
+		maxSize = maxSize < currSize ? currSize : maxSize;
+		//cout << *m.right[i] << setw(maxSize) << " ";// TODO Remove
+		os << *m.right[i] << '\t' << " ";
 	}
+
 	os << "|";
 	os << endl;
-	numOfSpaces = 0;
+
+	currSize = 0;
 	os << "L: ";
 	for (int i = 0; i < m.left.size(); i++) {
 		first = true;
@@ -68,23 +70,21 @@ ostream& operator<<(ostream& os, const Measure& m) {
 			Note* temp = (Note*)m.right[i];
 			while (temp) {
 				if (first) {
-					numOfSpaces++;
+					currSize+=2;
 					first = false;
 				}
 				else {
-					numOfSpaces += 2; // Pitch + octave
+					currSize += 2; // Pitch + octave
 				}
 				if (temp->checkSharp()) {
-					numOfSpaces++;
+					currSize++;
 				}
 				temp = temp->getNext();
 			}
 		}
-		os << *m.left[i];
-		numOfSpaces = numOfSpaces == 1 ? 1 : numOfSpaces + 1;
-		for (int j = 0; j < numOfSpaces; j++) {
-			os << " ";
-		}
+		maxSize = maxSize < currSize ? currSize : maxSize;
+		//cout << *m.left[i] << setw(maxSize) << " "; // TODO Remove
+		os << *m.left[i] << '\t' << " ";
 	}
 	os << "|";
 	os << endl;

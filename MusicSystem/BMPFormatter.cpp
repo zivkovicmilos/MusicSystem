@@ -29,9 +29,6 @@ void BMPFormatter::readColorMap() {
 			colorMap[note] = tempTuple;
 		}
 	}
-	for (auto& t : colorMap)
-		std::cout << t.first << " " << get<0>(t.second) << " " << get<1>(t.second) << " " << get<2>(t.second) << "\n";
-
 }
 
 int BMPFormatter::getValue(string note, int color) {
@@ -50,14 +47,6 @@ uint8_t BMPFormatter::getColorMix(vector<uint8_t>& colors) {
 		sum += colors[i];
 	}
 	return sum / colors.size();
-}
-
-string BMPFormatter::numToHex(int num) {
-	char hex[10];
-	_itoa_s(num, hex, 16);
-	string hexS(hex);
-	transform(hexS.begin(), hexS.end(), hexS.begin(), ::toupper);
-	return hexS;
 }
 
 void BMPFormatter::pushColors(int red, int green, int blue) {
@@ -115,46 +104,6 @@ void BMPFormatter::addColors(int octave, string note) {
 	}
 }
 
-string hexamize(string str) {
-	int remaining = 0;
-	string ret;
-	if (str.length() % 2 == 0) {
-		// Even number of digits
-		remaining = 4 - str.length()/2;
-
-		for (int i = 0; i < str.length(); i++) {
-			ret.push_back(str[i]);
-			if (i % 2 != 0) {
-				ret.push_back(' ');
-			}
-		}
-	}
-	else {
-		// Uneven number of digits
-		remaining = 4 - (str.length() + 1) / 2;
-		for (int i = 0; i < str.length(); i++) {
-			if (i == str.length() - 1) {
-				ret.push_back('0');
-			}
-			ret.push_back(str[i]);
-			if (i % 2 != 0) {
-				ret.push_back(' ');
-			}
-		}
-	}
-	if (ret[ret.length() - 1] != ' ') {
-		ret.push_back(' ');
-	}
-
-	for (int i = 0; i < remaining; i++) {
-		ret.push_back('0');
-		ret.push_back('0');
-		ret.push_back(' ');
-	}
-
-	return ret;
-}
-
 void write8bit(std::ostream& out, char const* c, std::size_t n) {
 	out.write(c, n);
 }
@@ -195,22 +144,6 @@ void BMPFormatter::generateBoilerplate(ofstream& output, uint32_t totalSize, uin
 	write32bit(output, 0);
 	write32bit(output, 0);
 
-	//int bitmapSize = totalSize + 54;
-	/*
-	output << (byte) 'B' << (byte) 'M';
-	output << (byte) (totalSize + 54);// hexamize(numToHex(totalSize + 54));
-	for (int i = 0; i < 7; i++) {
-		output << (byte) 0;
-	}
-	output << (byte)54 << (byte)0 << (byte)0 << (byte)0 << (byte)40;
-
-	output << "28 00 00 00 ";
-	output << hexamize(numToHex(width)); // add width
-	output << hexamize(numToHex(height)); // add height
-	output << "01 00 " << "18 00 " << "00 00 00 00 ";
-	output << hexamize(numToHex(totalSize)); // add bitmap size;
-	output << "13 0B 00 00 " << "13 0B 00 00 " << "00 00 00 00 " << "00 00 00 00 ";
-	*/
 }
 
 int getClosest(int rowPixelCnt) {
@@ -220,26 +153,14 @@ int getClosest(int rowPixelCnt) {
 	int closest = 8 + (rowPixelCnt - (rowPixelCnt % 8)); // Closest multiple of 8
 	return closest - rowPixelCnt;
 }
-inline std::ostream& write_binary_8bit(std::ostream& out, char c) {
-	return out.put(c);
-}
-
-inline std::ostream& write_binary_8bit(std::ostream& out, char* c, std::size_t n) {
-	return out.write(c, n);
-}
-
-inline std::ostream& write_binary_8bit(std::ostream& out, byte* c, std::size_t n) {
-	return write_binary_8bit(out, reinterpret_cast<char*>(c), n);
-}
 
 void BMPFormatter::format() {
-	readColorMap(); // Load in the color map;
-
+	if (colorMap.empty()) readColorMap(); // Load in the color map;
+	
 	string outputFileName;
 	cout << "Enter the BMP output file name: ";
 	cout << "> ";
 	cin >> outputFileName;
-	//output.open("colorStorage.txt");
 
 	// Pause is white (255, 255, 255)
 	// 1/4 is two pixels
@@ -264,8 +185,6 @@ void BMPFormatter::format() {
 	int rowPixelCnt = 0;
 	int totalSize = 0;
 
-	
-	
 	for (int i = 0; i < measureArr->size(); i++) {
 		
 		right = (*measureArr)[i]->getRight();
@@ -366,12 +285,9 @@ void BMPFormatter::format() {
 
 	//output.close();
 	ofstream output("BMP\\"+outputFileName+".bmp", std::ios::binary);
-	uint32_t bWidth = 3 * width; // How many bytes in a row
+	uint32_t rowWidth = 3 * width; // How many bytes in a row
 	uint8_t padding = (8 - (width * 3) % 8) % 8;
 
-	//FILE* ptr = fopen(("BMP\\"+outputFileName+".bmp").c_str(), "w");
-	//IMG actualImage(totalSize+54, width, height, totalSize);
-	//fwrite(&actualImage.header, sizeof(actualImage.header), 1, ptr);
 	char* buff = new char[colors.size() * 3 + 1];
 	int cnt = 0;
 	for (int i = 0; i < colors.size(); i++) {
@@ -384,7 +300,7 @@ void BMPFormatter::format() {
 	generateBoilerplate(output, totalSize, width, height); // ok
 
 	for (int i = height -1; i >= 0; i--) {
-		output.write(buff + i * bWidth, bWidth);
+		output.write(buff + i * rowWidth, rowWidth);
 		// changed i!=0
 		for (int j = 0; j < padding; j++) {
 			write8bit(output, 0);
@@ -392,15 +308,4 @@ void BMPFormatter::format() {
 	}
 
 	output.close();
-	/*
-	for (int i = 0; i < height; i++) {
-		write_binary_8bit(output, buffer + i*bWidth, bWidth); // read bWidth bytes from the i*bWidth location
-		output.seekp(padding, std::ios::cur); // Skip over the padding
-	}
-
-	output.close();
-
-	cout << "end";
-	*/
-
 }
