@@ -1,177 +1,126 @@
-R: G4	 c5	 |
-L: P	 g3	 |
-
-R: c5	 C4E4C5	 |
-L: g3	 P	 |
-
-R: D5	 c4e4c5	 |
+R: E4	 e4	 |
 L: P	 P	 |
 
-R: c4e4c5	 B4	 |
+R: e4	 F4	 |
 L: P	 P	 |
 
-R: A4	 c4a4	 |
-L: F3	 a3	 |
+R: G4	 g4	 |
+L: P	 P	 |
 
-R: c4a4	 C4A4	 |
-L: a3	 A3	 |
+R: g4	 F4	 |
+L: P	 P	 |
 
-R: D5	 d5	 |
-L: D3	 a3	 |
+R: E4	 d4	 |
+L: P	 P	 |
 
-R: d5	 E5	 |
-L: a3	 P	 |
+R: d4	 C4	 |
+L: P	 P	 |
 
-R: D5	 c5	 |
-L: A3	 P	 |
+R: C4	 d4	 |
+L: P	 P	 |
 
-R: c5	 B4	 |
-L: P	 F3	 |
+R: d4	 E4	 |
+L: P	 P	 |
 
-R: D4G4	 d4g4	 |
-L: G3B3	 g3b3	 |
+R: E4	 P	 |
+L: P	 P	 |
 
-R: d4g4	 E5	 |
-L: g3b3	 E3	 |
+R: d4	 P	 d4	 |
+L: P	 P	 P	 |
 
-R: D4E5	 f5	 |
-L: B3	 P	 |
+R: P	 E4	 |
+L: P	 P	 |
 
-R: f5	 D4E5	 |
-L: P	 B3	 |
+R: E4	 f4	 |
+L: P	 P	 |
 
-R: D5	 c5	 |
+R: f4	 G4	 |
+L: P	 P	 |
+
+R: G4	 f4	 |
+L: P	 P	 |
+
+R: f4	 E4	 |
+L: P	 P	 |
+
+R: D4	 c4	 |
+L: P	 P	 |
+
+R: c4	 C4	 |
+L: P	 P	 |
+
+R: D4	 e4	 |
+L: P	 P	 |
+
+R: e4	 D4	 |
+L: P	 P	 |
+
+R: P	 c4	 P	 |
+L: P	 P	 P	 |
+
+R: c4	 P	 d4	 |
+L: P	 P	 P	 |
+
+R: d4	 D4	 |
+L: P	 P	 |
+
+R: E4	 c4	 |
+L: P	 P	 |
+
+R: c4	 D4	 |
+L: P	 P	 |
+
+R: e4	 P	 f4	 |
+L: P	 P	 P	 |
+
+R: P	 e4	 c4	 |
+L: P	 P	 P	 |
+
+R: c4	 D4	 |
+L: P	 P	 |
+
+R: e4	 P	 f4	 |
+L: P	 P	 P	 |
+
+R: P	 e4	 d4	 |
+L: P	 P	 P	 |
+
+R: d4	 C4	 |
+L: P	 P	 |
+
+R: D4	 P	 |
 L: P	 g3	 |
 
-R: c5	 C4E4A4	 |
-L: g3	 A3	 |
-
-R: C4E4G4	 P	 |
-L: A3	 P	 |
-
-R: G4	 a4	 |
-L: P	 d3	 |
-
-R: a4	 C4D5	 |
-L: d3	 F3A3	 |
-
-R: D4B4	 c5	 |
-L: G3B3	 c3	 |
-
-R: c5	 C4	 |
-L: c3	 E3G3	 |
-
-R: C4G4	 c5	 |
-L: E3G3	 a3	 |
-
-R: c5	 C4E4C5	 |
-L: a3	 P	 |
-
-R: C4E4C5	 b4	 |
-L: P	 g3	 |
-
-R: b4	 D4	 |
-L: g3	 B3	 |
-
-R: D4B4	 c5	 |
-L: B3	 d3	 |
-
-R: c5	 C4B4	 |
-L: d3	 A3	 |
-
-R: C4A4	 g4	 |
-L: A3	 g3	 |
-
-R: g4	 D4	 |
-L: g3	 B3	 |
-
-R: D4D5	 e5	 |
-L: B3	 g3	 |
-
-R: e5	 P	 c4e4d5	 |
+R: P	 P	 e4	 |
 L: g3	 P	 P	 |
 
-R: c4e4d5	 C4E4C5	 |
+R: e4	 E4	 |
 L: P	 P	 |
 
-R: E5G5	 d4g4	 |
-L: G3	 b3	 |
+R: F4	 g4	 |
+L: P	 P	 |
 
-R: d4g4	 D4G4	 |
-L: b3	 B3	 |
+R: g4	 G4	 |
+L: P	 P	 |
 
-R: G4	 a4	 |
-L: P	 d3	 |
+R: F4	 e4	 |
+L: P	 P	 |
 
-R: a4	 C4D5	 |
-L: d3	 A3	 |
+R: e4	 D4	 |
+L: P	 P	 |
 
-R: D4B4	 c5	 |
-L: G3B3	 c3	 |
+R: C4	 c4	 |
+L: P	 P	 |
 
-R: c5	 C4	 |
-L: c3	 E3G3	 |
+R: c4	 D4	 |
+L: P	 P	 |
 
-R: C4G4	 c5	 |
-L: E3G3	 c3	 |
+R: E4	 d4	 |
+L: P	 P	 |
 
-R: c5	 C5	 |
-L: c3	 E3G3	 |
+R: d4	 P	 c4	 |
+L: P	 P	 P	 |
 
-R: D5	 c5	 |
-L: P	 e3g3	 |
-
-R: c5	 B4	 |
-L: e3g3	 P	 |
-
-R: A4	 c4a4	 |
-L: F3	 a3	 |
-
-R: c4a4	 C4A4	 |
-L: a3	 A3	 |
-
-R: D5	 c4d5	 |
-L: D3	 a3	 |
-
-R: c4d5	 P	 e5	 |
-L: a3	 P	 P	 |
-
-R: e5	 C4D5	 |
-L: P	 A3	 |
-
-R: C5	 b4	 |
-L: P	 d3	 |
-
-R: b4	 G4	 |
-L: d3	 G3B3	 |
-
-R: G4	 e5	 |
-L: G3B3	 e3	 |
-
-R: e5	 E5	 |
-L: e3	 G3B3	 |
-
-R: F5	 e5	 |
-L: P	 g3b3	 |
-
-R: e5	 D5	 |
-L: g3b3	 P	 |
-
-R: C5	 c4a4	 |
-L: E3	 a3	 |
-
-R: c4a4	 C4G4	 |
-L: a3	 A3	 |
-
-R: G4	 a4	 |
-L: P	 d3	 |
-
-R: a4	 C4D5	 |
-L: d3	 F3A3	 |
-
-R: D4B4	 c4c5	 |
-L: G3B3	 e3g3	 |
-
-R: c4c5	 |
-L: e3g3	 |
+R: P	 c4	 |
+L: P	 P	 |
 

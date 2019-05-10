@@ -86,6 +86,7 @@ void Menu::exportMenu(Composition* comp, map<string, int>& midiMap,
 			}
 			mxml = new MXMLFormatter(comp);
 			mxml->format();
+			delete mxml;
 			break;
 		case 2:
 			// BMP
@@ -99,6 +100,7 @@ void Menu::exportMenu(Composition* comp, map<string, int>& midiMap,
 			cin >> ans;
 			bmp = new BMPFormatter(comp, ans);
 			bmp->format();
+			delete bmp;
 			break;
 		case 3:
 			// MIDI
@@ -109,6 +111,7 @@ void Menu::exportMenu(Composition* comp, map<string, int>& midiMap,
 			}
 			midi = new MIDIFormatter(comp, &midiMap);
 			midi->format();
+			delete mxml;
 			break;
 		case 4:
 			inUse = false;

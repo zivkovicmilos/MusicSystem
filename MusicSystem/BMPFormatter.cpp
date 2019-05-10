@@ -147,10 +147,10 @@ void BMPFormatter::generateBoilerplate(ofstream& output, uint32_t totalSize, uin
 }
 
 int getClosest(int rowPixelCnt) {
-	if ((rowPixelCnt % 8) == 0) return 0; // Already a multiple of 8
-	if ((rowPixelCnt % 8) == rowPixelCnt) return 8 - rowPixelCnt; // num < 8
+	if ((rowPixelCnt % 4) == 0) return 0; // Already a multiple of 8
+	if ((rowPixelCnt % 4) == rowPixelCnt) return 4 - rowPixelCnt; // num < 8
 
-	int closest = 8 + (rowPixelCnt - (rowPixelCnt % 8)); // Closest multiple of 8
+	int closest = 4 + (rowPixelCnt - (rowPixelCnt % 4)); // Closest multiple of 8
 	return closest - rowPixelCnt;
 }
 
@@ -286,7 +286,7 @@ void BMPFormatter::format() {
 	//output.close();
 	ofstream output("BMP\\"+outputFileName+".bmp", std::ios::binary);
 	uint32_t rowWidth = 3 * width; // How many bytes in a row
-	uint8_t padding = (8 - (width * 3) % 8) % 8;
+	uint8_t padding = (4 - (width * 3) % 4) % 4;
 
 	char* buff = new char[colors.size() * 3 + 1];
 	int cnt = 0;
@@ -299,13 +299,20 @@ void BMPFormatter::format() {
 
 	generateBoilerplate(output, totalSize, width, height); // ok
 
-	for (int i = height -1; i >= 0; i--) {
+	for (int i = height - 1; i >= 0; i--) {
 		output.write(buff + i * rowWidth, rowWidth);
 		// changed i!=0
 		for (int j = 0; j < padding; j++) {
 			write8bit(output, 0);
 		}
 	}
+
+	delete buff;
+
+	colors.clear();
+	red.clear();
+	blue.clear();
+	green.clear();
 
 	output.close();
 }
