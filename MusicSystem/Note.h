@@ -22,6 +22,7 @@ public:
 
 	static Pitch getPitch(char);
 	void getInfo(ostream&) override;
+	void singleNote(ostream&);
 	int getOctave() const;
 	char getPitchC() const;
 	char getPitchS() const;
@@ -29,7 +30,6 @@ public:
 	Note* getNext() const;
 	Note* getPrev() const;
 
-	void setSplit();
 	void setNext(Note*);
 	void setPrev(Note*);
 	void resetPtr();
@@ -49,6 +49,7 @@ public:
 	bool checkSharp() const;
 	bool checkSplit() const;
 	bool isAdded() const;
+	void clearAdded();
 	~Note();
 };
 

@@ -20,14 +20,21 @@ void Note::removeSharp() {
 }
 
 void Note::changeOctave(int num) {
-	if (num < 2) {
-		octave = 2;
-	}
-	else if (num > 6) {
-		octave = 6;
+	if (octave <= 3) {
+		if (num < 2) {
+			octave = 2;
+		}
+		else if (num <=3) {
+			octave = num;
+		}
 	}
 	else {
-		octave = num;
+		if (num > 6) {
+			octave = 6;
+		}
+		else if (num > 3) {
+			octave = num;
+		}
 	}
 }
 
@@ -119,6 +126,10 @@ void Note::addNext(Note* n) {
 	nextNote = n;
 }
 
+void Note::clearAdded() {
+	added = false;
+}
+
 void Note::addPrev(Note* n) {
 	prevNote = n;
 }
@@ -148,23 +159,16 @@ void Note::getInfo(ostream& os) {
 		os << temp->getOctave();
 		temp = temp->nextNote;
 	}
+}
 
-	/* Test for output
-	if (nextNote) {
-		os << " (next note: " << nextNote->getPitchC();
-		if (isSharp) {
-			os << "#";
-		}
-		os << nextNote->getOctave() << ")";
+void Note::singleNote(ostream& os) {
+	char pitch = getPitchS();
+
+	os << pitch;
+	if (isSharp) {
+		os << "#";
 	}
-	if (prevNote) {
-		os << " (prev note: " << prevNote->getPitchC();
-		if (isSharp) {
-			os << "#";
-		}
-		os << prevNote->getOctave() << ")";
-	}
-	*/
+	os << octave;
 }
 
 int Note::getOctave() const {
@@ -187,9 +191,11 @@ char Note::getPitchC() const {
 char Note::getPitchS() const {
 	bool upperCase = false;
 	char pitch;
-	if (d == Duration(1, 4)) {
+
+	if (d == Duration(1, 4) && !isSplit()) {
 		upperCase = true;
 	}
+
 	switch (p) {
 	case C: upperCase ? pitch = 'C' : pitch = 'c'; break;
 	case D: upperCase ? pitch = 'D' : pitch = 'd'; break;
@@ -223,10 +229,6 @@ bool Note::checkSharp() const {
 // TODO remove below (2)
 bool Note::checkSplit() const {
 	return split;
-}
-
-void Note::setSplit() {
-	split = true;
 }
 
 Note::~Note() {

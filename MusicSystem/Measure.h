@@ -18,6 +18,7 @@ public:
 	status getStatus(MusicSymbol*); // Returns the status of the current measure when adding symbols
 	vector<MusicSymbol*>* getLeft(); // Returns the left part of the measure
 	vector<MusicSymbol*>* getRight(); // Returns the right part of the measure
+	int getID(); // Used for iterating
 	void addDuration(Duration); // Increases the duration by a certain amount
 
 	friend ostream& operator<<(ostream&, const Measure&);

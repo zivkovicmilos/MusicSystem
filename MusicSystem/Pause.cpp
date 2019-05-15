@@ -9,10 +9,12 @@ void Pause::splitDuration() {
 	d.changeDuration(1, 8);
 }
 
-void Pause::setSplit() {
-	split = true;
-}
-
 void Pause::getInfo(ostream& os) {
-	os << "P";
+	bool upperCase = false;
+	if (d == Duration(1, 4) && !isSplit()) {
+		os << "P";
+	}
+	else {
+		os << "p";
+	}
 }

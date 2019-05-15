@@ -25,7 +25,7 @@ void Menu::compIterMenu() {
 	cout << "> ";
 }
 
-void Menu::noteIterMenu() {
+void Menu::noteIterMenu(bool isChord) {
 	cout << endl;
 	cout << "1. Previous Note" << endl;
 	cout << "2. Next Note" << endl;
@@ -33,7 +33,13 @@ void Menu::noteIterMenu() {
 	cout << "4. Change Octave" << endl;
 	cout << "5. Make Sharp" << endl;
 	cout << "6. Remove Sharp" << endl;
-	cout << "7. Go back" << endl;
+	if (isChord) {
+		cout << "7. Enter Chord" << endl;
+		cout << "8. Go back" << endl;
+	}
+	else {
+		cout << "7. Go back" << endl;
+	}
 	cout << "> ";
 }
 
@@ -66,6 +72,18 @@ void Menu::exportText() {
 	cout << "  *                                   *" << endl;
 	cout << "  * * * * * * * * * * * * * * * * * * *" << endl;
 	cout << endl;
+}
+
+void Menu::chordIterMenu() {
+	cout << endl;
+	cout << "1. Previous Note in chord" << endl;
+	cout << "2. Next Note in chord" << endl;
+	cout << "3. Change Pitch" << endl;
+	cout << "4. Change Octave" << endl;
+	cout << "5. Make Sharp" << endl;
+	cout << "6. Remove Sharp" << endl;
+	cout << "7. Go back" << endl;
+	cout << "> ";
 }
 
 void Menu::exportMenu(Composition* comp, map<string, int>& midiMap,
@@ -125,7 +143,14 @@ void Menu::compositionMenu(Composition* comp) {
 	bool inUse = true;
 	bool compIterating = true;
 	bool noteIterating = false;
+	bool chordIterating = false;
 	int curr = 1;
+	bool chord = false;
+	int currID = 0;
+
+	Note* firstChained = nullptr;
+	Note* currChained = nullptr;
+
 	int ans = 0;
 	int numerator = 0;
 	vector<Measure*>* measureArr = comp->getMeasureArr();
@@ -173,11 +198,19 @@ void Menu::compositionMenu(Composition* comp) {
 					break;
 				case 3:
 					noteIterating = true;
+					chord = false;
 					noteArr = comp->getNoteArr();
+					currID = (*compIt)->getID();
 					noteIt = noteArr->begin();
+					while ((*noteIt)->getID() != currID) {
+						noteIt++;
+					}
 					while (noteIterating) {
 						cout << "Note: " << **noteIt;
-						noteIterMenu();
+						if ((*noteIt)->getNext()) {
+							chord = true;
+						}
+						noteIterMenu(chord);
 						cin >> ans;
 						switch (ans) {
 						case 1:
@@ -190,7 +223,7 @@ void Menu::compositionMenu(Composition* comp) {
 								noteIt++;
 							}
 							break;
-						case 3:// TODO iterate through chained notes
+						case 3:
 							cout << "Enter the new pitch: " << endl;
 							cout << "> ";
 							char pitch;
@@ -211,8 +244,63 @@ void Menu::compositionMenu(Composition* comp) {
 							(*noteIt)->removeSharp();
 							break;
 						case 7:
-							noteIterating = false;
-							noteIt = noteArr->begin();
+							if (chord) {
+								chordIterating = true;
+								firstChained = (*noteIt);
+								currChained = firstChained;
+								while (chordIterating) {
+									cout << "Note ";
+									currChained->singleNote(cout);
+									cout << " in chord: " << *firstChained << endl;
+									chordIterMenu();
+									cin >> ans;
+									switch (ans) {
+									case 1:
+										if (currChained->getPrev()) {
+											currChained = currChained->getPrev();
+										}
+										break;
+									case 2:
+										if (currChained->getNext()) {
+											currChained = currChained->getNext();
+										}
+										break;
+									case 3:
+										cout << "Enter the new pitch: " << endl;
+										cout << "> ";
+										char pitch;
+										cin >> pitch;
+										currChained->changePitch(pitch);
+										break;
+									case 4:
+										cout << "Enter the new octave: " << endl;
+										cout << "> ";
+										int octave;
+										cin >> octave;
+										currChained->changeOctave(octave);
+										break;
+									case 5:
+										currChained->setSharp();
+										break;
+									case 6:
+										currChained->removeSharp();
+										break;
+									case 7:
+										chordIterating = false;
+										break;
+									}
+								}
+							}
+							else {
+								noteIterating = false;
+								noteIt = noteArr->begin();
+							}
+							break;
+						case 8:
+							if (chord) {
+								noteIterating = false;
+								noteIt = noteArr->begin();
+							}
 							break;
 						}
 

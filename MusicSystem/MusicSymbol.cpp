@@ -1,5 +1,6 @@
 #include "MusicSymbol.h"
 
+int MusicSymbol::cnt = 0;
 MusicSymbol::MusicSymbol(Duration d) : d(d), isPause(false), split(false){}
 
 Duration MusicSymbol::getDuration() const {
@@ -10,7 +11,7 @@ void MusicSymbol::setDuration(int num, int denom) {
 	d.changeDuration(num, denom);
 }
 
-bool MusicSymbol::isSplit() {
+bool MusicSymbol::isSplit() const {
 	return split;
 }
 
@@ -25,4 +26,16 @@ bool MusicSymbol::checkPause() {
 
 void MusicSymbol::getInfo(ostream& os) {
 	os << "";
+}
+
+int MusicSymbol::getID() {
+	return id;
+}
+
+void MusicSymbol::setSplit() {
+	split = true;
+}
+
+void MusicSymbol::clearSplit() {
+	split = false;
 }

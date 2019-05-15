@@ -11,6 +11,15 @@ Composition::Composition(Duration d) : d(d){
 void Composition::updateComposition() {
 	measureArr.clear();
 	measureArr.push_back(new Measure(this->d));
+	MusicSymbol* ms = nullptr;
+	for (int i = 0; i < symbolMap.size(); i++) {
+		ms = symbolMap[i].first;
+		ms->clearSplit();
+		if (!ms->checkPause()) {
+			Note* temp = (Note*)ms;
+			temp->clearAdded();
+		}
+	}
 	createComposition();
 }
 
@@ -21,7 +30,22 @@ void Composition::changeOctaves(int num) {
 			continue;
 		}
 		Note* n = (Note*)ms;
-		n->addOctave(num);
+		Note* temp = n;
+		while (temp) {
+			if (temp->getNext()) {
+				while (temp) {
+					int currOctave = temp->getOctave();
+					if (!(currOctave <= 3 && currOctave + num > 3) && !(currOctave > 3 && currOctave + num <= 3)) {
+						temp->addOctave(num);
+					}
+					temp = temp->getNext();
+				}
+			}
+			else {
+				temp->addOctave(num);
+				temp = temp->getNext();
+			}
+		}
 	}
 	// Update the composition
 	updateComposition();
@@ -192,6 +216,7 @@ void Composition::createComposition() {
 		case Measure::status::SPLIT :{
 			// A split is required to fit the note(s)
 			ms->splitDuration();
+			ms->setSplit();
 			Measure* temp = measureArr.back();
 			measureArr.push_back(new Measure(d));
 

@@ -99,3 +99,23 @@ Measure::~Measure() {
 	left.clear();
 	right.clear();
 }
+
+int Measure::getID() {
+	vector<MusicSymbol*>* right = getRight();
+	vector<MusicSymbol*>* left = getLeft();
+
+	for (int i = 0; i < right->size(); i++) {
+		if ((*right)[i]->checkPause() && !((*left)[i]->checkPause())) {
+			// Right is a pause, left is a note
+			return (*left)[i]->getID();
+		}
+		else if (!((*right)[i]->checkPause()) && ((*left)[i]->checkPause())) {
+			// Right is a note, left is a pause
+			return (*right)[i]->getID();
+		}
+		else if (!((*right)[i]->checkPause()) && !((*left)[i]->checkPause())) {
+			// Both are notes, return the lowest ID
+			return (*right)[i]->getID() < (*left)[i]->getID() ? (*right)[i]->getID() : (*left)[i]->getID();
+		}
+	}
+}

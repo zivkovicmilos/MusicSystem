@@ -12,7 +12,8 @@ public:
 	bool changed = false;
 	void mainMenu();
 	void compIterMenu();
-	void noteIterMenu();
+	void noteIterMenu(bool);
+	void chordIterMenu();
 	void compositionText();
 	void exportText();
 	void exportMenu(Composition*, map<string, int>&,

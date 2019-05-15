@@ -5,8 +5,8 @@ class Pause : public MusicSymbol {
 public:
 	Pause(Duration);
 
-	bool checkSpecial();
-	void setSplit();
+	//bool checkSpecial();
+	
 	void getInfo(ostream&) override;
 	void splitDuration() override;
 };
