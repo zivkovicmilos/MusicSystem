@@ -184,7 +184,7 @@ char Note::getPitchC() const {
 	case G: return 'G';
 	case A: return 'A';
 	case B: return 'B';
-	default: cout << "Bad Pitch"; break;// TODO throw exception
+	default: cout << "Bad Pitch"; break;
 	};
 }
 
@@ -218,7 +218,7 @@ Note::Pitch Note::getPitch(char c) {
 	case 'G': ret = Note::Pitch::G; break;
 	case 'A': ret = Note::Pitch::A; break;
 	case 'B': ret = Note::Pitch::B; break;
-	default: cout << "Bad Pitch"; break;// TODO throw exception
+	default: cout << "Bad Pitch"; break;
 	};
 	return ret;
 }
@@ -226,7 +226,7 @@ Note::Pitch Note::getPitch(char c) {
 bool Note::checkSharp() const {
 	return isSharp;
 }
-// TODO remove below (2)
+
 bool Note::checkSplit() const {
 	return split;
 }

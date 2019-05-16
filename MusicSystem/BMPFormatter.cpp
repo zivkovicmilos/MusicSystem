@@ -104,22 +104,13 @@ void BMPFormatter::addColors(int octave, string note) {
 	}
 }
 
-void write8bit(std::ostream& out, char const* c, std::size_t n) {
-	out.write(c, n);
-}
-
 void write8bit(ofstream& output, char num) {
 	output.put(num);
-}
-
-void write8bit(std::ostream& out, byte const* c, std::size_t n) {
-	return write8bit(out, reinterpret_cast<char const*>(c), n);
 }
 
 void write16bit(ofstream& output, uint16_t num) {
 	output.put(num & 0xFFu).put((num >> 8) & 0xFFu);
 }
-
 
 void write32bit(ofstream& output, uint32_t num) {
 	output.put(num & 0xFFu).put((num >> 8) & 0xFFu).put((num >> 16) & 0xFFu).put((num >> 24) & 0xFFu);
@@ -147,10 +138,10 @@ void BMPFormatter::generateBoilerplate(ofstream& output, uint32_t totalSize, uin
 }
 
 int getClosest(int rowPixelCnt) {
-	if ((rowPixelCnt % 4) == 0) return 0; // Already a multiple of 8
-	if ((rowPixelCnt % 4) == rowPixelCnt) return 4 - rowPixelCnt; // num < 8
+	if ((rowPixelCnt % 4) == 0) return 0; // Already a multiple of 4
+	if ((rowPixelCnt % 4) == rowPixelCnt) return 4 - rowPixelCnt; // num < 4
 
-	int closest = 4 + (rowPixelCnt - (rowPixelCnt % 4)); // Closest multiple of 8
+	int closest = 4 + (rowPixelCnt - (rowPixelCnt % 4)); // Closest multiple of 4
 	return closest - rowPixelCnt;
 }
 
@@ -272,9 +263,10 @@ void BMPFormatter::format() {
 			totalSize += (pixels * 3);
 		}
 	}
+
 	// Fill in the last row with white pixels if there is space
 	if (rowPixelCnt > 0 && rowPixelCnt < width) {
-		// changed getClosest
+
 		int remaining = width - rowPixelCnt;
 		for (int i = 0; i < remaining; i++) {
 			// One white pixel
@@ -283,7 +275,6 @@ void BMPFormatter::format() {
 		totalSize += (remaining * 3);
 	}
 
-	//output.close();
 	ofstream output("BMP\\"+outputFileName+".bmp", std::ios::binary);
 	uint32_t rowWidth = 3 * width; // How many bytes in a row
 	uint8_t padding = (4 - (width * 3) % 4) % 4;
@@ -301,7 +292,7 @@ void BMPFormatter::format() {
 
 	for (int i = height - 1; i >= 0; i--) {
 		output.write(buff + i * rowWidth, rowWidth);
-		// changed i!=0
+
 		for (int j = 0; j < padding; j++) {
 			write8bit(output, 0);
 		}

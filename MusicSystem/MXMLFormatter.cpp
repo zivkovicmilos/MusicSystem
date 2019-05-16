@@ -39,7 +39,6 @@ void MXMLFormatter::printNote(ostream& os, MusicSymbol* m, bool& split) {
 		os << "</pitch>" << endl;
 		os << "<duration>" << duration << "</duration>" << endl;
 		if (n->checkSplit() && !split) {
-			// TODO Split arc for ALL notes
 			os << "<tie type=\"start\"/>" << endl;
 			split = true;
 		}

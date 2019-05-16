@@ -300,10 +300,8 @@ void Composition::addSymbols(map<char, string>& noteMap, ifstream& file) {
 					num += oldLength + pos;
 					num += (i == 2 ? -1 : 0);
 				}
-				// TODO: Remove below
-				//cout << "(" << workingStr << ") " << " at " << num << endl;
+
 				oldLength = match.str().length();
-				/////////////////////////////
 
 				int length = workingStr.length();
 				if (length > 1) {
@@ -331,7 +329,6 @@ void Composition::addSymbols(map<char, string>& noteMap, ifstream& file) {
 						Note::Pitch pitch;
 						int octave;
 						bool isSharp = false;
-						// TODO check if char map is valid when parsing
 						char note = charArr[j];
 						if (note == ' ') {
 							// The symbol is a pause within [ ]

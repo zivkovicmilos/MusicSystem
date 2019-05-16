@@ -171,7 +171,6 @@ void Menu::compositionMenu(Composition* comp) {
 		cin >> ans;
 		switch (ans) {
 		case 1:
-			// TODO Fix output
 			cout << *comp;
 			break;
 		case 2:

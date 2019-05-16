@@ -55,7 +55,6 @@ ostream& operator<<(ostream& os, const Measure& m) {
 			}
 		}
 		maxSize = maxSize < currSize ? currSize : maxSize;
-		//cout << *m.right[i] << setw(maxSize) << " ";// TODO Remove
 		os << *m.right[i] << '\t' << " ";
 	}
 
@@ -83,7 +82,6 @@ ostream& operator<<(ostream& os, const Measure& m) {
 			}
 		}
 		maxSize = maxSize < currSize ? currSize : maxSize;
-		//cout << *m.left[i] << setw(maxSize) << " "; // TODO Remove
 		os << *m.left[i] << '\t' << " ";
 	}
 	os << "|";
