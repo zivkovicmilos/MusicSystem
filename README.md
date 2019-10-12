@@ -14,7 +14,7 @@ The PianoPlayer project builds on top of the knowledge gained by building *Music
 
 # The CLI
 The user can interact with the program through the console window:<br/>
-![CLI](MusicSystem/imgs/mainMenu.png)
+![CLI](MusicSystem/imgs/mainMenu.svg)
 
 # Program Breakdown
 ## Data input
